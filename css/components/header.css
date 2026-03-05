@@ -1,0 +1,47 @@
+header{
+    background-color: #fff;
+    max-height: 80px;
+    overflow: hidden;
+    transition: all .6s ease 0s;
+    border: 3px solid orange;
+}
+header:hover{
+    max-height: 500px;
+}
+header .wrap{
+    width: 1842px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+header .logo{
+    height: 80px;
+    line-height: 0;
+}
+header .logo a{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header .gnb{
+    display: flex;
+    gap: 100px;
+}
+.gnb>li>a{
+    height: 80px;
+    display: flex;
+    justify-content: flex-start ;
+    align-items: center;
+}
+header .lnb{
+    display: flex;
+    padding-top: 10px;
+    gap: 10px ;
+}
+.gnb .deps2{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

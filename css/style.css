@@ -3,6 +3,10 @@
 :root{
     --font-main: '2uc-main-font', sans-serif;
     --font-point: '2uc-point-font', sans-serif;
+    --main-color: '#06311E';
+    --point-color-1: '#2C3333';
+    --point-color-2: '#476F91';
+    --neutral-color: '#FBFBFB';
 }
 .fw-100 { font-weight: 100; }
 .fw-200 { font-weight: 200; }
