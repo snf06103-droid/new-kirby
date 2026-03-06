@@ -1,9 +1,8 @@
 header{
-    background-color: #fff;
+    background-color: var(--neutral-color);
     max-height: 80px;
-    overflow: hidden;
+    overflow: hidden; 
     transition: all .6s ease 0s;
-    border: 3px solid orange;
 }
 header:hover{
     max-height: 500px;
@@ -34,11 +33,13 @@ header .gnb{
     display: flex;
     justify-content: flex-start ;
     align-items: center;
+    font-weight: 700;
 }
 header .lnb{
     display: flex;
     padding-top: 10px;
     gap: 10px ;
+    font-size: 16px;
 }
 .gnb .deps2{
     display: flex;

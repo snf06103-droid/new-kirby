@@ -3,11 +3,24 @@
 :root{
     --font-main: '2uc-main-font', sans-serif;
     --font-point: '2uc-point-font', sans-serif;
+
     --main-color: #06311E;
     --point-color-1: #2C3333;
     --point-color-2: #476F91;
     --neutral-color: #FBFBFB;
+
     --font-size-pc: 18px;
+     
+
+    --bold-weight: 700;
+    --medium-weight: 500;
+    --light-weight: 300;
+
+    --magin-up-down-pc:10rem;
+    --gap-pc:1rem;
+    --magin-main-text: 2rem;
+    --magin-sub-text: 1rem;
+
 }
 .fw-100 { font-weight: 100; }
 .fw-200 { font-weight: 200; }
@@ -20,7 +33,7 @@
 .fw-900 { font-weight: 900; }
 html{
     font-family: var(--font-main);
-    font-weight: 400; 
+    font-weight: var(--medium-weight); 
     line-height: 1.4;
     font-size: var(--font-size-pc);
 }

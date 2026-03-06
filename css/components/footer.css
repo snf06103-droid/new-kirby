@@ -6,7 +6,6 @@ footer{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
 }
 .footer-container{
     width: 1440px;
@@ -18,6 +17,11 @@ footer{
     font-size: 1rem;
 }
 .footer-info .sns{
+    margin-top: .5rem;
+    display: flex;
+    gap: 1rem;
+}
+.sns{
     margin-top: .5rem;
     display: flex;
     gap: 1rem;
