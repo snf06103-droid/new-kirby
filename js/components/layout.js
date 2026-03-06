@@ -4,7 +4,7 @@ async function includeLayout() {
 
   if (headerTarget) {
     try {
-      const response = await fetch("./components/header.html");
+      const response = await fetch("/components/header.html");
       if (!response.ok) throw new Error(`header load failed: ${response.status}`);
       headerTarget.innerHTML = await response.text();
     } catch (error) {
@@ -14,7 +14,7 @@ async function includeLayout() {
 
   if (footerTarget) {
     try {
-      const response = await fetch("./components/footer.html");
+      const response = await fetch("/components/footer.html");
       if (!response.ok) throw new Error(`footer load failed: ${response.status}`);
       footerTarget.innerHTML = await response.text();
     } catch (error) {

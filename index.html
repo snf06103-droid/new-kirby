@@ -4,15 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>2UC</title>
+    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/components/header.css">
     <link rel="stylesheet" href="./css/components/footer.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+    <link rel="stylesheet" href="./css/pages/index.css">
+    <script src="./js/components/header.js"></script>
 </head>
 <body>
     <div id="site-header"></div>
-    <div class="banner">
-        <img src="./images/banner/banner-1.png" alt="">
+
+    <div class="swiper station">
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <ul class="swiper-wrapper train">
+            <li class="swiper-slide">
+                <img src="./images/hero-banner/hero-banner-1.png" alt="">
+            </li>
+            <li class="swiper-slide">
+                <img src="./images/hero-banner/hero-banner-2.png" alt="">
+            </li>
+            <li class="swiper-slide">
+                <img src="./images/hero-banner/hero-banner-3.png" alt="">
+            </li>
+            <li class="swiper-slide">
+                <img src="./images/hero-banner/hero-banner-4.png" alt="">
+            </li>
+            <li class="swiper-slide">
+                <img src="./images/hero-banner/hero-banner-5.png" alt="">
+            </li>
+            <li class="swiper-slide">
+                <img src="./images/hero-banner/hero-banner-6.png" alt="">
+            </li>
+        </ul>
     </div>
+    <section class="pick-section">
+        <div class="common-frame">
+            <h2>쥐포's pick(수정)</h2>
+            <div class="pick-grid">
+                <div class="pick-item large">
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./images/pick-section/big.jpg" alt="제품 큰 이미지">
+                        </a>
+                    </div>
+                </div>
+                <div class="pick-item small">
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./images/pick-section/small-1.jpg" alt="제품 작은 이미지 1">
+                        </a>
+                    </div>
+                </div>
+                <div class="pick-item small">
+                    <div class="img-box">
+                        <a href="#">
+                            <img src="./images/pick-section/small-2.jpg" alt="제품 작은 이미지 2">
+                        </a>
+                    </div>
+                </div>
+                <div class="pick-info">
+                    <h3 class="h3">제품명, 설명글</h3>
+                    <p class="b2">안녕하세요 안녕하세요... (설명글 내용) Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam et quo dolor perferendis amet est quas voluptate repudiandae odit veritatis eveniet, magnam obcaecati repellendus? Dolorem qui excepturi eius minus alias. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Inventore ea provident delectus deserunt est nemo, accusantium aspernatur tempore commodi autem dolorem quisquam fuga omnis dignissimos numquam explicabo soluta sunt vel. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore sint, sapiente veniam ut iure dolorum nostrum fuga molestias recusandae! Consectetur similique soluta dolor labore accusamus iusto iure repellat eos natus?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="banner-2">
+        <h2>New arrival</h2>
+        <div class="banner">
+            <h3>hoho table</h3>
+        </div>
+    </div>
+    <div class="style-guide">
+        <h2>스타일링 가이드 / 룩북</h2>
+
+    </div>
+
+    <div class="quick-nav">
+        <div class="common-frame">
+            <h2>카테고리 퀵 네비게이션</h2>
+            <div class="quick-box">
+                <div class="quick-img">
+                    <a href="#">
+                        <img src="./images/quick-menu/chair.jpg" alt="">
+                        <div class="quick-text">
+                            <h3>의자</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="quick-img">
+                    <a href="#">
+                        <img src="./images/quick-menu/sofa.jpg" alt="">
+                        <div class="quick-text">
+                            <h3>소파</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="quick-img">
+                    <a href="#">
+                        <img src="./images/quick-menu/desk.jpg" alt="">
+                        <div class="quick-text">
+                            <h3>책상</h3>
+                        </div>
+                    </a>
+                </div>
+                <div class="quick-img">
+                    <a href="#">
+                        <img src="./images/quick-menu/light.jpg" alt="">
+                        <div class="quick-text">
+                            <h3>조명</h3>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <div id="site-footer"></div>
     <script src="./js/components/layout.js"></script>
 </body>

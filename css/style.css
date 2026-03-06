@@ -16,10 +16,10 @@
     --medium-weight: 500;
     --light-weight: 300;
 
-    --magin-up-down-pc:10rem;
+    --margin-top-pc:10rem;
     --gap-pc:1rem;
-    --magin-main-text: 2rem;
-    --magin-sub-text: 1rem;
+    --margin-main-text: 2rem;
+    --margin-sub-text: 1rem;
 
 }
 .fw-100 { font-weight: 100; }
@@ -36,4 +36,20 @@ html{
     font-weight: var(--medium-weight); 
     line-height: 1.4;
     font-size: var(--font-size-pc);
+}
+body{
+    padding-top: 80px;
+}
+header{
+    
+}
+.common-frame{
+    width: 1440px;
+    margin: 0 auto;
+}
+img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

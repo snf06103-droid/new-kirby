@@ -2,8 +2,27 @@ header{
     background-color: var(--neutral-color);
     max-height: 80px;
     overflow: hidden; 
-    transition: all .6s ease 0s;
+    transition: max-height 0.6s ease 0s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    /* transition: background-color 0.3s, backdrop-filter 0.3s; */
 }
+header.on {
+    /* 배경색을 반투명하게 변경 (뒤가 비쳐야 하니까요!) */
+    /* rgba의 마지막 0.8이 80% 투명도를 의미합니다 */
+    background-color: rgba(255, 255, 255, 0.8); 
+    
+    /* 뒤 배경을 흐리게 처리 */
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    
+    /* 아래쪽에 얇은 선을 넣어 구분감을 주면 더 깔끔합니다 */
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
 header:hover{
     max-height: 500px;
 }
@@ -23,6 +42,9 @@ header .logo a{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.logo img{
+    height: 60px;
 }
 header .gnb{
     display: flex;
