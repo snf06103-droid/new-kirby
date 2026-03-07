@@ -15,7 +15,6 @@
 <body>
     <div id="site-header"></div>
     
-    <!-- 라디오 버튼 (항상 표시) -->
     <div class="login-container">
         <div class="login-type">
             <h1>Log In</h1>
@@ -31,8 +30,6 @@
             </div>
         </div>
     </div>
-
-    <!-- 로그인 섹션 -->
     <div class="login">
         <div class="login-container">
             <div class="user-input">
@@ -42,7 +39,13 @@
                 </div>
                 <div class="input-box">
                     <label for="user-password">비밀번호</label>
-                    <input type="password" id="user-password" name="user-password">
+                    <div class="password-input-container">
+                        <input type="password" id="user-password" name="user-password">
+                        <button type="button" id="password-toggle" class="password-toggle">
+                            <img src="/assets/icons/eye.png" alt="비밀번호 보기" id="password-icon">
+                            <img src="/assets/icons/eye-closed.png" alt="비밀번호 숨기기" id="password-icon-closed" style="display:none;">
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="login-auto">
@@ -83,22 +86,19 @@
                 회원가입
             </a>
         </span>
-        <div class="sns-login">
-            <p>SNS 계정으로 간편 로그인</p>
-            <div class="sns-icons">
-                <a href="#">
-                    <img src="/assets/icons/naver-icons.png" alt="네이버 로그인">
-                    <p>네이버 아이디로 로그인</p>
-                </a>
-                <a href="#">
-                    <img src="/assets/icons/google-icon.png" alt="구글 로그인">
-                    <p>구글 아이디로 로그인</p>    
-                </a>
-                <a href="#">
-                    <img src="/assets/icons/kakao-icon.png" alt="카카오 로그인">
-                    <p>카카오 아이디로 로그인</p>
-                </a>
-            </div>
+        <div class="sns-icons">
+            <a href="#">
+                <img src="/assets/icons/naver-icons.png" alt="네이버 로그인">
+                <p>네이버 아이디로 로그인</p>
+            </a>
+            <a href="#">
+                <img src="/assets/icons/google-icon.png" alt="구글 로그인">
+                <p>구글 아이디로 로그인</p>    
+            </a>
+            <a href="#">
+                <img src="/assets/icons/kakao-icon.png" alt="카카오 로그인">
+                <p>카카오 아이디로 로그인</p>
+            </a>
         </div>
     </div>
     <div id="site-footer"></div>
