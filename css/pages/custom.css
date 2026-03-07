@@ -1,0 +1,115 @@
+.custom-order .banner{
+    height: 612px;
+    background-color: var(--main-color);
+}
+.main-text h1{
+    text-align: center;
+    font-size: var(--heading-2);
+}
+.main-text h1:nth-last-of-type(1){
+    margin-bottom: .5rem;
+}
+.main-text{
+    margin: 10rem 0;
+}
+.custom-box{
+    /* border: 5px solid var(--main-color); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.custom-container{
+    padding: 4rem 0;
+    background-color: #C2DCC2;
+}
+.custom-accout figure{
+    width: 709px;
+    aspect-ratio: 709/500;
+    border-radius: 30px;
+    overflow: hidden;
+    margin-bottom: 3rem;
+}
+.cart-box{
+    background-color: #fff;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 56px;
+    box-sizing: border-box;
+}
+.cart-box h1{
+    font-size: var(--heading-1);
+}
+.order-button{
+    display: flex;
+    gap: .5rem;
+}
+.order-button>span>a{
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    display: flex;
+    gap: .5rem;
+    background-color: blue;
+    color: #fff;
+}
+.order-button img{
+    width: 27px;
+    aspect-ratio: 1/1;
+}
+.custom-panel{
+    border-radius: 30px;
+    background-color: #fff;
+    width: 587px;
+    height: 754px;
+    padding: 2rem 4rem;
+    box-sizing: border-box;
+}
+.custom-step{
+    display: flex;
+    flex-direction: column;
+}
+.custom-step .step{
+    font-size:var(--heading-2);
+    font-weight: var(--bold-weight);
+    padding: 1rem 0;
+    border-bottom: 1px solid #999999;
+}
+.step{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.step img{
+    width: 27px;
+    height: 27px;
+}
+.active-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem 70px;
+    padding: var(--margin-main-text) 0;
+}
+.items{
+    text-align: center;
+}
+.items>figure{
+    margin-bottom: 1rem;
+    width: 100px;
+    aspect-ratio: 1/1;
+}
+.custom-menu{
+    max-height: 73px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+.custom-menu.active{
+    max-height: 500px;
+}
+.active-size{
+    margin-top: var(--margin-main-text);
+}
+.active-size .option{
+    margin-bottom: 1rem;
+}
