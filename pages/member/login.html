@@ -9,12 +9,96 @@
     <link rel="stylesheet" href="../../css/components/header.css">
     <link rel="stylesheet" href="../../css/components/footer.css">
     <script src="../../js/components/header.js"></script>
+    <link rel="stylesheet" href="/css/pages/login.css">
+    <script src="/js/pages/login.js"></script>
 </head>
 <body>
     <div id="site-header"></div>
-    <div class="wrap">
-        <div class="login">
-            
+    
+    <!-- 라디오 버튼 (항상 표시) -->
+    <div class="login-container">
+        <div class="login-type">
+            <h1>Log In</h1>
+            <div class="login-tabs">
+                <label for="login">
+                    <input type="radio" id="login" name="user-type" checked>
+                    로그인
+                </label>
+                <label for="nonmember">
+                    <input type="radio" id="nonmember" name="user-type">
+                    비회원 주문조회
+                </label>
+            </div>
+        </div>
+    </div>
+
+    <!-- 로그인 섹션 -->
+    <div class="login">
+        <div class="login-container">
+            <div class="user-input">
+                <div class="input-box">
+                    <label for="user-email">E-mail</label>
+                    <input type="text" id="user-email" name="user-email">
+                </div>
+                <div class="input-box">
+                    <label for="user-password">비밀번호</label>
+                    <input type="password" id="user-password" name="user-password">
+                </div>
+            </div>
+            <div class="login-auto">
+                <input type="checkbox" id="user-auto-login">
+                <label for="user-auto-login">아이디 저장</label>
+            </div>
+        </div>
+        <div class="login-buttons">
+            <span><a href="#">로그인</a></span>
+            <div class="login-links">
+                <a href="#">아이디 찾기</a>
+                <a href="#">비밀번호 찾기</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="nomembership">
+        <div class="login-container">
+            <div class="user-input">
+                <div class="input-box">
+                    <label for="user-order-number">주문번호</label>
+                    <input type="number" id="user-order-number" name="user-order-number">
+                </div>
+                <div class="input-box">
+                    <label for="user-number">핸드폰번호</label>
+                    <input type="number" id="user-number" name="user-number">
+                </div>
+            </div>
+        </div>
+        <div class="login-buttons">
+            <span><a href="#">주문조회</a></span>
+        </div>
+    </div>
+
+    <div class="sign-up">
+        <span>
+            <a href="./join.html">
+                회원가입
+            </a>
+        </span>
+        <div class="sns-login">
+            <p>SNS 계정으로 간편 로그인</p>
+            <div class="sns-icons">
+                <a href="#">
+                    <img src="/assets/icons/naver-icons.png" alt="네이버 로그인">
+                    <p>네이버 아이디로 로그인</p>
+                </a>
+                <a href="#">
+                    <img src="/assets/icons/google-icon.png" alt="구글 로그인">
+                    <p>구글 아이디로 로그인</p>    
+                </a>
+                <a href="#">
+                    <img src="/assets/icons/kakao-icon.png" alt="카카오 로그인">
+                    <p>카카오 아이디로 로그인</p>
+                </a>
+            </div>
         </div>
     </div>
     <div id="site-footer"></div>

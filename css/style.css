@@ -10,6 +10,16 @@
     --neutral-color: #FBFBFB;
 
     --font-size-pc: 18px;
+    --font-size-pad: 16px;
+    --font-size-mobile: 14px;
+
+    --heading-1: 1.61rem;
+    --heading-2: 1.44rem;
+    --heading-3: 1.27rem;
+    --heading-4: 1.11rem;
+    --body-1: 1rem;
+    --body-2: 0.88rem;
+
      
 
     --bold-weight: 700;
