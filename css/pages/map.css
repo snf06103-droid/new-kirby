@@ -1,0 +1,51 @@
+.map h1{
+    margin-top: var(--margin-top-pc);
+    font-size: var(--heading-1);
+    font-weight: var(--medium-weight);
+    margin-bottom: var(--margin-main-text);
+    font-family: var(--font-point);
+}
+.map-box{
+    border: 5px solid green;
+    display: flex;
+    gap: var(--margin-sub-text);
+    margin-bottom: var(--margin-main-text);
+}
+.map-photo{
+    width: 833px;
+    height: 496px;
+}
+.store-photo{
+    width: 589px;
+    height: 496px;
+}
+.location-box h4{
+    padding: var(--margin-sub-text);
+    font-size: var(--heading-4);
+    font-weight: var(--bold-weight);
+    border-bottom: 1px solid #000;
+}
+.location-box{
+    margin-bottom: var(--margin-top-pc);
+}
+.location-box p {
+    position: relative;
+    padding-left: var(--margin-sub-text);
+    margin-left: .5rem;
+    margin-top: var(--margin-sub-text);
+     /* 점이 들어갈 자리를 비워줍니다 */
+     margin-bottom: var(--margin-main-text);
+}
+
+.location-box p::before {
+    content: ''; /* 필수: 내용은 비워둡니다 */
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%); /* 세로 중앙 정렬 */
+    
+    width: 4px; /* 점의 크기 */
+    height: 4px;
+    background-color: #333; /* 점의 색상 */
+    border-radius: 50%; /* 둥글게 만들어 점으로 변신! */
+}

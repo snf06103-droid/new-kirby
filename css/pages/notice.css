@@ -1,0 +1,43 @@
+.notice .banner{
+    height: 400px;
+    background: url(../../images/event/event-1.png) no-repeat 50% 50% / cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: var(--margin-top-pc);
+}
+.notice .banner h1{
+    font-size: 50px;
+    color: #fff;
+}
+.notice-title h1{
+    font-size: var(--heading-1);
+    font-weight: var(--medium-weight);
+    font-family: var(--font-point);
+    padding: var(--margin-sub-text);
+    border-bottom: 3px solid #000;
+    margin-bottom: var(--margin-main-text);
+}
+.notice-box{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-sub-text);
+    margin-bottom: 800px;
+}
+.notice-box h4{
+    padding: var(--margin-sub-text);
+    border-bottom: 1px solid #9C9C9C;
+}
+.notice-box p{
+    padding: var(--margin-main-text);
+}
+.notice-text{
+    /* border: 1px solid red; */
+    max-height: 62px;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+}
+.notice-text.active{
+    max-height: 500px;
+}
+
