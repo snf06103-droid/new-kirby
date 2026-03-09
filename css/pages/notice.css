@@ -24,10 +24,6 @@
     gap: var(--margin-sub-text);
     margin-bottom: 800px;
 }
-.notice-box h4{
-    padding: var(--margin-sub-text);
-    border-bottom: 1px solid #9C9C9C;
-}
 .notice-box p{
     padding: var(--margin-main-text);
 }
@@ -39,5 +35,20 @@
 }
 .notice-text.active{
     max-height: 500px;
+}
+.title-box{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #9C9C9C;
+    padding: var(--margin-sub-text);
+}
+.title-box img{
+    width: 24px;
+    height: 24px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
 }
 

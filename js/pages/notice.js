@@ -1,25 +1,21 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. 모든 '.step' 버튼들을 가져옵니다.
-    const notices = document.querySelectorAll('.notice-text');
+    // 모든 '.title-box' 요소들을 가져옵니다.
+    const titleBoxes = document.querySelectorAll('.title-box');
 
-    notices.forEach(function(notices) {
-        notices.addEventListener('click', function() {
-            // 2. 클릭한 'step' 버튼의 바로 다음에 있는 'active-grid'를 찾습니다.
-            const targetGrid = this.nextElementSibling;
+    titleBoxes.forEach(function(titleBox) {
+        titleBox.addEventListener('click', function() {
+            // 클릭한 title-box의 부모 .notice-text를 찾습니다.
+            const parentNotice = this.closest('.notice-text');
             
-            // 3. 클릭한 버튼의 부모인 'custom-menu'에 active를 넣었다 뺐다 합니다.
-            // (CSS에서 .custom-menu.active .active-grid 스타일을 조절한다고 가정)
-            const parentMenu = this.closest('.custom-menu');
-            parentMenu.classList.toggle('active');
+            // 부모에 active 클래스를 토글합니다.
+            parentNotice.classList.toggle('active');
             
-            // 만약 '하나만 열리고 나머지는 닫히게' 하고 싶다면 아래 로직을 추가하세요.
-            
-            notices.forEach(otherStep => {
-                if (otherStep !== notices) {
-                    otherStep.closest('.custom-menu').classList.remove('active');
+            // 다른 모든 .notice-text에서 active 클래스를 제거합니다.
+            document.querySelectorAll('.notice-text').forEach(function(otherNotice) {
+                if (otherNotice !== parentNotice) {
+                    otherNotice.classList.remove('active');
                 }
             });
-            
         });
     });
 });

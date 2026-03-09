@@ -1,0 +1,14 @@
+.list-wrap .banner{
+    height: 600px;
+    background: url(../../images/banner/banner.jpg) no-repeat 50% 50% / cover;
+    margin-bottom: var(--margin-top-pc);
+}
+.product-types{
+    width: 100%;
+    padding: var(--margin-sub-text) var(--margin-main-text);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #999999;
+}
