@@ -14,13 +14,14 @@
     box-sizing: border-box;
     font-size: var(--heading-2);
     font-weight: var(--bold-weight);
+    margin-bottom: 3rem;
 }
 .list-box{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 3rem;
 }
 .select-box{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 100%;
     display: flex;
     align-items: flex-end;
@@ -30,7 +31,6 @@
 .select-label{
     display: flex;
     gap: .5rem;
-    
     font-size: var(--heading-2);
     font-weight: var(--bold-weight);
     cursor: pointer;
@@ -60,4 +60,45 @@
 }
 .select-box.active .select-list {
     display: flex;
+}
+.product-grid{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 8rem;
+    /* border: 1px solid red; */
+    margin-bottom: 140px;
+}
+.product-list{
+    /* border: 1px solid green; */
+}
+.product-list figure{
+    width: 100%;
+    aspect-ratio: 378/425;
+    margin-bottom: 2rem;
+}
+.product-description{
+    display: flex;
+    gap: 1rem;
+}
+.size-color{
+    width: 248px;
+    height: 79.37px;
+    background-color: aquamarine;
+}
+.product-name{
+    font-size: 26px;
+    font-weight: 700;
+}
+.product-name h3{
+    font-size: 23px;
+}
+.pagination{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+.list-box nav{
+    margin-bottom: var(--margin-top-pc);
 }
