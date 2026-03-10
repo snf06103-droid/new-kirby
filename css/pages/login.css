@@ -1,6 +1,6 @@
 .login-container{
-    width: 1000px;
-    margin: var(--margin-top-pc) auto;
+    width: 660px;
+    margin: 4rem auto 2rem;
 }
 .login-type{
     display: flex;
