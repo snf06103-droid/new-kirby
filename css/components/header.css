@@ -54,7 +54,8 @@ header .gnb{
 }
 header .lnb{
     display: flex;
-    padding-top: 10px;
+    height: 80px;
+    align-items: center;
     gap: 10px ;
     font-size: 16px;
 }
