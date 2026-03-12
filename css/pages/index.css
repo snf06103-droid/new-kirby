@@ -10,10 +10,102 @@
     object-fit: cover;
 }
 .pick-grid{
-    margin-top: 18rem;
     display: grid;
     grid-template-columns: 500px repeat(3,1fr);
     grid-template-rows: 295px 276px;
+    margin-top: 3rem;
+    gap: 3rem 1rem;   
+}
+.grid-1>.pick-text{
+    display: none;
+    width: 100%;
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-align: center;
+}
+.pick-text h4{
+    font-size: var(--heading-4);
+    font-weight: var(--bold-weight);
+    margin-bottom: .5rem;
+}
+.pick-text .h1-box{ 
+    display: inline-block;
+    font-size: 20px;
+    margin-bottom: 13.5rem;
+    font-weight:900;
+    border-top: 1px solid #fff;
+}
+.pick-list{
+    /* border: 1px solid red; */
+    margin: 18rem auto;
+}
+.pick-list>h1{
+    font-family: var(--font-point);
+    font-size: var(--heading-1);
+    font-weight: var(--medium-weight);
+}
+.pick-grid>.grid-1{
+    grid-row: 1/3;
+    /* border: 1px solid red; */
+    position: relative;
+}
+.grid-1 img{
+    filter: brightness(1);
+}
+.grid-1:hover img{
+    filter: brightness(.7);
+}
+.grid-1:hover .pick-text{
+    display: block;
+}
+.pick-grid>.text-box{
+    grid-column: 2/5;
+    padding-left: 10px;
+}
+.text-box h1{
+    font-size: var(--heading-1);
+    font-weight: var(--bold-weight);
+    margin-bottom: .5rem;
+}
+.text-box .desc1{
+    margin-bottom: 2.5rem;
+}
+.pick-grid figure{
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.new-product{
+    border: 1px solid red;
+    font-family: var(--font-point);
+    text-align: center;
+}
+.new-product>h1{
+    font-size: var(--heading-1);
+    margin-bottom: 3rem;
+}
+.new-product .banner{
+    width: 1622px;
+    height: 1622px;
+    margin: 0 auto;
+    background: url(../../images/new-product/bg.jpg) no-repeat 50% 50% / cover;
+    margin-bottom: 4.5rem;
+}
+.new-product .content1{
+    font-size: 150px;
+    line-height: 1.2;
+    margin-bottom: 903px;
+}
+.new-product .content2{
+    font-size: 120px;
+    line-height: 1.2;
+    text-align: start;
+    padding-left: 93px;
 }
 
 

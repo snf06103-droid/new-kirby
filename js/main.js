@@ -4,10 +4,10 @@ document.addEventListener("DOMContentLoaded",()=>{
       direction:'horizontal',
       loop: true,
       speed:1000,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
+      // navigation: {
+      //   nextEl: '.swiper-button-next',
+      //   prevEl: '.swiper-button-prev',
+      // },
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
