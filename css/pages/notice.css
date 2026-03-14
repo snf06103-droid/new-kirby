@@ -1,6 +1,9 @@
+body{
+    background-color: var(--neutral-color);
+}
 .notice .banner{
     height: 400px;
-    background: url(../../images/event/event-1.png) no-repeat 50% 50% / cover;
+    background: url(../../images/cs/notic-banner.jpg) no-repeat 50% 50% / cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,16 +25,22 @@
     display: flex;
     flex-direction: column;
     gap: var(--margin-sub-text);
-    margin-bottom: 800px;
+    margin-bottom: 18rem;
+}
+.notice-text h4{
+    font-weight: var(--bold-weight);
 }
 .notice-box p{
-    padding: var(--margin-main-text);
+    height: 500px;
+    padding: 1rem;
+    font-weight: var(--light-weight);
 }
 .notice-text{
     /* border: 1px solid red; */
     max-height: 62px;
     overflow: hidden;
     transition: max-height 0.4s ease;
+    background-color: #fff;
 }
 .notice-text.active{
     max-height: 500px;
@@ -47,8 +56,13 @@
     height: 24px;
 }
 .icon{
+    width: 80px;
     display: flex;
     align-items: center;
     gap: 1.5rem;
+    justify-content: space-between;
+}
+.title-box{
+    cursor: pointer;
 }
 
