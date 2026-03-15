@@ -84,3 +84,55 @@ button {
     
     vertical-align: middle;
 }
+.light{
+    font-weight: var(--light-weight);
+}
+.medium{
+    font-weight: var(--medium-weight);
+}
+.bold{
+    font-weight: var(--bold-weight);
+}
+.body2{
+    font-size: var(--body-2);
+}
+.detail{
+    font-size: var(--detail);
+}
+.point{
+    font-family: var(--font-point);
+}
+h1{
+    font-size: var(--heading-1);
+    font-weight: var(--bold-weight);
+}
+h2{
+    font-size: var(--heading-2);
+    font-weight: var(--bold-weight);
+}
+h3{
+    font-size: var(--heading-3);
+    font-weight: var(--bold-weight);
+}
+h4{
+    font-size: var(--heading-4);
+    font-weight: var(--bold-weight);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.magin05{
+    margin-bottom: .5rem;
+}
+.magin1{
+    margin-bottom: 1rem;
+}
+.magin2{
+    margin-bottom: 2rem;
+}
+.magin10{
+    margin-bottom: 10rem;
+}

@@ -1,52 +1,22 @@
-.as-wrap>.banner{
-    border: 1px solid red;
-    height: 867px;
-    background: url(../../images/banner/banner.jpg) no-repeat 50% 50% / cover;
-    display: flex;
-    align-items: center;
-    margin-bottom: var(--margin-top-pc);
-}
-.as-wrap>h1{
-    padding-top: var(--margin-top-pc);
-    margin-bottom: 2rem;
-    font-family: var(--font-point);
-    font-size: var(--heading-1);
-    font-weight: var(--medium-weight);
-    /* border: 1px solid red; */
-}
-.as-desc-box{
-    /* border: 1px solid red; */
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+.as-wrap .as-banner{
+    height: 400px;
+    background: url(../../images/cs/as-banner.jpg) no-repeat 50% 50% / cover;
     color: #fff;
 }
-.desc-1,.desc-2{
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-}
-.as-desc-box h1{
-    font-size: var(--heading-1);
-    font-weight: var(--bold-weight);
-}
-.desc-1{
-    font-size: var(--heading-2);
-    font-weight: var(--bold-weight);
-}
-.as-box h4{
-    font-size: var(--heading-4);
-    font-weight: var(--bold-weight);
-    margin-bottom: 1rem;
-}
-.as-box{
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    margin-bottom: 10rem;
+.as-wrap .as-banner h1{
+    font-size: 50px;
 }
 .as-box section{
-    padding: 2rem;
-    border-radius: 50px;
+    width: 710px;
+    height: 514px;
     border: 1px solid #000;
+    padding: 2rem;
+    border-radius: 30px;
+}
+.as-box{
+    margin-bottom: 4rem;
+}
+.as-text{
+    padding: 0 2rem;
+    margin-bottom: 14rem;
 }
