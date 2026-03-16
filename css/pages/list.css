@@ -16,9 +16,12 @@
     font-weight: var(--bold-weight);
     margin-bottom: 3rem;
 }
+.product-types li{
+    cursor: pointer;
+}
 .list-box{
     /* border: 1px solid red; */
-    margin-bottom: 4.5rem;
+    margin-bottom: 7rem;
 }
 .select-box{
     /* border: 1px solid red; */
@@ -158,12 +161,19 @@
     /* border: 1px solid red; */
     cursor: pointer;
 }
-.pagination>li{
+.pagination-container{
     cursor: pointer;
     font-weight: var(--light-weight);
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 .bottom-banner{
     background: url(../../images/main-page/mainpage-banner.jpg) no-repeat 50% 50% / cover;
     height: 150px;
     margin-bottom: 10rem;
 }
+
+.hover-box { position: relative; }
+.hover-img { position: absolute; top: 0; left: 0; opacity: 0; transition: 0.3s; }
+.hover-box:hover .hover-img { opacity: 1; }
