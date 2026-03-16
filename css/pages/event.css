@@ -1,24 +1,25 @@
-.event-box{
-    padding: var(--margin-top-pc 0);
+.event-box .banner{
+    height: 400px;
+    background: url(../../images/event/event-banner.jpg) no-repeat 50% 50% / cover;
+    margin-bottom: 10rem;
 }
-.event-box h1{
-    font-size: var(--heading-1);
-    font-weight: var(--medium-weight);
-    margin-bottom: var( --margin-main-text);
-    padding-top: var(--margin-top-pc);
+.event-box>h1{
+    padding-left: 1rem;
+    border-left: 2px solid #000;
+    margin-bottom: 1rem;
+    box-sizing: border-box;
 }
 .event-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: var(--margin-main-text);
+    gap: 4rem 2rem;
     padding-bottom: var(--margin-top-pc);
 }
 .event-items figure{
-    margin-bottom: 1rem;
-    height: 659px;
+    margin-bottom: 2rem;
+    height: 600px;
 }
 .event-items h4{
-    font-size: 30px;
     margin-bottom: .5rem;
     display: inline-block;
 }

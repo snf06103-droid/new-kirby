@@ -1,7 +1,7 @@
 .list-wrap .banner{
     height: 600px;
     background: url(../../images/list/banner/chair.jpg) no-repeat 50% 50% / cover;
-    margin-bottom: var(--margin-top-pc);
+    margin-bottom:8rem;
 }
 .product-types{
     width: 100%;
@@ -54,6 +54,7 @@
     flex-direction: column;
     gap: .5rem;
     margin-top: 0.5rem;
+    cursor: pointer;
 }
 .select-list li:hover {
     background-color: #f5f5f5;
@@ -74,24 +75,21 @@
 }
 .product-list figure{
     width: 100%;
-    aspect-ratio: 378/425;
-    margin-bottom: 2rem;
+    aspect-ratio: 378/424;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
 }
 .product-description{
     display: flex;
     gap: 1rem;
+    flex-direction: column;
 }
-.size-color{
-    width: 248px;
-    height: 60px;
-    background-color: aquamarine;
+.product-name>p{
+    margin-bottom: .5rem;
+    font-size: var(--body-2);
 }
-.product-name{
-    font-size: 26px;
-    font-weight: 700;
-}
-.product-name h3{
-    font-size: 23px;
+.product-name h4{
 }
 .pagination{
     /* border: 1px solid red; */
@@ -101,4 +99,66 @@
 }
 .list-box nav{
     margin-bottom: var(--margin-top-pc);
+}
+
+.product-option{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+.product-option .size{
+    font-size: var(--detail);
+    display: flex;
+    gap: 30px;
+}
+.size .gray{
+    color: #696969;
+}
+
+.color-box{
+    display: flex;
+    gap: .5rem;
+    /* border: 1px solid red; */
+    height: 100%;
+    
+}
+.color-ball{
+    /* border: 1px solid olivedrab; */
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.product-option .color{
+    /* border: 1px solid red; */
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+    height: 21px;
+}
+.color .color-ball span{
+    width: 15px;
+    height: 15px;
+    border-radius: 7.5px;
+}
+.color-ball img{
+    width: 15px;
+    height: 15px;
+}
+.color-box>figure{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    height: 100%;
+}
+.color-box>figure>img{
+    width: 15px;
+    height: 15px;
+    /* border: 1px solid red; */
+    cursor: pointer;
+}
+.pagination>li{
+    cursor: pointer;
+    font-weight: var(--light-weight);
 }

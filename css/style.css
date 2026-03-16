@@ -48,6 +48,7 @@ html{
 }
 body{
     padding-top: 80px;
+    background-color: var(--neutral-color);
 }
 header{
     

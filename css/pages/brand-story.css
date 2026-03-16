@@ -85,8 +85,10 @@
 }
 .text-box>h1{
     font-size: var(--heading-1);
-    font-weight: var(--bold-weight);
+    font-weight: var(--medium-weight);
     margin-bottom: 20rem;
+    text-transform: uppercase;
+    
 }
 .brand-promise{
     padding: 13.5rem 0 26rem;
@@ -97,6 +99,7 @@
     font-weight: var(--bold-weight);
     font-family: var(--font-point);
     margin-bottom: 2rem;
+    text-transform: uppercase;
 }
 .brand-promise>p{
     margin-bottom: 4.5rem;
