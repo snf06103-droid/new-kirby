@@ -152,12 +152,12 @@
 
 .slide-up{
     /* opacity: 0; */
-    transform: translateX(300px);
+    transform: translateY(300px);
     transition: all .5s ease-out .1s;
 }
 .slide-up.active{
     /* opacity: 1; */
-    transform: translateX(0px);
+    transform: translateY(0px);
 }
 
 
