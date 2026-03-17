@@ -370,7 +370,7 @@ element.style {
 
 .slide-up{
     /* opacity: 0; */
-    transform: translateX(1300px);
+    transform: translateX(1400px);
     transition: all .4s ease-out .1s;
 }
 .slide-up:nth-of-type(2){
