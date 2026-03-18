@@ -41,7 +41,7 @@
     border-top: 1px solid #fff;
 }
 .pick-list{
-    padding: 18rem 0;
+    padding: 10rem 0;
 }
 .pick-list>h1{
     font-family: var(--font-point);
@@ -87,7 +87,7 @@
     margin-bottom: 10rem;
 }
 .new-product>h1{
-    font-size: var(--heading-1);
+    /* font-size: var(--heading-1); */
     margin-bottom: 3rem;
 }
 .new-product .banner{
@@ -180,7 +180,7 @@
 }
 .best-box>.common-frame h4{
     font-size: var(--heading-4);
-    font-weight: var(--bold-weight);
+    font-weight: var(--medium-weight);
     color: #00000077;
 }
 .best-box .btn a{
@@ -198,7 +198,9 @@
  .best-flex{
     width: 100%;
     overflow: hidden;
-    
+}
+.best-container h4{
+    font-weight: var(--medium-weight);
 }
 .best-flex .best-container{
     display: flex;
