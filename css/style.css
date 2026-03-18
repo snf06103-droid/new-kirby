@@ -1,6 +1,11 @@
 @import url(./reset.css);
 @import url(./fonts.css);
 :root{
+     /* 화면에 따른 수치 */
+    --basic-font-pc:28px;
+    --basic-font-tab:16px;
+    --basic-font-mobile:14px;
+
     --font-main: '2uc-main-font', sans-serif;
     --font-point: '2uc-point-font', sans-serif;
 
@@ -50,9 +55,7 @@ body{
     padding-top: 80px;
     background-color: var(--neutral-color);
 }
-header{
-    
-}
+
 .common-frame{
     width: 1440px;
     margin: 0 auto;
@@ -135,4 +138,32 @@ h4{
 }
 .magin10{
     margin-bottom: 10rem;
+}
+
+@media (max-width:1440px){
+    main{
+        margin-top: 5rem;
+    }
+    html{
+        font-size:var(--basic-font-tab);
+    }
+    .common-frame{
+        width:auto;
+        margin:0 2rem;
+    }
+    .mo{display: none;}
+    .tab{display: block;}
+    .pc{display: none;}
+}
+@media (max-width:768px){
+    .tab{display: none;}
+    .pc{display: none;}
+    .mo{display: block;}
+    html{
+    font-size: var(--basic-font-mobile);
+    }
+    .common-frame{
+    width:auto;
+    margin:0 1rem;
+    }
 }
