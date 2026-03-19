@@ -2,7 +2,7 @@ body{
     background-color: var(--neutral-color);
 }
 .notice .banner{
-    height: 400px;
+    height: 600px;
     background: url(../../images/cs/notic-banner.jpg) no-repeat 50% 50% / cover;
     display: flex;
     justify-content: center;
@@ -25,7 +25,7 @@ body{
     display: flex;
     flex-direction: column;
     gap: var(--margin-sub-text);
-    margin-bottom: 18rem;
+    margin-bottom: 10rem;
 }
 .notice-text h4{
     font-weight: var(--bold-weight);

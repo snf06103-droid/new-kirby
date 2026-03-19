@@ -34,7 +34,7 @@ section>p{
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    margin-bottom: 14rem;
+    margin-bottom: 10rem;
 }
 .faq-wrap .faq-box .section2{
     width: 910px;
