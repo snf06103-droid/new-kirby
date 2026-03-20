@@ -51,6 +51,7 @@
 /* 최근 본 상품 스타일 */
 .mypage-wrap .view{
     margin-bottom: var(--margin-top-pc);
+    border: 1px solid red;
 }
 .view h1{
     margin-bottom: var(--margin-main-text);
@@ -78,6 +79,14 @@
     align-items: center;
     gap: var(--margin-main-text);
     margin-bottom: var(--margin-main-text);
+}
+.mypage-back{
+    display: none;
+    justify-content: flex-end;
+    cursor: pointer;
+}
+.mypage-back img{
+    width: 49px;
 }
 .delivery h1{
     text-align: center;
@@ -107,7 +116,7 @@
     justify-content: space-between;
     font-size: var(--heading-3);
 }
-.status-bar{
+.delivert-bar>.status-bar{
     border: 1px solid #D3D3D3;
     background-color: #D9D9D9;
     height: 31px;
@@ -191,4 +200,118 @@
 .text-box img{
     width: 40px;
     aspect-ratio: 1/1;
+}
+.status-desc{
+    display: none;
+}
+.status-desc2{
+    display: none;
+}
+.status-desc3{
+    display: none;
+}
+
+/* 배송현황 눌렀을 때 바뀌는 스타일 */
+.order-list.active{
+    display: none;
+}
+.mypage-wrap .view.active{
+    display: none;
+}
+.mypage-wrap .delivery.active{
+    border: 0;
+}
+.mypage-back.active{
+    display: flex;
+}
+.status-bar .bar.active{
+    width: 100%;
+}
+.status-button.active{
+   display: none;
+}
+
+.status-desc.active{
+    display: flex;
+    width: 100%;
+    border: 1px solid #D3D3D3;
+    height: 61px;
+    align-items: center;
+    border-radius: 10px;
+    margin-bottom: 3rem;
+}
+.status-desc.active ul{
+    display: flex;
+    width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+}
+.status-des .status-active-bar li img{
+    width: 30px ;
+    aspect-ratio: 1/1;
+}
+.customer-service.active{
+    display: none;
+}
+.status-desc2{
+    margin-bottom: var(--margin-top-pc);
+}
+.status-desc2.active{
+    display: block;
+    padding:15px 0;
+    box-sizing: border-box;
+}
+.status-desc2 ul{
+    padding: 0 4rem;
+}
+.status-desc2 .one{
+    height: 59px;
+    padding: 0 rem;
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--heading-3);
+    font-weight: var(--bold-weight);
+    border-bottom: 1px solid #000;
+}
+.status-desc2 .two{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 57px;
+    border-bottom: 1px solid #D3D3D3;
+}
+.status-desc2 .two li:nth-of-type(1){
+    display: flex;
+    gap: var(--gap-pc);
+}
+.status-desc3.active{
+    display: block;
+}
+.status-desc3 h1{
+    height: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: var(--margin-main-text);
+    border-bottom: 1px solid #000;
+}
+.dl-flex{
+    display: flex;
+    flex-direction: column;
+    gap: var(--margin-main-text);
+}
+.status-desc3 .dl-flex dl{
+    display: flex;
+    gap: var(--margin-top-pc);
+    font-weight: var(--bold-weight);
+}
+.dl-flex dl dt{
+    font-size: var(--heading-3);
+    color: #0000007a;
+    width: 86px;
+    text-align: start;
+}
+.dl-flex dl dd{
+    font-size: var(--heading-2);
 }

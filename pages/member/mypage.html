@@ -31,14 +31,14 @@
                     <div class="desc1">
                         <p class="bold">가구의 정석님</p>
                         <ul class="btn">
-                            <li><a href="#">주문내역</a></li>
+                            <li class="order-list active"><a href="#">주문내역</a></li>
                             <li><a href="#">내가 쓴 리뷰</a></li>
                             <li><a href="#">쿠폰</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="view">
+            <div class="view active">
                 <h1>최근 본 상품</h1>
                 <ul class="view-box">
                     <li><img src="../../images/list/all/desk-12.jpg" alt=""></li>
@@ -47,7 +47,10 @@
                     <li><img src="../../images/list/all/booself-10.jpg" alt=""></li>
                 </ul>
             </div>
-            <div class="delivery">
+            <div class="delivery active">
+                <div class="mypage-back active">
+                    <img src="../../assets/icons/arow-left.svg" alt="마이페이지로돌아가기버튼">
+                </div>
                 <h1>결제 상품 배송 현황</h1>
                 <div class="delivery-box">
                     <div class="delivery-product">
@@ -78,20 +81,82 @@
                             <li>배송완료</li>
                         </ul>
                         <div class="status-bar">
-                            <div class="bar"></div>
+                            <div class="bar active"></div>
                             <ul class="ball">
                                 <li></li>
                                 <li></li>
                                 <li></li>
                             </ul>
                         </div>
-                        <div class="status-button bold">
+                        <div class="status-button bold active">
                             <a href="#">배송현황</a>
                         </div>
+                        <!-- active클래스 붙으면 나타날 배송 상태 -->
+                         <div class="status-active">
+                             <div class="status-desc active">
+                                 <ul class="status-active-bar gray">
+                                     <li>결제완료</li>
+                                     <li><img src="../../assets/icons/right.svg" alt="배송 진행 표시"></li>
+                                     <li>배송 준비중</li>
+                                     <li><img src="../../assets/icons/right.svg" alt="배송 진행 표시"></li>
+                                     <li>배송 중</li>
+                                     <li><img src="../../assets/icons/right.svg" alt="배송 진행 표시"></li>
+                                     <li class="bold main-color">배송 완료</li>
+                                 </ul>
+                             </div>
+                             <div class="status-desc2 active">
+                                 <ul class="one">
+                                     <li>처리 일시</li>
+                                     <li>현재 위치</li>
+                                     <li>상태</li>
+                                 </ul>
+                                 <ul class="two">
+                                     <li>
+                                         <p>2026-03-03 </p>
+                                         <p>15:29:05</p>
+                                     </li>
+                                     <li>초월(집)</li>
+                                     <li>배송완료</li>
+                                 </ul>
+                                 <ul class="two">
+                                     <li>
+                                         <p>2026-03-03 </p>
+                                         <p>15:29:05</p>
+                                     </li>
+                                     <li>초월(집)</li>
+                                     <li>배송완료</li>
+                                 </ul>
+                                 <ul class="two">
+                                     <li>
+                                         <p>2026-03-03 </p>
+                                         <p>15:29:05</p>
+                                     </li>
+                                     <li>초월(집)</li>
+                                     <li>배송완료</li>
+                                 </ul>
+                             </div>
+                             <div class="status-desc3 active">
+                                <h1>배송 정보</h1>
+                                <div class="dl-flex">
+                                    <dl>
+                                        <dt>택배사</dt>
+                                        <dd>한진택배</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>송장번호</dt>
+                                        <dd>548-4885-1589</dd>
+                                    </dl>
+                                    <dl>
+                                        <dt>보내는 분</dt>
+                                        <dd>2UC</dd>
+                                    </dl>
+                                </div>
+                             </div>
+                         </div>
                     </div>
                 </div>
             </div>
-            <ul class="customer-service ">
+            <ul class="customer-service active">
                 <div class="service-box">
                     <div class="text-box">
                         <h1>고객센터</h1>

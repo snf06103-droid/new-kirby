@@ -179,6 +179,9 @@ h4{
 .gray{
     color: #9C9C9C;
 }
+.main-color{
+    color: var(--main-color);
+}
 
 @media (max-width:1440px){
     main{
