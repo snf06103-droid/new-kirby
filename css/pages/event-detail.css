@@ -1,36 +1,78 @@
-.event-container{
-    padding: var(--margin-top-pc) 0;
-}
-.event{
-    border-bottom: 1px solid #000;
-    margin-bottom: var(--margin-top-pc);
-}
-.event .common-frame{
-    display: flex;
-    gap: var(--margin-main-text);
-    padding-bottom: var(--margin-sub-text);
-    align-items: center;
-    font-size: var(--heading-1);
-    font-weight: var(--medium-weight );
-}
-.event img{
-    width: 17.4px;
-}
-.event-box{
-    width: 1000px;
+/* 이벤트 박스 스타일 */
+.event-wrap .container{
+    width: 1200px;
     margin: 0 auto;
-    font-size: var(--heading-2);
-    font-weight: var(--bold-weight );
+    margin-top: var(--margin-top-pc);
 }
-.event-title{
+.container .event-box{
     display: flex;
-    gap: 4rem;
-    margin-bottom: var(--margin-sub-text);
+    justify-content: space-between;
+    margin-bottom: 8rem;
 }
 .event-box figure{
-    margin-bottom: var(--margin-sub-text);
+    width: 456px;
+    aspect-ratio: 456/600;
+    box-shadow:  10px 10px 20px 0px rgba(0, 0, 0, 0.1);
 }
-.event-box figcaption{
-    font-size: 1rem;
-    font-weight: var(--medium-weight);
+.event-box .event-desc{
+    width: 708px;
+    height: 600px;
+    box-sizing: border-box;
+    padding: var(--margin-main-text);
+    background-color: #fff;
+    box-shadow:  10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.event-desc>h1{
+    margin-bottom: var(--gap-pc);
+}
+.event-desc>p{
+    padding-bottom:var(--margin-main-text);
+    border-bottom: 2px solid #000;
+    margin-bottom: var(--margin-main-text);
+}
+.event-text{
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-pc);
+}
+
+/* 진행중인 다른 이벤트 스타일 */
+.other-event{
+    text-align: center;
+}
+.other-event>p{
+    margin-bottom:var(--gap-pc);
+}
+.other-box{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8rem;
+}
+.other-box li{
+}
+.other-box li a{
+    display: block;
+}
+.other-box img{
+    margin-bottom:var(--gap-pc);
+    width: 250px;
+    aspect-ratio: 250/329;
+    box-shadow:  10px 10px 20px 0px rgba(0, 0, 0, 0.1);
+}
+.other-box li a p{
+    font-size: var(--detail);
+    font-weight: var(--light-weight);
+}
+.event-list-btn{
+    text-align: center;
+    margin-bottom: var(--margin-top-pc);
+}
+.event-wrap button{
+    border: 1px solid #000;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 140px;
+    height: 43px;
+    font-weight: var(--light-weight);
 }

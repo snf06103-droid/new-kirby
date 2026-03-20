@@ -51,7 +51,6 @@
 /* 최근 본 상품 스타일 */
 .mypage-wrap .view{
     margin-bottom: var(--margin-top-pc);
-    border: 1px solid red;
 }
 .view h1{
     margin-bottom: var(--margin-main-text);
