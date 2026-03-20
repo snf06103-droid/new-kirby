@@ -1,0 +1,188 @@
+/* 마이페이지 프로필 스타일 */
+.profile{
+    background-color: #EDF2F2;
+    padding: 115px 240px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.top img{
+    width: 30PX;
+    aspect-ratio: 1/1;
+}
+.middle .smile img{
+    width: 300px;
+    aspect-ratio: 1/1;
+
+}
+.profile .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profile .middle{
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+}
+.middle .bold{
+    font-size: 45px;
+}
+.middle .desc1 .bold{
+    margin-bottom:var(--margin-main-text);
+}
+.middle .btn{
+    display: flex;
+    gap: var(--gap-pc);
+}
+.middle .btn>li>a{
+    font-weight: var(--bold-weight);
+    font-size: var(--heading-1);
+    width: 191px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* 최근 본 상품 스타일 */
+.mypage-wrap .view{
+    margin-bottom: var(--margin-top-pc);
+}
+.view h1{
+    margin-bottom: var(--margin-main-text);
+    text-align: center;
+}
+.view-box{
+    display: flex;
+    justify-content: space-between;
+}
+.view-box li{
+    width: 280px;
+    aspect-ratio: 1/1;
+}
+
+/* 결제상품 배송 현황 스타일 */
+.mypage-wrap .delivery{
+    border: 1px solid #D3D3D3;
+    border-radius: 10px;
+    padding: 46px 102px;
+    box-sizing: border-box;
+    margin-bottom: var(--margin-top-pc);
+}
+.delivery-product{
+    display: flex;
+    align-items: center;
+    gap: var(--margin-main-text);
+    margin-bottom: var(--margin-main-text);
+}
+.delivery h1{
+    text-align: center;
+    margin-bottom: var(--margin-main-text);
+}
+.delivery-product figure{
+    width: 280px;
+    aspect-ratio: 1/1;
+}
+.delivery-option{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+.delivery-option dl{
+    display: flex;
+    gap: var(--margin-main-text);
+}
+.delivery-option .bold{
+    font-size: var(--heading-1);
+}
+.delivert-bar{
+    text-align: center;
+}
+.delivert-bar ul{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--heading-3);
+}
+.status-bar{
+    border: 1px solid #D3D3D3;
+    background-color: #D9D9D9;
+    height: 31px;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: var(--margin-main-text);
+}
+.status-bar .bar{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-radius: 25px;
+    background-color: #B3D179;
+    width: 939px;
+    height: 100%;
+}
+.status-bar .ball{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    padding: 0 25px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.ball li{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    background-color: #053005;
+}
+.status-button{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.status-button>a{
+    width: 251px;
+    height: 50px;
+    border-radius: 25px;
+    background-color: #E9EFEA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--heading-1);
+}
+
+/* 마이페이지 공지사항 스타일*/
+.customer-service{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.customer-service h1{
+    padding: 1rem 0;
+}
+.service-box{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-height: 77px;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+.service-box.down{
+    max-height: 1500px;
+}
+.customer-service .text-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+.text-box img{
+    width: 40px;
+    aspect-ratio: 1/1;
+}
