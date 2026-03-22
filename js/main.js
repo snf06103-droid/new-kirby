@@ -32,12 +32,31 @@ document.addEventListener("DOMContentLoaded",()=>{
 
         var swiper = new Swiper(".mySwiper", {
           slidesPerView: 5,
-          spaceBetween: 30,
+          spaceBetween: 18,
           freeMode: true,
           pagination: {
             el: ".swiper-pagination",
             clickable: true,
           },
+          breakpoints: {
+            // 1440px 이하일 때 실행
+            0: { 
+              slidesPerView: 1.5, /* 모바일 고려 */
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,   /* 태블릿 */
+              spaceBetween: 16,
+            },
+            1024: {
+              slidesPerView: 3,   /* 1440 이하 타겟 */
+              spaceBetween: 18,
+            },
+            1440: {
+              slidesPerView: 5,
+              spaceBetween: 18,
+             }
+            }
         });
 
 
