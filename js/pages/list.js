@@ -1,7 +1,7 @@
 // [1] 전역 상태 변수
 let currentSort = 'default'; // 기본값: 신상품순(데이터 순서)
 let currentPage = 1;
-const itemsPerPage = 9;
+let itemsPerPage = 9;
 let currentCategory = 'all';
 
 // [2] 페이지 변경 함수

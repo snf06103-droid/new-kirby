@@ -107,6 +107,14 @@
         width: 124px;
         height: 38px;
     }
+    .event-box .event-desc {
+        width: 708px;
+        height: 600px;
+        box-sizing: border-box;
+        padding: var(--margin-main-text);
+        background-color: inherit;
+        box-shadow: none;
+    }
 }
 
 @media (max-width:880px){

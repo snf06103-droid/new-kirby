@@ -8,14 +8,18 @@ document.addEventListener("DOMContentLoaded",()=>{
       //   nextEl: '.swiper-button-next',
       //   prevEl: '.swiper-button-prev',
       // },
-      pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
+      // pagination: {
+      //     el: ".swiper-pagination",
+      //     clickable: true,
+      //   },
         autoplay: {
           delay: 2500,
           disableOnInteraction: false,
-        },  
+        },
+        scrollbar: {
+        el: ".swiper-scrollbar",
+        hide: true,
+      },  
       });
 
 

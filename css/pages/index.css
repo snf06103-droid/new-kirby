@@ -536,7 +536,7 @@ body {
     .category-box img{
         width: 100%;
         height: 100%;
-    }
+    } 
 }
 
 
@@ -544,9 +544,10 @@ body {
     .category-section{
         flex-wrap: wrap;
     }
+    
 }
 @media (max-width:768px){
-
+    
 }
 
 @media (max-width:370px){
