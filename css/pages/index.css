@@ -10,6 +10,8 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* 코쿤 픽 리스트 스타일 */
 .pick-grid{
     display: grid;
     grid-template-columns: 500px repeat(3,1fr);
@@ -56,7 +58,6 @@
 .grid-1 img{
     width: 100%;
     height: 100%;
-    border: 1px solid red;
     filter: brightness(1);
 }
 .grid-1:hover img{
@@ -84,6 +85,10 @@
 }
 .pick-grid .grid{
     aspect-ratio: 1/1;
+}
+.pick-grid .grid img{
+    width: 100%;
+    height: 100%;
 }
 
 .new-product{
@@ -291,6 +296,9 @@ element.style {
     font-size: var(--heading-1);
     margin-bottom: 2rem;
 }
+.look-book-desc{
+    position: relative;
+}
 
 .look-book-desc .content-box{
     width: 707px;
@@ -324,15 +332,26 @@ element.style {
     height: 485px;
     background-color: var(--point-color-1);
 }
+.look-book-desc .img-box .img-1{
+    position: absolute;
+    right: 0%;
+    bottom: -10%;
+    z-index: 10;
+}
+.look-book-desc .img-box .img-2{
+    position: absolute;
+    right: 19%;
+    bottom: 25%;
+}
 .look-book-section{
     display: flex;
     overflow: hidden;
     height: 570px;
     align-items: flex-end;
 }
-.look-book-section img{
-    width: 418px;
-    height: 570px;
+.look-book-section .swiper-slide>img{
+    width: 100%;
+    aspect-ratio: 418/570;
     border-radius: 10px 10px 0 0;
 }
 .look-book-section .swiper-wrapper{
@@ -355,11 +374,13 @@ element.style {
 }
 .category-section{
     display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
     gap: 1rem;
 }
-.category-box{
-    width: 343px;
-    height: 486px;
+.category-box {
+    width: 100%;
+    aspect-ratio: 346/486;
     border-radius: 10px;
     overflow: hidden;
     position: relative;
@@ -389,6 +410,9 @@ element.style {
 body {
     overflow-x: hidden;
 }
+.look-book-section.tab{
+    display: none;
+}
 
 
 
@@ -409,7 +433,8 @@ body {
     .pick-grid>.grid-1 {
         grid-column: 1/4;
         grid-row: 1/2;
-        height: 500px;
+        width: 100%;
+        aspect-ratio: 768/500;
     }
     .new-product .content1 {
         font-size: 6.2rem;
@@ -450,8 +475,8 @@ body {
     .desc-best p {
         font-size: var(--detail);
     }
-    .common-frame {
-        margin: 0;
+    .pick-grid .common-frame {
+        margin: 0 7.5rem;
     }
     img {
         height: 100%;
@@ -496,8 +521,30 @@ body {
         flex-direction: column;
         gap: 2rem;
     }
+    .best-box>.common-frame {
+        margin: 0;
+    }
+    .look-book-section.pc{
+        display: none;
+    }
+    .look-book-section.tab{
+        display: block;
+    }
+    .category-box{
+        width: 40%;
+    }
+    .category-box img{
+        width: 100%;
+        height: 100%;
+    }
 }
 
+
+@media (max-width:1139px){
+    .category-section{
+        flex-wrap: wrap;
+    }
+}
 @media (max-width:768px){
 
 }
