@@ -191,4 +191,32 @@ header .lnb{
 
 @media (max-width:768px){
 
+    .menu-lnb {
+        color: var(--point-color-1);
+        justify-content: center;
+        margin-bottom: 3rem;
+    }
+    .menu-content {
+        margin: 1rem 1rem;
+    }
+    .menu-top {
+        margin-bottom: 1rem;
+    }
+    .gnb-smart {
+        width: 100%;
+    }
+    .gnb-smart>li{
+        max-height: 50px;
+        overflow: hidden;
+    }
+    .menu-sns .sns {
+        width: 100%;
+        margin: 3rem 2rem;
+    }
+    header .common-frame {
+        margin: 1rem;
+    }
+    .gnb-smart>li.on{
+        max-height: 300px;
+    }
 }

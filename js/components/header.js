@@ -32,4 +32,5 @@ window.addEventListener('scroll', () => {
             span.parentElement.classList.toggle("on")
         })
     })
+
 });
