@@ -41,7 +41,7 @@ header .logo a{
     justify-content: center;
     align-items: center;
 }
-.logo img{
+header .logo img{
     height: 60px;
 }
 header .gnb{

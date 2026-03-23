@@ -67,4 +67,82 @@ span{
     display: flex;
     flex-direction: column;
     gap: .5rem;
+    border: 1px solid red;
+}
+footer .logo img{
+    height: 80px;
+}
+
+
+@media (max-width:1440px){
+   .footer-container{
+    margin: 0 2rem;
+   }
+   
+   
+}
+@media (max-width:1300px){
+    .footer-side-box.pc{
+        display: none;
+   }
+    .footer-text{
+        width: 751px;
+    }
+    .footer-box {
+        display: flex;
+        justify-content: center;
+        gap: 3.7rem;
+    }
+    footer .logo img {
+        height: 60px;
+    }
+    .sns img {
+        width: 22px;
+        aspect-ratio: 1/1;
+    }
+}
+@media (max-width:900px){
+    footer .logo img {
+        height: 40px;
+    }
+    .footer-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 1rem;
+        align-items: center;
+    }
+    .sns img {
+        width: 19.6px;
+        aspect-ratio: 1/1;
+    }
+    .footer-container {
+        margin: 2rem;
+    }
+    .sns.none{
+        display: none;
+    }
+    .footer-text .sns.mo{
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 1rem;
+    }
+    footer {
+        height: 400px;
+    }
+    .footer-top {
+        margin-bottom: 1rem;
+    }
+    .footer-bottom {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: .5rem;
+    }
+    .footer-text {
+        width: 100%;
+    }
+}
+@media (max-width:320px){
+   
 }
