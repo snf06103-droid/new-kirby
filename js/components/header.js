@@ -1,36 +1,43 @@
+// [1] 스크롤 기능 (PC에서만 뿌예짐 효과)
 window.addEventListener('scroll', () => {
-    
+    const browserWidth = window.innerWidth;
     const header = document.querySelector('#site-header header') || document.querySelector('header');
     
-    if (window.scrollY > 0) {
-        // 1px이라도 내려가면 'on' 클래스 추가
-        header.classList.add('on');
-    } else {
-        // 맨 위로 올라오면 다시 원래대로(불투명)
-        header.classList.remove('on');
+    if (header) {
+        if (browserWidth > 1440 && window.scrollY > 0) {
+            header.classList.add('on');
+        } else {
+            header.classList.remove('on');
+        }
+    }
+});
+
+// [2] 클릭 이벤트 통합 (이벤트 위임 방식 - 헤더가 나중에 로드되어도 작동함)
+document.addEventListener('click', function(e) {
+    // 클릭한 요소의 가장 가까운 부모 중 해당 클래스가 있는지 확인
+    const btnMenu = e.target.closest('.btn-menu');
+    const btnClose = e.target.closest('.btn-close');
+    const btnMore = e.target.closest('.btn-more'); // 모바일 2뎁스 버튼
+    
+    const menuSmart = document.querySelector('.menu-smart-hidden');
+
+    // 1. 메뉴 열기
+    if (btnMenu && menuSmart) {
+        menuSmart.classList.add('on');
+        console.log("모바일 메뉴 열림");
     }
 
-     // 메뉴버튼을 누르면 header가 나오는 기능
-    const btnMenu = document.querySelector('.btn-menu');
-    const menuSmartHidden = document.querySelector('.menu-smart-hidden');
-    const btnClose = document.querySelector(".btn-close")
-    const gnbSmartList = document.querySelectorAll(".gnb-smart>li")
+    // 2. 메뉴 닫기
+    if (btnClose && menuSmart) {
+        menuSmart.classList.remove('on');
+        // 닫을 때 펼쳐졌던 서브메뉴들도 초기화
+        document.querySelectorAll(".gnb-smart > li").forEach(li => li.classList.remove("on"));
+        console.log("모바일 메뉴 닫힘");
+    }
 
-    btnMenu.addEventListener('click', () => {
-        menuSmartHidden.classList.add('on');
-    });
-    btnClose.addEventListener("click",()=>{
-        menuSmartHidden.classList.remove('on');
-        gnbSmartList.forEach(tag=>tag.classList.remove("on"))
-    })
-
-
-    // 모바일에서 2뎁스 메뉴 나오는 기능
-    const btnMores = document.querySelectorAll(".gnb-smart li .btn-more")
-    btnMores.forEach(span=>{
-        span.addEventListener('click',()=>{
-            span.parentElement.classList.toggle("on")
-        })
-    })
-
+    // 3. 모바일 2뎁스 아코디언 (btn-more 클릭 시)
+    if (btnMore) {
+        // 부모 li에 'on' 클래스 토글
+        btnMore.parentElement.classList.toggle("on");
+    }
 });

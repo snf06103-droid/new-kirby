@@ -413,7 +413,9 @@ body {
 .look-book-section.tab{
     display: none;
 }
-
+.block-410{
+    display: none;
+}
 
 
 
@@ -442,7 +444,7 @@ body {
     .new-product .content2{
         font-size: 5.6rem;
         bottom: 0 ;
-        left: 0;
+        left: 5%;
     }
     .new-product .background {
         /* border: 1px solid red; */
@@ -546,14 +548,90 @@ body {
     }
     
 }
-@media (max-width:768px){
+@media (max-width:970px){
+    .new-product .content1 {
+        font-size: 5rem;
+    }
+    .new-product .content2 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width:910px){
     
 }
 
-@media (max-width:370px){
-
+@media (max-width:700px){
+    .new-product>h1 {
+        /* font-size: var(--heading-1); */
+        margin-bottom: 5.8rem;
+    }
+    .new-product .content1 {
+        top: -10%;
+        font-size: 3.5rem;
+    }
+    .new-product .content2 {
+        font-size: 2.8rem;
+        bottom: -5%;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .new-product .banner {
+        margin-bottom: 11rem
+    }
 }
 
-@media (max-width:350px){
-    
+@media (max-width:590px){
+    .pick-list>h1 {
+        font-family: var(--font-point);
+        font-size: 1.28rem;
+        font-weight: var(--medium-weight);
+    }
+}
+
+@media (max-width:410px){
+    .pick-grid>.grid-1 {
+        grid-column: 1/4;
+        grid-row: 1/2;
+        width: 100%;
+        aspect-ratio: 375/500;
+    }
+    .text-box h1 {
+        font-size: var(--heading-2);
+        font-weight: var(--bold-weight);
+        margin-bottom: .6rem;
+        margin-top: 1rem;
+    }
+    .text-box .desc1 {
+        margin-bottom: 2rem;
+    }
+    .block-410{
+        display: block;
+    }
+    .none-410{
+        display: none;
+    }
+}
+
+@media (max-width:360px){
+    .pick-list>h1 {
+        font-family: var(--font-point);
+        font-size: 1.05rem;
+        font-weight: var(--medium-weight);
+        text-align: center;
+    }
+    .new-product .content1 {
+        font-size: 3rem;
+    }
+    .new-product .content2 {
+        font-size: 2rem;
+    }
+}
+@media (max-width:360px){
+    .new-product .content1 {
+        font-size: 2.5rem;
+    }
+    .new-product .content2 {
+        font-size: 1.8rem;
+    }
 }
