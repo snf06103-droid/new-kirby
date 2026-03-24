@@ -1,5 +1,8 @@
 .custom-order{
     background: url(../../images/custom/bg.jpg) no-repeat 50% 50% / cover;
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+        url('../../images/custom/bg.jpg');
 }
 .custom-order .banner{
     height: 800px;
@@ -12,9 +15,10 @@
     font-weight: var(--bold-weight);
 }
 .main-text h1:nth-last-of-type(1){
-    margin-bottom: .5rem;
+    margin-bottom: 2rem;
 }
 .main-text{
+    color: #fff;
     margin: 10rem 0;
     text-align: center;
 }
@@ -22,9 +26,10 @@
     /* border: 5px solid var(--main-color); */
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 .custom-container{
+    width: 100%;
     padding: 4rem 0;
     border-radius: 80px 80px 0 0;
 
@@ -99,7 +104,7 @@
     box-sizing: border-box;
 
     /* 1. 반투명한 배경색 (흰색 10~20% 추천) */
-    background: rgba(255, 255, 255, 0.1); 
+    background:#ffffff88; 
     
     /* 2. 배경 블러 처리 (핵심!) */
     backdrop-filter: blur(10px);
@@ -132,15 +137,19 @@
 .active-grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 1rem 70px;
+    justify-content: space-between;
     padding: var(--margin-main-text) 0;
 }
-.items{
+.items {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .items>figure{
     margin-bottom: 1rem;
-    width: 100px;
+    width:5.5rem;
     aspect-ratio: 1/1;
 }
 .items>p{
@@ -150,13 +159,14 @@
 .items:hover>p{
     background-color: #575757;
     color: #fff;
+    width: 5.5rem;
 }
-.custom-menu{
+.custom-order.none-mo .custom-menu{
     max-height: 73px;
     overflow: hidden;
     transition: max-height 0.4s ease;
 }
-.custom-menu.active{
+.custom-order.none-mo .custom-menu.active{
     max-height: 500px;
 }
 .active-size{
@@ -168,31 +178,182 @@
 .items, .option{
     cursor: pointer;
 }
+.order-button.tab{
+    display: none;
+}
+.custom-order.mo{
+    display: none;
+}
+
 
 @media (max-width:1440px){
     .custom-panel {
         border-radius: 34px;
-        /* background-color: #fff; */
         width: 454px;
         height: 679px;
-        padding: 2rem 4rem;
+    }
+    .main-text h1 {
+        font-size: 2.37rem;
+    }
+    .custom-container{
+        padding: 4rem 3.37rem 4rem 5.75rem;
         box-sizing: border-box;
-        background: rgba(255, 255, 255, 0.1);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.2);
-        box-shadow: inset 0 0 15px 5px rgba(141, 141, 141, 0.3);
+    }
+    .custom-accout {
+        width: 38.5%;
+    }
+    .custom-panel {
+        width: 51.7%;
+        aspect-ratio: 454/679;
+        padding: 2rem 2.75rem;
+    }
+    .custom-accout figure {
+        width: auto;
+        aspect-ratio: 338/443;
+    }
+    .cart-box {
+        padding: 1rem 2.68rem;
+        justify-content: center;
+    }
+    .order-button.pc{
+        display: none;
+    }
+    .order-button.tab{
+        display: block;
+        display: flex;
+        justify-content: center;
+        gap: .5rem;
+        margin-top: 2rem;
+    }
+    .order-button>span>a {
+        padding: 0.56rem 0.92rem;
+        border-radius: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .5rem;
+        background-color: blue;
+        color: #fff;
+    }
+    .step img {
+        width: 24px;
+        height: 24px;
+    }
+    .active-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: var(--margin-main-text) 0;
+    }
+    .items {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .mg{
+        margin-bottom: .5rem;
     }
 }
 
-@media (max-width:768px){
+@media (max-width:950px){
+    .custom-order .none{
+        display: none;
+    }
+    .custom-order.none-mo{
+        display: none;
+    }
+    .custom-order.mo{
+        display: block;
+    }
+    .main-text>p{
+        font-size: var(--heading-4);
+        font-weight: var(--bold-weight);
+    }
+    .custom-order .banner {
+        height: 762px;
+    }
+    .custom-box {
+        flex-direction: column;
+    }
+    .custom-container {
+        padding: 4rem 2rem 0;
+    }
+    .custom-accout {
+        width: 100%;
+    }
+    .cart-box h1 {
+        font-size: var(--heading-4);
+        text-align: center;
+    }
+    .order-option>p{
+        font-size: 12px;
+    }
+    .cart-box {
+        padding: 11px 37px;
+        justify-content: center;
+        gap: 25px;
+        margin-bottom: 2rem;
+    }
+    .order-button {
+        flex-direction: column;
+    }
+    h4 {
+        font-size: 10px;
+    }
+    .order-button img {
+        width: 10px;
+    }
+    .custom-panel {
+        width: 100%;
+        /* aspect-ratio: 454/679; */
+        padding: 0;
+        height: 380px;
+    }
+    .custom-accout figure {
+        width: auto;
+        aspect-ratio: 338/443;
+        margin-bottom: 2rem;
+    }
+    .custom-step .step {
+        padding: 2rem;
+        border-bottom: 1px solid #999999;
+    }
+    .active-grid{
+        padding: 1rem;
+    }
+    /* 1. 기본적으로 모든 단계 숨김 */
+    .custom-menu {
+        display: none;
+        width: 100%;
+    }
 
-}
-
-@media (max-width:370px){
-
-}
-
-@media (max-width:350px){
+    /* 2. 'on' 클래스가 붙은 단계만 노출 */
+    .custom-menu.on {
+        display: block;
+    }
     
+}
+
+@media (max-width:490px){
+    .cart-box h1 {
+        font-size: var(--body-1);
+        text-align: center;
+    }
+    .order-option>p{
+        font-size: 9px;
+    }
+    .cart-box {
+        justify-content: space-between;
+        gap: 0px;
+    }
+
+}
+@media (max-width:310px){
+    .items>figure {
+        width: 4rem;
+    }
+    .items:hover>p {
+        width: 4rem;
+    }
 }
