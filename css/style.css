@@ -203,10 +203,10 @@ h4{
     .pc{display: none;}
     .mo{display: block;}
     html{
-    font-size: var(--basic-font-mobile);
+        font-size: var(--basic-font-mobile);
     }
     .common-frame{
-    width:auto;
-    margin:0 1rem;
+        width:auto;
+        margin:0 2rem;
     }
 }

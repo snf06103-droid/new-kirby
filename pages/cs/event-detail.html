@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="../../css/components/footer.css">
     <script src="../../js/components/header.js"></script>
     <link rel="stylesheet" href="../../css/pages/event-detail.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div id="site-header"></div>
@@ -37,33 +39,77 @@
             </div>
             <div class="other-event">
                 <p class="bold">진행중인 이벤트</p>
-                <ul class="other-box">
-                    <li data-id="2">
-                        <a href="#">
-                            <img src="../../images/event/event-2.jpg" alt="">
-                            <p>2UC 컬러 위크</p>
-                        </a>
-                    </li>
-                    <li data-id="3">
-                        <a href="#">
-                            <img src="../../images/event/event-3.jpg" alt="">
-                            <p>베스트 리뷰어 ‘2UCer’ 선정 이벤트</p>
-                        </a>
-                    </li>
-                    <li data-id="4">
-                        <a href="#">
-                            <img src="../../images/event/event-4.jpg" alt="">
-                            <p>정품 인증 및 가품 주의 안내</p>
-                        </a>
-                    </li>
-                    <li data-id="5">
-                        <a href="#">
-                            <img src="../../images/event/event-5.jpg" alt="">
-                            <p>2UC 미드센추리 조명 단독전</p>
-                        </a>
-                    </li>
-                    <li></li>
-                </ul>
+                <div class="none-mo">
+                     <ul class="other-box">
+                    
+                        <li data-id="2">
+                            <a href="#">
+                                <img src="../../images/event/event-2.jpg" alt="">
+                                <p>2UC 컬러 위크</p>
+                            </a>
+                        </li>
+                        <li data-id="3">
+                            <a href="#">
+                                <img src="../../images/event/event-3.jpg" alt="">
+                                <p>베스트 리뷰어 ‘2UCer’ 선정 이벤트</p>
+                            </a>
+                        </li>
+                        <li data-id="4">
+                            <a href="#">
+                                <img src="../../images/event/event-4.jpg" alt="">
+                                <p>정품 인증 및 가품 주의 안내</p>
+                            </a>
+                        </li>
+                        <li data-id="5">
+                            <a href="#">
+                                <img src="../../images/event/event-5.jpg" alt="">
+                                <p>2UC 미드센추리 조명 단독전</p>
+                            </a>
+                        </li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div class=" swiper mySwiper none-pc">
+                     <ul class=" swiper-wrapper">
+                    
+                        <li data-id="2" class="swiper-slide">
+                            <a href="#">
+                                <img src="../../images/event/event-2.jpg" alt="">
+                                <p>2UC 컬러 위크</p>
+                            </a>
+                        </li>
+                        <li data-id="3" class="swiper-slide">
+                            <a href="#">
+                                <img src="../../images/event/event-3.jpg" alt="">
+                                <p>베스트 리뷰어 ‘2UCer’ 선정 이벤트</p>
+                            </a>
+                        </li>
+                        <li data-id="4" class="swiper-slide">
+                            <a href="#">
+                                <img src="../../images/event/event-4.jpg" alt="">
+                                <p>정품 인증 및 가품 주의 안내</p>
+                            </a>
+                        </li>
+                        <li data-id="5" class="swiper-slide">
+                            <a href="#">
+                                <img src="../../images/event/event-5.jpg" alt="">
+                                <p>2UC 미드센추리 조명 단독전</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2.2,
+                    spaceBetween: 14,
+                    centeredSlides: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });
+                </script>
             </div>
             <div class="event-list-btn">
                 <button><a href="../../pages/cs/event.html">목록</a></button>
@@ -74,5 +120,6 @@
     <div id="site-footer"></div>
     <script src="../../js/components/layout.js"></script>
     <script src="../../js/pages/event-detail.js"></script>
+    
 </body>
 </html>
