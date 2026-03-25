@@ -4,6 +4,9 @@ body{
 .faq-box{
     margin-bottom: 13rem;
 }
+.faq-wrap>h1{
+    margin-top: var(--margin-top-pc);
+}
 .faq-box section.flex{
     flex-direction: column;
     width: 400px;
@@ -86,11 +89,76 @@ width: 100%;
     width: 100px;
 }
 
-@media (max-width:1440px){
+.faq-box.mo{
+    display: none;
+}
 
+@media (max-width:1440px){
+    .faq-box section.flex {
+        width: 23.8%;
+    }
+    .faq-wrap .faq-box .section2 {
+        width: 72.9%;
+    }
+    .faq-content p:nth-of-type(2) {
+        width: 400px;
+    }
+    .faq-content p:nth-of-type(3) {
+        width: 80px;
+    }
+    
 }
 
 @media (max-width:768px){
+    .faq-box.none-mo{
+        display: none;
+    }
+    .faq-box.mo{
+        display: block;
+    }
+    .faq-box .faq-option{
+        border: 1px solid red;
+        margin-bottom: 5rem;
+    }
+    .faq-box .faq-container{
+        display: flex;
+        font-weight: var(--bold-weight);
+        gap: 1rem;
+        border: 1px solid rgb(38, 0, 255);
+    }
+    .faq-box.mo .cover {
+        padding: 0;
+        border-bottom:none;
+        cursor: pointer;
+        background-color: inherit;
+        width: auto;
+    }
+    .faq-box.mo .cover .p{
+        flex-wrap: nowrap;
+    }
+    .faq-wrap .cover:nth-of-type(1) {
+        padding: 0;
+        border-bottom: none;
+    }
+    
+    /* 모바일 faq옵션 스크롤 기능 */
+    .horizontal-scroll-list-wrap{
+        overflow-x: auto;
+    }
+    .horizontal-scroll-list{
+        display: flex;
+        gap:1rem;
+    }
+    .horizontal-scroll-list>li{
+        flex-shrink: 0;
+        border:1px solid red;
+    }
+    .faq-box.mo .section2{
+        border:1px solid red;
+        width: 100%;
+    }
+
+
 
 }
 

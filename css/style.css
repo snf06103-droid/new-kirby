@@ -183,6 +183,20 @@ h4{
     color: var(--main-color);
 }
 
+/* 웹킷 계열의 브라우저 -> 크롬 엣지 사파리 */
+::-webkit-scrollbar{
+    width: 0px;
+    height:0px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: inherit;
+}
+
+::-webkit-scrollbar-track{
+    background-color:inherit;
+}
+
 @media (max-width:1440px){
     main{
         margin-top: 5rem;
@@ -194,6 +208,9 @@ h4{
         width:auto;
         margin:0 2rem;
     }
+    body{
+        padding-top: 70px;
+    }
     .mo{display: none;}
     .tab{display: block;}
     .pc{display: none;}
@@ -204,6 +221,9 @@ h4{
     .mo{display: block;}
     html{
         font-size: var(--basic-font-mobile);
+    }
+    body{
+        padding-top: 50px;
     }
     .common-frame{
         width:auto;
