@@ -3,15 +3,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>장바구니</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/components/header.css">
     <link rel="stylesheet" href="../../css/components/footer.css">
+    <link rel="stylesheet" href="../../css/pages/cart.css">
     <script src="../../js/components/header.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div id="site-header"></div>
+        
+    <div class="cart-wrap">
+        <div class="cart-container">
+            <h1>장바구니</h1>
+            <ul class="delete flex">
+                <li>품절상품삭제</li>
+                <li>전체선택삭제</li>
+                <li>선택삭제</li>
+            </ul>
+            <div class="cart-box">
+                <ul class="cart-items">
+                    <li class="items">
+                        <figure>
+                            <input type="checkbox" id="cart-item-1" class="cart-check">
+                            <label for="cart-item-1">상품선택</label>
+                            <img src="../../images/list/all/desk-3.jpg" alt="">
+                        </figure>
+                        <div class="product-option">
+                            <div class="desc">
+                                <h2>Ginza table</h2>
+                                <p class="body2">제품 옵션 :</p>
+                                <div class="account">
+                                    <p class="bold">500,000원</p>
+                                    <div class="box-number">
+                                        <span><img src="../../assets/icons/number-minus.png" alt=""></span>
+                                        <span>1</span>
+                                        <span><img src="../../assets/icons/number-plus.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="btns-buy">
+                                <li><a href="#">장바구니</a></li>
+                                <li><a href="#">구매하기</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="items">
+                        <figure>
+                            <input type="checkbox" id="cart-item-1" class="cart-check">
+                            <label for="cart-item-1">상품선택</label>
+                            <img src="../../images/list/all/desk-3.jpg" alt="">
+                        </figure>
+                        <div class="product-option">
+                            <div class="desc">
+                                <h2>Ginza table</h2>
+                                <p class="body2">제품 옵션 :</p>
+                                <div class="account">
+                                    <p class="bold">500,000원</p>
+                                    <div class="box-number">
+                                        <span><img src="../../assets/icons/number-minus.png" alt=""></span>
+                                        <span>1</span>
+                                        <span><img src="../../assets/icons/number-plus.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="btns-buy">
+                                <li><a href="#">장바구니</a></li>
+                                <li><a href="#">구매하기</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="items">
+                        <figure>
+                            <input type="checkbox" id="cart-item-1" class="cart-check">
+                            <label for="cart-item-1">상품선택</label>
+                            <img src="../../images/list/all/desk-3.jpg" alt="">
+                        </figure>
+                        <div class="product-option">
+                            <div class="desc">
+                                <h2>Ginza table</h2>
+                                <p class="body2">제품 옵션 :</p>
+                                <div class="account">
+                                    <p class="bold">500,000원</p>
+                                    <div class="box-number">
+                                        <span><img src="../../assets/icons/number-minus.png" alt=""></span>
+                                        <span>1</span>
+                                        <span><img src="../../assets/icons/number-plus.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="btns-buy">
+                                <li><a href="#">장바구니</a></li>
+                                <li><a href="#">구매하기</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                    <li class="items">
+                        <figure>
+                            <input type="checkbox" id="cart-item-1" class="cart-check">
+                            <label for="cart-item-1">상품선택</label>
+                            <img src="../../images/list/all/desk-3.jpg" alt="">
+                        </figure>
+                        <div class="product-option">
+                            <div class="desc">
+                                <h2>Ginza table</h2>
+                                <p class="body2">제품 옵션 :</p>
+                                <div class="account">
+                                    <p class="bold">500,000원</p>
+                                    <div class="box-number">
+                                        <span><img src="../../assets/icons/number-minus.png" alt=""></span>
+                                        <span>1</span>
+                                        <span><img src="../../assets/icons/number-plus.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <ul class="btns-buy">
+                                <li><a href="#">장바구니</a></li>
+                                <li><a href="#">구매하기</a></li>
+                            </ul>
+                        </div>
+
+                    </li>
+                </ul>
+                <div class="paginatioin">
+                    <span><img src="../../assets/icons/left.svg" alt="왼쪽페이지이동"></span>
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span><img src="../../assets/icons/right.svg" alt="오른쪽페이지이동"></span>
+                </div>
+            </div>
+            <div class="with-items">
+                <div class="title">
+                    <h1>함께 구매하면 좋은 상품</h1>
+                    <div class="more">
+                        <h4 class="gray">더보기</h4>
+                        <img src="../../assets/icons/right-gray.png" alt="더보기버튼">
+                    </div>
+                </div>
+                
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../images/list/all/booself-11.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/booself-11.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/booself-11.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/booself-11.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/booself-11.jpg" alt=""></div>
+                    
+                    </div>
+                </div>
+                 <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 2.8,
+                    spaceBetween: 0,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });
+                </script>
+
+
+            </div>
+        </div>
+        <div class="total-container">
+            <div class="total">
+                <div class="product-price">
+                    <h1>전체 상품 : 3개</h1>
+                    <dl class="price-grid">
+                        <dt>주문 금액</dt>
+                        <dd>160,000</dd>
+                        <dt>상품 할인</dt>
+                        <dd class="red">-13,000</dd>
+                        <dt>배송비</dt>
+                        <dd>3,000</dd>
+                    </dl>
+                </div>
+                <div class="total-price">
+                    <h1>총 결제 금액</h1>
+                    <p class="fw-900">총  150,000원</p>
+                    <span>구매하기</span>
+                </div>
+                <div class="notice">
+                    <span>
+                        <p>장바구니 안내 및 유의사항</p>
+                        <img src="../../assets/icons/down-white.png" alt="유의사항보기">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div id="site-footer"></div>
     <script src="../../js/components/layout.js"></script>

@@ -1,44 +1,4 @@
-.signup-container{
-    border: 1px solid red;
-    margin-top: var(--margin-top-pc);
-}
-.signup-container h1{
-    margin-bottom: 5rem;
-    text-align: center;
-    font-size: 50px;
-}
-.signup-container form{
-    border: 1px solid green;
-}
-.signup-form legend{
-    font-size: var(--heading-1);
-    font-weight: var(--bold-weight);
-    margin-bottom: var(--margin-main-text);
-}
-.tel-box{
-    border: 1px solid #000;
-    height: 41px;
-}
-.phone-flex{
-    display: flex;
-    gap: 1.5rem;
-}
-.phone-flex select{
-    width: 149px;
-    height: 41px;
-    border-bottom: 1px solid #000;
-    background: url(../../assets/icons/list-down.png) no-repeat 95% 50% /cover;
-    background-size: 21.6px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.phone-flex select option{
-    border: 1px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+
 
 @media (max-width:1440px){
 

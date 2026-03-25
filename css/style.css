@@ -197,6 +197,27 @@ h4{
     background-color:inherit;
 }
 
+/* 스와이퍼 공통 스타일 */
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 @media (max-width:1440px){
     main{
         margin-top: 5rem;

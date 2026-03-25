@@ -15,96 +15,10 @@
 <body>
     <div id="site-header"></div>
     
-    <section class="signup-container common-frame">
+    <section class="signup-container">
         <h1>회원 가입</h1>
 
-        <form action="#" method="POST" class="signup-form">
-            <fieldset>
-                <legend>필수 정보 입력</legend>
-
-                <div class="input-group phone-group">
-                    <label class="gray">전화번호</label>
-                    <div class="phone-flex">
-                        <select name="telecom">
-                            <option value="" >통신사</option>
-                            <option value="skt">SKT</option>
-                            <option value="LG">LG</option>
-                            <option value="U+">U+</option>
-                            <option value="알뜰폰">알뜰폰</option>
-                        </select>
-                        <div class="tel-box">
-                            <input type="tel" placeholder="010" maxlength="3">
-                            <span>-</span>
-                            <input type="tel" maxlength="4">
-                            <span>-</span>
-                            <input type="tel" maxlength="4">
-                        </div>
-                        <button type="button" class="btn-verify">본인인증</button>
-                    </div>
-                </div>
-
-                <div class="input-group email-group">
-                    <label for="user-email" class="gray">E-mail</label>
-                    <div class="email-flex">
-                        <input type="text" id="user-email">
-                        <span>@</span>
-                        <input type="text" class="email-domain">
-                        <select>
-                            <option value="">직접입력</option>
-                            <option value="naver.com">naver.com</option>
-                        </select>
-                    </div>
-                </div>
-
-                <div class="input-group pw-group">
-                    <label for="user-pw" class="gray">비밀번호</label>
-                    <div class="pw-wrap">
-                        <input type="password" id="user-pw">
-                        <button type="button" class="btn-toggle-pw"><i class="icon-eye"></i></button>
-                    </div>
-                </div>
-
-                <div class="input-group pw-group">
-                    <label for="user-pw" class="gray">비밀번호 확인</label>
-                    <div class="pw-wrap">
-                        <input type="password" id="user-pw">
-                        <button type="button" class="btn-toggle-pw"><i class="icon-eye"></i></button>
-                    </div>
-                </div>
-
-                <div class="input-group pw-group">
-                    <label for="user-name" class="gray">이름</label>
-                    <div class="pw-wrap">
-                        <input type="text" id="user-name">
-                        <button type="button" class="btn-toggle-pw"><i class="icon-eye"></i></button>
-                    </div>
-                </div>
-
-                <div class="input-group birth-group">
-                    <label>생년월일 ex.19880808</label>
-                    <div class="birth-flex">
-                        <input type="text" maxlength="8">
-                        <div class="gender-selection">
-                            <label><input type="radio" name="gender" value="male" checked> 남자</label>
-                            <label><input type="radio" name="gender" value="female"> 여자</label>
-                        </div>
-                    </div>
-                </div>
-            </fieldset>
-
-            <fieldset class="terms-group">
-                <legend>이용약관</legend>
-                <div class="term-item all-check">
-                    <label><input type="checkbox" id="all-agree"> 전체동의</label>
-                </div>
-                <div class="term-item">
-                    <label><input type="checkbox" class="agree"> 회원 이용 약관(필수)</label>
-                    <a href="#" class="view-more">></a>
-                </div>
-                </fieldset>
-
-            <button type="submit" class="btn-signup">회원가입</button>
-        </form>
+        
     </section>
 
     <div id="site-footer"></div>

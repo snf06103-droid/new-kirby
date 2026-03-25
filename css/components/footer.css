@@ -67,7 +67,6 @@ span{
     display: flex;
     flex-direction: column;
     gap: .5rem;
-    border: 1px solid red;
 }
 footer .logo img{
     height: 80px;
