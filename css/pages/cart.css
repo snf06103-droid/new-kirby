@@ -4,13 +4,14 @@
     margin: 0 0 0 240px;
 }
 .cart-container>h1{
-    padding-top: var(--margin-top-pc);
+    padding-top: 5rem;
 }
 .cart-container .delete{
     justify-content: flex-end;
 }
 .cart-container .delete li{
     padding: 10px;
+    cursor: pointer;
 }
 .items{
 }
@@ -107,13 +108,22 @@
     width: 25px;
     aspect-ratio: 1/1;
 }
+.paginatioin span{
+    cursor: pointer;
+    font-weight: var(--medium-weight);
+}
+.paginatioin span.on {
+    font-weight: var(--bold-weight);
+    color: var(--point-color-2); 
+    text-decoration: underline; 
+}
 .cart-wrap{
     display: flex;
     gap: 1.5rem;
 }
 
 /* 함께 구매하면 좋은 상품 스타일 */
-.with-items .more{
+.with-items .more a{
     display: flex;
     align-items: center;
 }
@@ -166,6 +176,7 @@
     font-weight: var(--bold-weight);
 }
 .price-grid .red{
+    color: #FF0000;
 }
 .total-price{
     padding: 1.66rem;
@@ -189,6 +200,7 @@
     align-items: center;
     color: #fff;
     margin: 0 auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 .total .notice span{
     display: flex;
@@ -207,5 +219,65 @@
 .total-container {
     border: 1px solid red;
     width: 700px;
-    margin-top: 261px;
+    margin-top: 170px;
+}
+.total .notice{
+    margin-bottom: 2rem;
+}
+.card-benefits>p{
+    color: var(--main-color);
+    padding-bottom: 10px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1rem;
+}
+.benefits-detail{
+    justify-content: center;
+    display: flex;
+    gap: 1rem;
+}
+.notice .desc{
+    padding: 1rem 42px;
+    border: 1px solid red;
+}
+.notice .desc li {
+    font-size: var(--detail);
+    font-weight: var(--light-weight);
+    text-align: left;
+    position: relative;
+    padding-left: 10px;      /* 점이 들어갈 여백 */
+}
+
+/* 가상 요소로 만드는 커스텀 점 */
+.notice .desc li::before {
+    content: '';        
+    position: absolute;
+    left: 0;
+    top: 9px;            
+    width: 3px;              
+    height: 3px;            
+    border-radius: 50%;     
+    background-color: #000;
+}
+
+/* 1. 화살표 기본 스타일 (애니메이션 준비) */
+.notice span img {
+    transition: transform 0s ease; /* 0.3초 동안 부드럽게 회전 */
+    cursor: pointer;
+}
+
+/* 2. active 클래스가 붙었을 때 화살표 180도 회전 */
+.notice.active span img {
+    transform: rotate(180deg);
+}
+
+/* 3. 리스트 기본 상태: 숨김 */
+.notice .desc {
+    display: none; /* 처음에는 안 보이게 */
+    padding-top: 10px;
+}
+
+/* 4. active 클래스가 붙었을 때 리스트 보임 */
+.notice.active .desc {
+    display: block;
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../../css/components/footer.css">
     <link rel="stylesheet" href="../../css/pages/cart.css">
     <script src="../../js/components/header.js"></script>
+    <script src="../../js/pages/cart.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
 </head>
@@ -145,8 +146,10 @@
                 <div class="title">
                     <h1>함께 구매하면 좋은 상품</h1>
                     <div class="more">
-                        <h4 class="gray">더보기</h4>
-                        <img src="../../assets/icons/right-gray.png" alt="더보기버튼">
+                        <a href="../../pages/shop/list.html">
+                            <h4 class="gray">더보기</h4>
+                            <img src="../../assets/icons/right-gray.png" alt="더보기버튼">
+                        </a>
                     </div>
                 </div>
                 
@@ -192,13 +195,24 @@
                 <div class="total-price">
                     <h1>총 결제 금액</h1>
                     <p class="fw-900">총  150,000원</p>
-                    <span>구매하기</span>
+                    <span><a href="#">구매하기</a></span>
                 </div>
                 <div class="notice">
                     <span>
                         <p>장바구니 안내 및 유의사항</p>
                         <img src="../../assets/icons/down-white.png" alt="유의사항보기">
                     </span>
+                    <ul class="desc">
+                        <li>장바구니에는 최근 6개월 동안 담은 상품이 150개까지 보관됩니다.</li>
+                        <li>담은 지 90일이 지난 상품은 장바구니 상단의 ‘담은 지 90일 지난 상품 관리’ 메뉴로 자동 이동됩니다.</li>
+                    </ul>
+                </div>
+                <div class="card-benefits">
+                    <p  class="bold">결제혜택</p>
+                    <div class="benefits-detail">
+                        <img src="../../assets/icons/toss.png" alt="토스현대카드 할인혜택">
+                        <p class="detail light">현대 카드 & 토스카드 20만원 이상 결제시 10,000원 할인</p>
+                    </div>
                 </div>
             </div>
         </div>

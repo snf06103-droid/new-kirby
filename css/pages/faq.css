@@ -58,15 +58,7 @@ width: 100%;
     justify-content: space-between;
     align-items: center;
 }
-.faq-wrap .btn-more{
-    text-align: center;
-    margin-bottom: 10rem;
-}
-.faq-wrap .btn-more button{
-    padding: 1rem 3rem;
-    background-color: var(--point-color-1);
-    color: #fff;
-}
+
 
 
 .section1 .cover.active{

@@ -1,0 +1,16 @@
+.coupon>h1{
+    padding-top: var(--margin-top-pc);
+    text-align: center;
+}
+.coupon .banner{
+    height: 900px;
+    margin-bottom: 2rem;
+}
+.coupon .btn-cp-option{
+    display: flex;
+    gap: .5rem;
+
+}
+.btn-cp-option li{
+    
+}
