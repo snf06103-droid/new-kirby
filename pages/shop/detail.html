@@ -15,43 +15,195 @@
     <script src="../../js/components/header.js"></script>
 </head>
 <body>
+    <aside>
+        <span><img src="../../assets/icons/aside-up.png" alt="페이지 위로 이동"></span>
+        <span><img src="../../assets/icons/aside-down.png" alt="페이지 아래로 이동"></span>
+    </aside>
     <div id="site-header"></div>
 
     <div class="detail-wrap">
         <div class="common-frame">
-            <div class="img-box">
-                
-                <!-- Swiper -->
-                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="../../images/detail-page/detail-01/detail-1.jpg" />
+            <div class="main-box">
+                <!-- 상품이미지 -->
+                <div class="img-box">
+                    
+                    <!-- Swiper -->
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-3.jpg" />
+                            </div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="../../images/detail-page/detail-01/detail-2.jpg" />
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="../../images/detail-page/detail-01/detail-3.jpg" />
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div thumbsSlider="" class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-3.jpg" />
+                            </div>
                         </div>
                     </div>
-                    <div class="swiper-button-next"></div>
-                    <div class="swiper-button-prev"></div>
                 </div>
-                <div thumbsSlider="" class="swiper mySwiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="../../images/detail-page/detail-01/detail-1.jpg" />
+
+                <!-- 상품상세페이지 -->
+                <div class="detail-sticky-box">
+                    <div class="sticky-menu-wrap">
+                        <ul class="sticky-menu">
+                            <li><a href="#">상품상세</a></li>
+                            <li><a href="#">고객리뷰</a></li>
+                            <li><a href="#">Q&A</a></li>
+                            <li><a href="#">서비스 가이드</a></li>
+                        </ul>
+                    </div>
+                    <div class="detail-caregoty-wrap">
+                        <div class="detail">
+                            <div class="img-container">
+                                <img src="../../images/detail-page/detail-desk/dt-desk-1.jpg" alt="디테일 상세페이지">
+                            </div>
+                            <span>
+                                상품정보 더보기 
+                                <img src="../../assets/icons/down.png" alt="상품정보더보기">
+                            </span>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="../../images/detail-page/detail-01/detail-2.jpg" />
+                        <div class="review"></div>
+                        <div class="qna"></div>
+                        <div class="service"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="order-box">
+                <div class="price-container">
+                    <p class="category">products > desk</p>
+                    <h1 class="point magin05">H GLASS TABLE</h1>
+                    <p class="body2 gray magin1">컬러풀한 프레임과 투명한 유리 글라스의 만남</p>
+                    <div class="size-option">
+                        <p class="body2 bold">사이즈</p>
+                        <div class="option-selector">
+                            <button type="button" class="selected-value">
+                                사이즈를 선택해주세요.
+                                <img src="../../assets/icons/down-black.png" alt="사이즈 선택창">
+                            </button>
+                            <ul class="option-list">
+                                <li>15 X 25 cm</li>
+                                <li>50 X 75 cm</li>
+                                <li>100 X 120 cm</li>
+                            </ul>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="../../images/detail-page/detail-01/detail-3.jpg" />
+                    </div>
+                    <div class="color-option">
+                        <p class="body2 bold">색상</p>
+                        <div class="option-selector">
+                            <button type="button" class="selected-value">
+                                색상을 선택해주세요.
+                                <img src="../../assets/icons/down-black.png" alt="사이즈 선택창">
+                            </button>
+                            <ul class="option-list">
+                                <li>pink</li>
+                                <li>yellow</li>
+                                <li>green</li>
+                                <li>orange</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <dl>
+                        <dt>배송방법</dt>
+                        <dd>택배</dd>
+                        <dt>배송비</dt>
+                        <dd>200,000원 이상 무료 배송</dd>
+                    </dl>
+                    <p class="magin05">상품금액</p>
+                    <div class="price">
+                        <p class="bold">30%</p>
+                        <p class="body2 light">350,000원</p>
+                    </div>
+                    <p class="final-price">240,000원</p>
+                    <div class="order-btn">
+                        <span class="flex">구매하기</span>
+                    </div>
+                    <div class="cart-btn">
+                        <div class="share">
+                            <img src="../../assets/icons/share-link.png" alt="공유하기버튼">
+                        </div>
+                        <div class="heart">
+                            <img src="../../assets/icons/heart.png" alt="좋아요 버튼">
+                        </div>
+                        <span>장바구니</span>
+                    </div>
+                    <div class="card-benefits">
+                        <p  class="bold">결제혜택</p>
+                        <div class="benefits-detail">
+                            <img src="../../assets/icons/toss.png" alt="토스현대카드 할인혜택">
+                            <p class="detail light">현대 카드 & 토스카드 20만원 이상 결제시 10,000원 할인</p>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
 
+        <!-- 추천상품 -->
+        <div class="rcmd-items ">
+            <div class="common-frame rcmd">
+                <div class="more">
+                    <h1 class="point">2UC 추천 상품</h1>
+                    <div class="btn-more">
+                        <a href="#">
+                            더보기
+                            <img src="../../assets/icons/right-gray.png" alt="추천상품더보기">
+                        </a>
+                    </div>
+                </div>
+                <ul class="rcmd-product-list">
+                    <li class="rcmd-product">
+                        <a href="#">
+                            <figure>
+                                <img src="../../images/list/all/booself-12.jpg" alt="">
+                            </figure>
+                            <figcaption>
+                                <h2>SAIA LOUNGE CHAIR</h2>
+                                <p class="light">독특한 패턴 & 매끈한 곡률</p>
+                                <h3>580,000원</h3>
+                            </figcaption>
+                        </a>
+                    </li>
+                    <li class="rcmd-product">
+                        <a href="#">
+                            <figure>
+                                <img src="../../images/list/all/booself-5.jpg" alt="">
+                            </figure>
+                            <figcaption>
+                                <h2>CL4 TABLE LAMP</h2>
+                                <p class="light">은색의 차가운 무드의 램프</p>
+                                <h3>850,000원</h3>
+                            </figcaption>
+                        </a>
+                    </li>
+                    <li class="rcmd-product">
+                        <a href="#">
+                            <figure>
+                                <img src="../../images/list/all/booself-19.jpg" alt="">
+                            </figure>
+                            <figcaption>
+                                <h2>OVAL STEEL CONSOL</h2>
+                                <p class="light">판타지한 색감의 테이블</p>
+                                <h3>1,450,000원</h3>
+                            </figcaption>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </div>
 

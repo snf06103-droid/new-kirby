@@ -43,4 +43,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // 초기 설정 (첫 페이지 활성화)
     updatePage(0);
+
+
 })

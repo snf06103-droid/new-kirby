@@ -1,3 +1,17 @@
+aside{
+    position: fixed;
+    right: 80px;
+    bottom:320px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 1000;
+}
+aside img{
+    width: 50px;
+    height: 50px;
+}
+
 html,
 body {
     position: relative;
@@ -120,8 +134,212 @@ element.style {
 
 /* 상세페이지 스타일 */
 .detail-wrap .img-box{
+}
+
+
+.detail-wrap>.common-frame{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--margin-top-pc);
+}
+.detail-wrap .order-box{
+    border: 5px solid rgb(0, 255, 55);
+    width: 400px;
+    position: relative;
+}
+.price-container{
+    position: sticky;
+    top: 100px;
+    left: 0;
+    border: 1px solid gold;
+}
+.price-container .category{
+    margin-bottom: .5rem;
+}
+.order-box .size-option{
+    display: flex;
+    justify-content: space-between;
+}
+.order-box .option-selector{
+    width: 340px;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.option-selector button{
+    font-size: 16px;
+    font-weight: var(--light-weight);
+    width: 340px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    border-radius: 2px;
+    border: 1px solid #000;
+    padding: 4px 20px;
+}
+.color-option{
+    display: flex;
+    justify-content: space-between;
+}
+.price-container dl{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: var(--body-2);
+    font-weight: var(--bold-weight);
+    gap: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.price-container dd{
+    text-align: end;
+}
+.price-container .price{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+}
+.price .light{
+    text-decoration: line-through;
+}
+.price .bold{
+    color: #FF383C;
+}
+.price-container .final-price{
+    font-size: var(--heading-1);
+    font-weight: var(--bold-weight);
+    text-align: end;
+    margin-bottom: 1.5rem;
+}
+.price-container .order-btn{
+    color: #fff;
+}
+.price-container .order-btn span{
+    font-weight: var(--bold-weight);
+    width: 100%;
+    height: 40px;
+    background-color: var(--point-color-2);
+}
+.price-container .cart-btn{
+    display: flex;
+    margin-bottom: 2rem;
+}
+.cart-btn span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: var(--bold-weight);
+    color: #fff;
+    width: 320px;
+    height: 40px;
+    background-color: var(--main-color);
+}
+.card-benefits>p{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    margin-bottom: 1rem;
+}
+.benefits-detail{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+}
+
+
+/* 제품 상세 페이지 스티키메뉴 스타일 */
+.sticky-menu-wrap{
+    border: 1px solid red;
+    width: 953px;
+}
+.sticky-menu{
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.sticky-menu-wrap>li{
     border: 1px solid red;
 }
+.sticky-menu>li>a{
+    width: 130px;
+    height: 57px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: var(--point-color-1);
+    font-weight: var(--bold-weight);
+}
+.sticky-menu>li>a.active{
+    background-color: var(--point-color-2);
+}
+.detail-caregoty-wrap{
+    width: 953px;
+}
+.detail-caregoty-wrap .detail .img-container{
+    max-height:  1911px;
+    overflow: hidden;
+}
+.detail span{
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    background-color: #EFEFEF;
+    cursor: pointer;
+}
+.detail span img{
+    width: 20px;
+    height: 20px;
+}
+
+/* 추천상품 스타일 */
+.rcmd-items .more{
+    width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.rcmd-items .more .btn-more a{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: var(--heading-4);
+    font-weight: var(--bold-weight);
+    color: rgba(0, 0, 0, 0.5);
+}
+.btn-more img{
+    width: 19px;
+    height: 20px;
+}
+.common-frame.rcmd{
+}
+.rcmd-items{
+}
+.rcmd-product-list{
+    margin-bottom: var(--margin-top-pc);
+    display: flex;
+    justify-content: space-between;
+}
+.rcmd-product figure{
+    width: 378px;
+    aspect-ratio: 378/425;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.rcmd-product figcaption{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
 
 @media (max-width:1440px){
 
