@@ -136,7 +136,7 @@ element.style {
 .detail-wrap .img-box{
 }
 
-
+/* 오른쪽 상품 구매 스타일 */
 .detail-wrap>.common-frame{
     border: 1px solid red;
     display: flex;
@@ -148,6 +148,21 @@ element.style {
     width: 400px;
     position: relative;
 }
+.order-box .option-list{
+    font-size: var(--body-2);
+    font-weight: var(--light-weight);
+    border-radius: 0 0 2px 2px ;
+    border: 1px solid #000;
+    border-top: none;
+}
+.option-list li{
+    padding: 4px 0;
+    cursor: pointer;
+}
+.option-list li:hover{
+    background-color: rgba(181, 181, 181, 0.25);
+}
+
 .price-container{
     position: sticky;
     top: 100px;
@@ -166,6 +181,12 @@ element.style {
     background-color: #fff;
     text-align: center;
     margin-bottom: 1rem;
+    max-height: 33.4px;
+    overflow: hidden;
+    transition: all .2s ease 0s;
+}
+.order-box .option-selector.active{
+max-height: 200px;
 }
 .option-selector button{
     font-size: 16px;
@@ -178,6 +199,11 @@ element.style {
     border: 1px solid #000;
     padding: 4px 20px;
 }
+.option-selector.active button img{
+    transform: rotate(180deg);
+}
+
+
 .color-option{
     display: flex;
     justify-content: space-between;
@@ -250,7 +276,6 @@ element.style {
 
 /* 제품 상세 페이지 스티키메뉴 스타일 */
 .sticky-menu-wrap{
-    border: 1px solid red;
     width: 953px;
 }
 .sticky-menu{
