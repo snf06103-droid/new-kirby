@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 aside{
     position: fixed;
     right: 80px;
@@ -78,6 +81,7 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    cursor: pointer;
 }
 
 element.style {
@@ -136,15 +140,179 @@ element.style {
 .detail-wrap .img-box{
 }
 
+
+/* 리뷰 스타일 */
+.best-review-photo{
+    padding: 2rem 0;
+    border-radius: 10px;
+    background-color: #EDF2F2;
+}
+.best-review-photo ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+.best-review-photo ul>li{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+
+
+/* qna스타일 */
+.qna .qna-title{
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.qna-text .title-box{
+    display: flex;
+    justify-content: space-between;
+    padding: 28px 2rem;
+    border: 1px solid #000;
+}
+.qna-text .title-box.active{
+    color: #fff;
+    background-color: var(--main-color);
+}
+.qna-text .title-box .q{
+    display: flex;
+    gap: 2rem;
+}
+.qna-box .icon,.icon-click{
+    width: 30px;
+    height:30px;
+}
+.qna-desc{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 1rem 0;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.qna-desc p{
+    text-align: start;
+    width: 800px;
+}
+.qna-box .icon{
+    display: block;
+}
+.qna-box .icon.active{
+    display: none;
+}
+.qna-box .icon-click{
+    display: none;
+}
+.qna-box .icon-click.active{
+    display: block;
+}
+.qna-text{
+    max-height: 97px;
+    overflow: hidden;
+    transition: .3s ease;
+}
+.qna-text.active{
+    max-height: 500px;
+}
+
+
+
+
+
+/* 반품안내 스타일 */
+.detail-caregoty-wrap .service .point:nth-of-type(1){
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.delivery .desc1{
+    
+}
+.service .delivery{
+    width: 100%;
+    height: 291px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.service button{
+    margin: 0 auto;
+    width: 300px;
+    height: 36px;
+    border-radius: 50px;
+    background-color: var(--main-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--heading-2);
+    font-weight: var(--bold-weight);
+    margin-bottom: 3rem;
+}
+.service .notes{
+    font-weight: var(--medium-weight);
+    font-family: var(--font-point);
+    padding: 10px;
+    margin-bottom: 1rem;
+}
+.service figure{
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.service h3{
+    margin-bottom: 2rem;
+    text-align: center;
+}
+.service .desc2{
+    text-align: center;
+}
+
+/* 스티키 메뉴 클릭했을 때 나오는 스타일*/
+.detail-caregoty-wrap .detail{
+    display: none;
+}
+.detail-caregoty-wrap .detail.active{
+    display: block;
+}
+.review{
+    display: none;
+}
+.review.active{
+    display: block;
+}
+.qna{
+    display: none;
+}
+.qna.active{
+    display: block;
+}
+.service{
+    display: none;
+}
+.service.active{
+    display: block;
+}
+
+
 /* 오른쪽 상품 구매 스타일 */
 .detail-wrap>.common-frame{
-    border: 1px solid red;
+    text-align: center;
+    /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
     margin-bottom: var(--margin-top-pc);
 }
 .detail-wrap .order-box{
-    border: 5px solid rgb(0, 255, 55);
+    /* border: 5px solid rgb(0, 255, 55); */
     width: 400px;
     position: relative;
 }
@@ -167,9 +335,16 @@ element.style {
     position: sticky;
     top: 100px;
     left: 0;
-    border: 1px solid gold;
+    /* border: 1px solid gold; */
+}
+.price-container>dl>dt{
+    text-align: start;
+}
+.item-price{
+    text-align: start;
 }
 .price-container .category{
+    text-align: start;
     margin-bottom: .5rem;
 }
 .order-box .size-option{
@@ -201,6 +376,12 @@ max-height: 200px;
 }
 .option-selector.active button img{
     transform: rotate(180deg);
+}
+.price-container .product-name{
+    text-align: start;
+}
+.price-container .product-desc{
+    text-align: start;
 }
 
 
@@ -264,19 +445,41 @@ max-height: 200px;
     padding-bottom: 10px;
     border-bottom: 1px solid #000;
     margin-bottom: 1rem;
+    text-align: start;
 }
 .benefits-detail{
+    /* border: 1px solid red; */
     display: flex;
     gap: 1rem;
     justify-content: center;
     align-items: center;
     color: var(--main-color);
 }
+.cart-btn img{
+    width: 40px;
+    height: 40px;
+}
+.heart{
+    display: block;
+}
+.heart.active{
+    display: none;
+}
+.heart-click{
+    display: none;
+}
+.heart-click.active{
+    display: block;
+}
 
 
 /* 제품 상세 페이지 스티키메뉴 스타일 */
-.sticky-menu-wrap{
+.sticky-menu-wrap {
     width: 953px;
+    position: sticky;
+    top:120px;
+    left: 0;
+    margin-bottom: 2rem;
 }
 .sticky-menu{
     display: flex;
@@ -287,6 +490,9 @@ max-height: 200px;
 .sticky-menu-wrap>li{
     border: 1px solid red;
 }
+.sticky-menu>li.active>a{
+    background-color: rgba(6, 49, 30, 0.6);
+}
 .sticky-menu>li>a{
     width: 130px;
     height: 57px;
@@ -294,7 +500,8 @@ max-height: 200px;
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: var(--point-color-1);
+    background-color: rgba(71, 111, 145, 0.6);
+    
     font-weight: var(--bold-weight);
 }
 .sticky-menu>li>a.active{
@@ -306,6 +513,9 @@ max-height: 200px;
 .detail-caregoty-wrap .detail .img-container{
     max-height:  1911px;
     overflow: hidden;
+}
+.detail-caregoty-wrap .detail .img-container.active{
+max-height: 15000px;
 }
 .detail span{
     width: 100%;
