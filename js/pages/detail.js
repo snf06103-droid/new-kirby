@@ -80,7 +80,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const qna = document.querySelector('.detail-caregoty-wrap .qna')
     const service = document.querySelector('.detail-caregoty-wrap .service')
 
-
+    btnDetail.addEventListener('click',()=>{
+        
+    })
 
 
 })

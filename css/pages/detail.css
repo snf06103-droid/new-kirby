@@ -146,6 +146,7 @@ element.style {
     padding: 2rem 0;
     border-radius: 10px;
     background-color: #EDF2F2;
+    margin-bottom: 2rem;
 }
 .best-review-photo ul{
     display: flex;
@@ -160,6 +161,14 @@ element.style {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+.review .option{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.4rem;
+    border: 1px solid red;
+    margin-bottom: 2rem;
 }
 
 
