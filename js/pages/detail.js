@@ -40,7 +40,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
     //qna눌렀을 때 답변 내려오는 기능
-    // 모든 '.title-box' 요소들을 가져옵니다.
     const titleBoxes = document.querySelectorAll('.title-box');
 
     titleBoxes.forEach(function(titleBox) {
@@ -80,9 +79,38 @@ document.addEventListener('DOMContentLoaded', () => {
     const qna = document.querySelector('.detail-caregoty-wrap .qna')
     const service = document.querySelector('.detail-caregoty-wrap .service')
 
-    btnDetail.addEventListener('click',()=>{
-        
+    //모든 버튼과 컨텐츠의 active를 끄는 리셋 함수
+    function resetTabs() {
+        [btnDetail, btnReview, btnQna, btnService].forEach(btn => btn?.classList.remove('active'));
+        [detail, review, qna, service].forEach(cont => cont?.classList.remove('active'));
+    }
+
+    btnDetail.addEventListener('click',function(){
+        resetTabs()
+        this.classList.toggle('active')
+        detail.classList.toggle('active')
     })
+
+    btnReview.addEventListener('click',function(){
+        resetTabs()
+        this.classList.toggle('active')
+        review.classList.toggle('active')
+    })
+
+    btnQna.addEventListener('click',function(){
+        resetTabs()
+        this.classList.toggle('active')
+        qna.classList.toggle('active')
+    })
+
+    btnService.addEventListener('click',function(){
+        resetTabs()
+        this.classList.toggle('active')
+        service.classList.toggle('active')
+    })
+
+    // 초기 실행: 첫 로딩 시 상세페이지 활성화
+    btnDetail.click()
 
 
 })

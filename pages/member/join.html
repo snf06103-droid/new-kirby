@@ -10,16 +10,95 @@
     <link rel="stylesheet" href="../../css/components/footer.css">
     <script src="../../js/components/header.js"></script>
     <link rel="stylesheet" href="../../css/pages/join.css">
+    <script src="../../js/pages/join.js"></script>
 
 </head>
 <body>
     <div id="site-header"></div>
     
-    <section class="signup-container">
-        <h1>회원 가입</h1>
+    <div class="join-wrap">
+        <section class="join-container">
+            <h1 class="title">회원 가입</h1>
+            <h2 class="required">필수 정보 입력</h2>
 
-        
-    </section>
+            <!-- 폼태그 -->
+             <form action="">
+                <dl>
+                    <dt><label for="user-membership">전화번호</label></dt>
+                    <dd class="user-number">
+                        <select id="user-membership">
+                            <option value="선택안함">선택안함</option>
+                            <option value="KT" selected>KT</option>
+                            <option value="SK" disabled>SK</option>
+                            <option value="U+">U+</option>
+                            <option value="알뜰폰">알뜰폰</option>
+                        </select>
+                        <input type="number" id="user-phone-number" class="user-phone-number">
+                        <a href="#">본인인증</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><label for="user-email">E-mail</label></dt>
+                    <dd>
+                        <div class="email-group">
+                            <input type="text" id="user-email">
+                            <span class="medium">@</span>
+                            <input type="text" id="email-domain">
+                            
+                            <select id="domain-list">
+                                <option value="direct">직접입력</option>
+                                <option value="naver.com">naver.com</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="daum.net">daum.net</option>
+                            </select>
+                        </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><label for="user-password">비밀번호</label></dt>
+                    <dd>
+                    <div class="password-input-container">
+                        <input type="password" id="user-password" name="user-password">
+                        <button type="button" id="password-toggle" class="password-toggle">
+                            <img src="../../assets/icons/eye.png" alt="비밀번호 보기" id="password-icon">
+                            <img src="../../assets/icons/eye-closed.png" alt="비밀번호 숨기기" id="password-icon-closed" style="display:none;">
+                        </button>
+                    </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><label for="user-password-confirm">비밀번호 확인</label></dt>
+                    <dd>
+                        <div class="password-input-container">
+                        <input type="password" id="user-password-confirm" name="user-password-confirm">
+                        <button type="button" id="password-toggle" class="password-toggle">
+                            <img src="../../assets/icons/eye.png" alt="비밀번호 보기" id="password-icon">
+                            <img src="../../assets/icons/eye-closed.png" alt="비밀번호 숨기기" id="password-icon-closed" style="display:none;">
+                        </button>
+                    </div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt><label for="user-name">이름</label></dt>
+                    <dd><input type="text" id="user-name"></dd>
+                </dl>
+                <dl class="birth">
+                    <dt><label for="user-birth">생년월일 ex.19880808</label></dt>
+                    <dd>
+                        <input type="number" id="user-birth">
+                        <div class="gender">
+                            <input type="radio" id="user-male" name="user-gender">
+                            <label for="user-male" class="">남자</label>
+                            <input type="radio" id="user-female" name="user-gender">
+                            <label for="user-female">여자</label>
+                        </div>
+                    </dd>
+                </dl>
+             </form>
+    
+            
+        </section>
+    </div>
 
     <div id="site-footer"></div>
     <script src="../../js/components/layout.js"></script>

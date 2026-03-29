@@ -170,7 +170,67 @@ element.style {
     border: 1px solid red;
     margin-bottom: 2rem;
 }
-
+.review-item{
+    border: 1px solid #000;
+    border-radius: 10px;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-between;
+}
+.review-item figure{
+    width: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.review-item figure img{
+    height: auto;
+}
+.review-item .review-desc{
+    width: 650px;
+}
+.review-item .review-desc .review-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+.review-title .star{
+    width: 80px;
+    height: 12.5px;
+}
+.review-item .review-desc>p{
+    text-align: start;
+    margin-bottom: 2rem;
+}
+.review-desc .item-info{
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.6);
+}
+.item-info .product-info{
+    font-size: var(--body-2);    
+}
+.item-info .user-info{
+    font-weight: var(--bold-weight);
+}
+.user-review>ul{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+.user-review .pagination{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.user-review .pagination>span{
+    font-size: var(--body-1);
+    font-weight: var(--light-weight);
+    cursor: pointer;
+}
 
 
 /* qna스타일 */
