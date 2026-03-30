@@ -90,7 +90,28 @@
     width: 100%;
     height: 100%;
 }
+.guid-img-1{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+.guid-img-2{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 40px;
+    aspect-ratio: 1/1;
+}
+.grid-1:hover .guid-img-1{
+    display: none;
+}
+.grid-1:hover .guid-img-2{
+    display: none;
+}
 
+/* new-product 스타일 */
 .new-product{
     /* border: 1px solid red; */
     font-family: var(--font-point);
@@ -116,7 +137,7 @@
 .new-product .content1{
     position: absolute;
     top: 0 ;
-    left: 50%;
+    left: -50%;
     transform: translateX(-50%);
     font-size: 8.3rem;
     line-height: 1.2;
@@ -181,7 +202,7 @@
     height: 25px;
 }
 .new-product .bg-1{
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
     margin-left: auto;
 }
 .best-box{
@@ -421,8 +442,13 @@ body {
 .block-410{
     display: none;
 }
+.swiper-slide .mo{
+    display: none;
+}
 
-
+.new-product .bg-1 .mo{
+    display: none;
+}
 
 
 @media (max-width:1440px){
@@ -560,13 +586,34 @@ body {
     .new-product .content2 {
         font-size: 4rem;
     }
+
 }
 
-@media (max-width:910px){
-    
+@media (max-width:870px){
+    .new-product .bg-1 .mo{
+        display: block;
+    }
+    .new-product .bg-1 .none-mo{
+        display: none;
+    }
+    .new-product .bg-1 .product-img{
+        width: 41.8%;
+        aspect-ratio: 168/200;
+        border: 1px solid red;
+    }
+    .new-product .bg-1 {
+        margin-bottom: 0rem;
+        margin-left: auto;
+    }
 }
 
 @media (max-width:700px){
+    .swiper-slide .none-mo{
+        display: none;
+    }
+    .swiper-slide .mo{
+        display: block;
+    }
     .new-product>h1 {
         /* font-size: var(--heading-1); */
         margin-bottom: 5.8rem;
@@ -583,6 +630,23 @@ body {
     }
     .new-product .banner {
         margin-bottom: 11rem
+    }
+    .swiper-wrapper .swiper-slide{
+        height: 500px;
+    }
+    .pick-list>h1 {
+        text-align: center;
+    }
+    .guid-img-2 {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 25px;
+        aspect-ratio: 1/1;
+    }
+    .new-product>h1 {
+        font-size: var(--heading-3);
+        margin-bottom: 3rem;
     }
 }
 
