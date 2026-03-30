@@ -446,7 +446,13 @@ body {
     display: none;
 }
 
-.new-product .bg-1 .mo{
+.new-product .background .mo{
+    display: none;
+}
+.main-page-bn .none-mo{
+    display: block;
+}
+.main-page-bn mo{
     display: none;
 }
 
@@ -590,21 +596,25 @@ body {
 }
 
 @media (max-width:870px){
-    .new-product .bg-1 .mo{
+    .new-product .background .mo{
         display: block;
     }
-    .new-product .bg-1 .none-mo{
+    .new-product .background .none-mo{
         display: none;
     }
-    .new-product .bg-1 .product-img{
+    .new-product .background .product-img{
         width: 41.8%;
         aspect-ratio: 168/200;
-        border: 1px solid red;
     }
     .new-product .bg-1 {
         margin-bottom: 0rem;
         margin-left: auto;
     }
+    .new-product .background .mo {
+        display: block;
+        width: 44.8%;
+    }
+    
 }
 
 @media (max-width:700px){
@@ -648,6 +658,145 @@ body {
         font-size: var(--heading-3);
         margin-bottom: 3rem;
     }
+    .product-box img {
+        width: 12px;
+        height: 8px;
+    }
+    .product-box>button {
+        /* border: 1px solid red; */
+        width: auto;
+        height: auto;
+        padding: .5rem 2rem;
+        border-radius: 40px;
+        background-color: #fff;
+    }
+    .product-box>button h1 {
+        font-size: var(--heading-3);
+    }
+    .product-box>button a {
+        gap: 1rem;
+    }
+    .new-product .background {
+        gap: 1rem;
+    }
+    .new-product .background {
+        justify-content: end;
+    }
+    .new-product .background {
+        height: 430px;
+    }
+    .new-product .bg-2 {
+        justify-content: start;
+    }
+    .product-box>h4 {
+        font-size: var(--heading-4);
+        font-weight: var(--bold-weight);
+        margin-bottom: 1.5rem;
+    }
+    .best-box>.common-frame>h1 {
+        font-size: var(--heading-3);
+    }
+    .best-box>.common-frame h4 {
+        font-size: var(--body-2);
+    }
+    .best-box .btn img {
+        width: 15px;
+        height: 15px;
+    }
+    .best-box .mySwiper .best-container figure{
+        border: 1px solid red;
+        height: 200px;
+    }
+    .best-flex .swiper-slide .desc-best{
+        text-align: start;
+    }
+    .best-container figure figcaption {
+        position: absolute;
+        bottom: 1rem;
+        left: initial;
+        font-family: var(--font-point);
+    }
+    .best-box .best-container {
+        transition-duration: 0ms;
+        transform: translate3d(-590.896px, 0px, 0px);
+        transition-delay: 0ms;
+    }
+    .best-box>.common-frame>h1 {
+        font-size: var(--heading-3);
+        margin-bottom: 3rem;
+    }
+    .best-banner figure {
+        width: 100%;
+        height: 350px;
+    }
+    .look-book-section .swiper-wrapper .swiper-slide {
+        height: 273px;
+    }
+    .look-book-section .swiper-wrapper {
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+    }
+    .look-book-desc .content-box {
+        width: 100%;
+        height: 515px;
+    }
+    .look-book-desc h2 {
+        font-size: var(--body-1);
+        font-weight: var(--bold-weight);
+        padding-right: 23px;
+    }
+    .look-book-desc .content-box .content p{
+        font-size: var(--body-2);
+        font-weight: var(--light-weight);
+    }
+    .content-box {
+        padding: 3rem 5rem 16rem 7rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .look-book-desc .img-box .img-2 {
+        position: absolute;
+        right: 31%;
+        bottom: 13%;
+        width: 132px;
+    }
+    .look-book-desc .img-box .img-1 {
+        position: absolute;
+        right: 11%;
+        bottom: -6%;
+        z-index: 10;
+        width: 205px;
+    }
+    .category>h1 {
+        font-size: var(--heading-3);
+    }
+    .category h4{
+        right: 50%;
+        transform: translateX(+50%);
+    }
+    .category-box img {
+        position: absolute;
+        z-index: 1;
+        filter: none;
+    }
+    .main-page-bn .none-mo{
+        display: none;
+    }
+    .main-page-bn mo{
+        display: block;
+    }
+    .main-page-bn figure {
+        height: 300px;
+    }
+    .main-page-bn{
+        margin: 0;
+    }
+
 }
 
 @media (max-width:590px){

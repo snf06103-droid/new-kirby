@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded",()=>{
           breakpoints: {
             // 1440px 이하일 때 실행
             0: { 
-              slidesPerView: 1.5, /* 모바일 고려 */
+              slidesPerView: 1.8, /* 모바일 고려 */
               spaceBetween: 10,
             },
             768: {
@@ -78,6 +78,10 @@ document.addEventListener("DOMContentLoaded",()=>{
               
               // 반응형 설정
               breakpoints: {
+                  0: { 
+                    slidesPerView: 1.8, /* 모바일 고려 */
+                    spaceBetween: 14,
+                  },
                   768: { slidesPerView: 2.2 },
                   1024: { slidesPerView: 2.5 }
               },
