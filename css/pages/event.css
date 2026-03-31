@@ -34,7 +34,7 @@
 
 @media (max-width:768px){
     .event-box .banner {
-        height: 200px;
+        height: 400px;
         background: url(../../images/event/event-banner.jpg) no-repeat 50% 50% / cover;
         margin-bottom: 6rem;
     }
