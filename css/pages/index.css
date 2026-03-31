@@ -135,10 +135,6 @@
     position: relative;
 }
 .new-product .content1{
-    position: absolute;
-    top: 0 ;
-    left: -50%;
-    transform: translateX(-50%);
     font-size: 8.3rem;
     line-height: 1.2;
     white-space: nowrap;
@@ -634,7 +630,6 @@ body {
     .new-product .content2 {
         font-size: 2.8rem;
         bottom: -5%;
-        left: 50%;
         transform: translateX(-50%);
     }
     .new-product .banner {
