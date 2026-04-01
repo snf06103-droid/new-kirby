@@ -28,9 +28,31 @@
     element.style {
         font-size: var(--body-2);
     }
+    .as-box>section>.b2{
+        font-size: var(--body-2);
+    }
 }
 
 @media (max-width:768px){
+    .as-box section {
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        box-sizing: border-box;
+    }
+    .as-wrap .as-box{
+        flex-direction: column;
+    }
+    .as-wrap .as-banner {
+        height: 200px;
+        margin-bottom: 2rem;
+    }
+    .as-wrap .common-frame>h1{
+        text-align: center;
+    }
+    .as-box>section>h4{
+        text-align: center;
+    }
 
 }
 

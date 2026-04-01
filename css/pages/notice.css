@@ -43,7 +43,7 @@ body{
     background-color: #fff;
 }
 .notice-text.active{
-    max-height: 500px;
+    max-height: 900px;
 }
 .title-box{
     display: flex;
@@ -90,7 +90,7 @@ body{
         margin-bottom: 2rem;
     }
     .notice-title h1 {
-        font-size: var(--heading-1);
+        font-size: var(--heading-3);
         font-weight: var(--medium-weight);
         font-family: var(--font-point);
         padding: var(--margin-sub-text);
