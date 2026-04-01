@@ -680,7 +680,7 @@ body {
         justify-content: start;
     }
     .product-box>h4 {
-        font-weight: var(--bold-weight);
+        font-weight: var(--medium-weight);
         margin-bottom: 1.5rem;
     }
     .best-box>.common-frame>h1 {
@@ -797,6 +797,9 @@ body {
         font-size: var(--body-1);
         font-weight: var(--medium-weight);
     }
+    .best-box>.common-frame {
+        margin: 0 2rem;
+    }
 }
 
 @media (max-width:590px){
@@ -816,6 +819,7 @@ body {
         flex-direction: column;
         gap: 2rem;
     }
+    
 
 }
 
