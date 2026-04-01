@@ -43,11 +43,11 @@ section>p{
     width: 910px;
 }
 .section2 .cover{
-padding-left: 1rem;
-padding-right: 1rem;
-box-sizing: border-box;
-width: 100%;
-}
+    padding-left: 1rem;
+    padding-right: 1rem;
+    box-sizing: border-box;
+    width: 100%;
+    }
 .faq-wrap .section2 .cover:nth-of-type(1) {
     padding: 1rem 1rem;
     border-bottom: 1px solid #000;

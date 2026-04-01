@@ -9,6 +9,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    aspect-ratio: 1/1;
 }
 
 /* 코쿤 픽 리스트 스타일 */
@@ -275,6 +276,7 @@ element.style {
 }
 .desc-best h4{
     font-size: var(--heading-4);
+    white-space: nowrap;
 }
 .desc-best p{
     font-size: var(--body-2);
@@ -928,6 +930,9 @@ body {
     .content-box {
         padding: 3rem 1.5rem 7rem;
     }
+    .desc-best h4 {
+        font-size: var(--detail);
+    }
 }
 
 @media (max-width:333px){
@@ -962,4 +967,5 @@ body {
         margin-bottom: 3rem;
         text-align: center;
     }
+    
 }
