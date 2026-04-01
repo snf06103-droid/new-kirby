@@ -253,9 +253,14 @@
     .mg{
         margin-bottom: .5rem;
     }
+    .items>figure {
+        margin-bottom: 1rem;
+        width: 4rem;
+        aspect-ratio: 1/1;
+    }
 }
 
-@media (max-width:950px){
+@media (max-width:786px){
     .custom-order .none{
         display: none;
     }
@@ -311,7 +316,7 @@
     }
     .custom-accout figure {
         width: auto;
-        aspect-ratio: 338/443;
+        aspect-ratio: 346/290;
         margin-bottom: 2rem;
     }
     .custom-step .step {
@@ -321,6 +326,47 @@
     .active-grid{
         padding: 1rem;
     }
+    .items>figure {
+        width: 7rem;
+    }
+    .custom-order {
+        background: url(../../images/custom/bg.jpg) no-repeat 41% -9%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+            url('../../images/custom/bg.jpg');
+        background-size: initial;
+    }
+    .main-text h1:nth-last-of-type(1) {
+        margin-bottom: 1.4rem;
+    }
+    .custom-container {
+        padding: 0;
+        padding-top: 4rem ;
+    }
+    .cart-box {
+        padding: 11px 37px;
+        justify-content: center;
+        gap: 25px;
+        margin: 0 2rem 2rem;
+    }
+    .custom-accout figure {
+        width: auto;
+        aspect-ratio: 346/290;
+        margin: 2rem;
+    }
+    .active-size {
+        margin: var(--margin-main-text);
+    }
+    .active-size .option {
+        margin-bottom: 1rem;
+        padding: 7px;
+        border-bottom: 1px solid #000;
+    }
+    .custom-panel{
+        background-color: var(--neutral-color);
+        box-shadow: none;
+    }
+
+
     /* 1. 기본적으로 모든 단계 숨김 */
     .custom-menu {
         display: none;
@@ -346,7 +392,30 @@
         justify-content: space-between;
         gap: 0px;
     }
+    .items>figure {
+        width: 5.7rem;
+    }
 
+}
+@media (max-width:388px){
+    .cart-box {
+        flex-direction: column;
+    }
+    .order-button {
+        flex-direction: row;
+    }
+    .order-button>span>a {
+        padding: 0.5rem 0.8rem;
+    }
+    .main-text h1 {
+        font-size: 1.5rem;
+    }
+    .cart-box {
+        padding: 10px 2rem;
+        justify-content: center;
+        gap: 1rem;
+        margin: 0 1rem 2rem;
+    }
 }
 @media (max-width:310px){
     .items>figure {
@@ -355,4 +424,5 @@
     .items:hover>p {
         width: 4rem;
     }
+    
 }
