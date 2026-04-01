@@ -197,6 +197,12 @@
     .story-img-box>.photo-1 {
         width: auto;
         height: 100%;
+        aspect-ratio: 200/236;
+    }
+    .story-img-box>.photo-2 {
+        width: auto;
+        height: 100%;
+        aspect-ratio: 86/236;
     }
     
     .brand-mind {
