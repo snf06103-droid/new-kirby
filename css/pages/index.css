@@ -262,7 +262,7 @@ element.style {
 
 .best-container figure{
     width: 400px;
-    height: 400px;
+    
 }
 .best-container>figure>a{
     position: relative;
@@ -452,6 +452,9 @@ body {
 .best-flex .best-container .swiper-slide {
     text-align: start;
 }
+.best-banner figure{
+    width: 100%;
+}
 
 
 @media (max-width:1440px){
@@ -634,9 +637,6 @@ body {
     }
     .new-product .banner {
         margin-bottom: 11rem
-    }
-    .swiper-wrapper .swiper-slide{
-        height: 500px;
     }
     .pick-list>h1 {
         text-align: center;
