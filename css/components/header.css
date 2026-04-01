@@ -68,21 +68,23 @@ header .lnb{
 }
 .header-smart{display: none;}
 .menu-smart-hidden{display: none;}
-
+.gnb-smart>li>a>span{
+    display: none;
+}
 
 @media (max-width:1440px){
     header{display: none;}
     .menu-smart-hidden{
-        /* transform: translateX(-100%); */
-        filter: blur(50px);
-        opacity: 0;
+        transform: translateX(100%);
+        /* filter: blur(50px); */
+        /* opacity: 1; */
         pointer-events: none;
         transition: all 0.7s ease 0s;
     }
     .menu-smart-hidden.on{
-        /* transform: translateX(0%); */
+        transform: translateX(0%);
         filter: blur(0px);
-        opacity: 1;
+        /* opacity: 1; */
         pointer-events: auto;
     }
     .header-smart{
@@ -201,7 +203,7 @@ header .lnb{
         margin-bottom: 3rem;
     }
     .menu-content {
-        margin: 1rem 1rem;
+        margin: 1rem 0;
     }
     .menu-top {
         margin-bottom: 1rem;
@@ -212,6 +214,7 @@ header .lnb{
     .gnb-smart>li{
         max-height: 50px;
         overflow: hidden;
+        position: relative;
     }
     .menu-sns .sns {
         width: 100%;
@@ -225,6 +228,49 @@ header .lnb{
         height: 50px;
     }
     .gnb-smart>li.on{
-        max-height: 300px;
+        max-height: 500px;
+    }
+    .menu-top .common-frame {
+        height: 50px;
+    }
+    .gnb-smart>li>a {
+        text-align: start;
+    }
+    .gnb-smart>li>a>span{
+        display: block;
+        width: 24px;
+        aspect-ratio: 1/1;
+    }
+    .gnb-smart>li .btn-more img {
+        transition: all .5s ease 0s;
+        width: 24px;
+        height: 24px;
+    }
+    .gnb-smart>li.on .btn-more img{
+        transform: rotate(180deg);
+    }
+    .btn-more{
+        position: absolute;
+        padding-left: 20px;
+        height:40px;
+        right:0;
+        top:0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+    }
+    .gnb-smart .depth2 {
+        font-size: var(--body-1);
+    }
+}
+
+@media (max-width:350px){
+    .gnb-smart>li>a {
+        font-size: var(--heading-4);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
     }
 }

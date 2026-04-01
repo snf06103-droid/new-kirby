@@ -2,10 +2,10 @@
 }
 .station{
     width: 100%;
-    /* height: 900px; */
+    height: 900px;
     
 }
-.swiper img{
+.best-box .swiper img{
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -448,13 +448,16 @@ body {
 .main-page-bn .none-mo{
     display: block;
 }
-.main-page-bn mo{
+.main-page-bn .mo{
     display: none;
 }
 .best-flex .best-container .swiper-slide {
     text-align: start;
 }
 .best-banner figure{
+    width: 100%;
+}
+.best-banner figure img{
     width: 100%;
 }
 
@@ -560,8 +563,8 @@ body {
         flex-direction: column;
         gap: 2rem;
     }
-    .best-box>.common-frame {
-        margin: 0;
+    .best-box>.common-frame>h1{
+        margin-bottom: 3rem;
     }
     .look-book-section.pc{
         display: none;
@@ -771,7 +774,7 @@ body {
     .main-page-bn .none-mo{
         display: none;
     }
-    .main-page-bn mo{
+    .main-page-bn .mo{
         display: block;
     }
     .main-page-bn figure {

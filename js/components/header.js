@@ -12,32 +12,35 @@ window.addEventListener('scroll', () => {
     }
 });
 
-// [2] 클릭 이벤트 통합 (이벤트 위임 방식 - 헤더가 나중에 로드되어도 작동함)
+// 
+
+// 클릭 이벤트 통합
 document.addEventListener('click', function(e) {
-    // 클릭한 요소의 가장 가까운 부모 중 해당 클래스가 있는지 확인
     const btnMenu = e.target.closest('.btn-menu');
     const btnClose = e.target.closest('.btn-close');
-    const btnMore = e.target.closest('.btn-more'); // 모바일 2뎁스 버튼
+    const btnMore = e.target.closest('.btn-more'); // 모바일 2뎁스 버튼 클릭 타겟
     
     const menuSmart = document.querySelector('.menu-smart-hidden');
 
-    // 1. 메뉴 열기
+    //메뉴 열기
     if (btnMenu && menuSmart) {
         menuSmart.classList.add('on');
-        console.log("모바일 메뉴 열림");
     }
 
-    // 2. 메뉴 닫기
+    //메뉴 닫기
     if (btnClose && menuSmart) {
         menuSmart.classList.remove('on');
-        // 닫을 때 펼쳐졌던 서브메뉴들도 초기화
         document.querySelectorAll(".gnb-smart > li").forEach(li => li.classList.remove("on"));
-        console.log("모바일 메뉴 닫힘");
     }
 
-    // 3. 모바일 2뎁스 아코디언 (btn-more 클릭 시)
+    //모바일 2뎁스 메뉴 토글 (이벤트 위임 방식)
+    // 버튼을 클릭했을 때 바로 실행되도록 수정함
     if (btnMore) {
-        // 부모 li에 'on' 클래스 토글
-        btnMore.parentElement.classList.toggle("on");
+        // 클릭한 btn-more의 부모인 li를 찾아서 'on' 토글
+        const parentLi = btnMore.parentElement;
+        if (parentLi) {
+            parentLi.classList.toggle("on");
+            console.log("2뎁스 토글됨");
+        }
     }
 });
