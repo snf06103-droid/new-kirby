@@ -228,7 +228,7 @@
 
 
 @media (max-width:1440px){
-    .list-wrap .banner {
+    .list-wrap #main-banner {
         height: 400px;
     }
     .product-grid {
@@ -257,7 +257,7 @@
 
 }
 
-@media (max-width:890px){
+@media (max-width:768px){
     .product-grid {
         grid-template-columns: repeat(2,1fr);
     }
@@ -283,11 +283,47 @@
     .pagination-container button img{
         width: 20px;
     }
-    
+    .list-wrap #main-banner {
+        height: 350px;
+    }
+    .bottom-banner {
+        background: url(../../images/main-page/mainpage-banner-mo.jpg) no-repeat 50% 50% / cover;
+        height: 300px;
+        margin-bottom: 10rem;
+        margin: 0;
+    }
+    .list-wrap #main-banner {
+        height: auto;
+        width: 100%;
+        aspect-ratio: 402/350;
+    }
 }
 
 @media (max-width:370px){
-
+    .product-grid {
+        gap: 3rem 1rem;
+        height: auto;
+    }
+    .color .color-ball span {
+        width: 10px;
+        height: 10px;
+    }
+    .color-ball {
+        width: 44px;
+    }
+    .color-box {
+        gap: .3rem;
+    }
+    .product-description {
+        display: flex;
+        gap: .5rem;
+        flex-direction: column;
+    }
+    .product-option {
+        display: flex;
+        flex-direction: column;
+        gap: .2rem;
+    }
 }
 
 @media (max-width:350px){

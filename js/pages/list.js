@@ -1,35 +1,3 @@
-// // [1] 전역 상태 변수
-// let currentSort = 'default'; // 기본값: 신상품순(데이터 순서)
-// let currentPage = 1;
-// let itemsPerPage = 9;
-// let currentCategory = 'all';
-
-// // [2] 페이지 변경 함수
-// function changePage(pageNumber) {
-//     currentPage = pageNumber;
-//     renderProducts();
-//      window.scrollTo(0, 500); // 페이지 이동 시 리스트 시작점으로 스크롤 (선택사항)
-// }
-
-// // [3] 페이지네이션 버튼 생성 함수
-// function renderPagination(totalItems) {
-//     const paginationContainer = document.querySelector(".pagination-container");
-//     if (!paginationContainer) return;
-
-//     const totalPages = Math.ceil(totalItems / itemsPerPage);
-//     let paginationHtml = '';
-    
-//     for (let i = 1; i <= totalPages; i++) {
-//         // 현재 페이지(currentPage)와 버튼 번호(i)가 같으면 'active' 클래스 추가
-//         paginationHtml += `
-//             <button class="page-num ${i === currentPage ? 'active' : ''}" 
-//                     onclick="changePage(${i})">${i}</button>
-//         `;
-//     }
-//     paginationContainer.innerHTML = paginationHtml;
-// }
-// [1] 전역 상태 변수 (초기 설정)
-// [1] 전역 상태 변수
 let currentSort = 'default'; 
 let currentPage = 1;
 let currentCategory = 'all';
@@ -121,7 +89,11 @@ function renderProducts() {
 
     // 1. 배너 이미지 업데이트 (all일 때는 기본 chair 이미지)
     if (banner) {
-        const bannerImg = currentCategory === 'all' ? 'chair' : currentCategory;
+       const categoryImg = currentCategory === 'all' ? 'chair' : currentCategory;
+
+       const isMobileSize = window.innerWidth <= 768;
+        const bannerImg = isMobileSize ? `${categoryImg}-mo` : categoryImg;
+
         banner.style.background = `url(../../images/list/banner/${bannerImg}.jpg) no-repeat 50% 50% / cover`;
     }
 

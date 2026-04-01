@@ -53,6 +53,9 @@
     .as-box>section>h4{
         text-align: center;
     }
+    .as-wrap .as-text.non-mo{
+        display: none;
+    }
 
 }
 
