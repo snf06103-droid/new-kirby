@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     },{
         threshold:0.3 // 태그가 화면에 30%이상 보일 때 트리거
     })
-    document.querySelectorAll(".ltr").forEach(tag=>{observer.observe(tag)})
+    document.querySelectorAll(".ltr, .blur, .btt").forEach(tag=>{observer.observe(tag)})
     // ()부분만 수정하면 됨
 
 })

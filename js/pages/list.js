@@ -8,7 +8,7 @@ let currentCategory = 'all';
 function changePage(pageNumber) {
     currentPage = pageNumber;
     renderProducts();
-    // window.scrollTo(0, 500); // 페이지 이동 시 리스트 시작점으로 스크롤 (선택사항)
+     window.scrollTo(0, 500); // 페이지 이동 시 리스트 시작점으로 스크롤 (선택사항)
 }
 
 // [3] 페이지네이션 버튼 생성 함수

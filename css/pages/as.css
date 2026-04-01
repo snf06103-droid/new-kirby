@@ -1,5 +1,5 @@
 .as-wrap .as-banner{
-    height: 400px;
+    height: 600px;
     background: url(../../images/cs/as-banner.jpg) no-repeat 50% 50% / cover;
     color: #fff;
 }
@@ -22,7 +22,12 @@
 }
 
 @media (max-width:1440px){
-
+    .as-wrap .as-banner{
+        height: 400px;
+    }
+    element.style {
+        font-size: var(--body-2);
+    }
 }
 
 @media (max-width:768px){

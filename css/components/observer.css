@@ -7,10 +7,19 @@
     transform: translateX(0px);
     opacity: 1;
 }
-.blur{
-    filter: blur(50px);
+.btt{
+    transform: translateY(300px);
     opacity: 0;
-    transition: all 0.8s ease 0s;
+    transition: all 0.5s ease 0s;
+}
+.btt.on{
+    transform: translateY(0px);
+    opacity: 1;
+}
+.blur{
+    filter: blur(60px);
+    opacity: 0;
+    transition: all 0.5s ease 0s;
 }
 .blur.on{
     filter: blur(0px);

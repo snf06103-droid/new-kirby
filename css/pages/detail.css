@@ -167,7 +167,6 @@ element.style {
     justify-content: flex-end;
     align-items: center;
     gap: 0.4rem;
-    border: 1px solid red;
     margin-bottom: 2rem;
 }
 .review-item{
@@ -527,6 +526,7 @@ max-height: 200px;
 .cart-btn img{
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 .heart{
     display: block;
@@ -542,12 +542,13 @@ max-height: 200px;
 }
 
 
+
 /* 제품 상세 페이지 스티키메뉴 스타일 */
 .sticky-menu-wrap {
     width: 953px;
-    position: sticky;
+    /* position: sticky;
     top:120px;
-    left: 0;
+    left: 0; */
     margin-bottom: 2rem;
 }
 .sticky-menu{
@@ -560,7 +561,7 @@ max-height: 200px;
     border: 1px solid red;
 }
 .sticky-menu>li.active>a{
-    background-color: rgba(6, 49, 30, 0.6);
+    background-color: var(--point-color-2);
 }
 .sticky-menu>li>a{
     width: 130px;
@@ -569,7 +570,7 @@ max-height: 200px;
     justify-content: center;
     align-items: center;
     color: #fff;
-    background-color: rgba(71, 111, 145, 0.6);
+    background-color: var(--point-color-1);
     
     font-weight: var(--bold-weight);
 }
