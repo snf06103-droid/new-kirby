@@ -1,31 +1,115 @@
+// // [1] 전역 상태 변수
+// let currentSort = 'default'; // 기본값: 신상품순(데이터 순서)
+// let currentPage = 1;
+// let itemsPerPage = 9;
+// let currentCategory = 'all';
+
+// // [2] 페이지 변경 함수
+// function changePage(pageNumber) {
+//     currentPage = pageNumber;
+//     renderProducts();
+//      window.scrollTo(0, 500); // 페이지 이동 시 리스트 시작점으로 스크롤 (선택사항)
+// }
+
+// // [3] 페이지네이션 버튼 생성 함수
+// function renderPagination(totalItems) {
+//     const paginationContainer = document.querySelector(".pagination-container");
+//     if (!paginationContainer) return;
+
+//     const totalPages = Math.ceil(totalItems / itemsPerPage);
+//     let paginationHtml = '';
+    
+//     for (let i = 1; i <= totalPages; i++) {
+//         // 현재 페이지(currentPage)와 버튼 번호(i)가 같으면 'active' 클래스 추가
+//         paginationHtml += `
+//             <button class="page-num ${i === currentPage ? 'active' : ''}" 
+//                     onclick="changePage(${i})">${i}</button>
+//         `;
+//     }
+//     paginationContainer.innerHTML = paginationHtml;
+// }
+// [1] 전역 상태 변수 (초기 설정)
 // [1] 전역 상태 변수
-let currentSort = 'default'; // 기본값: 신상품순(데이터 순서)
+let currentSort = 'default'; 
 let currentPage = 1;
-let itemsPerPage = 9;
 let currentCategory = 'all';
+
+// 반응형: 모바일(768px 미만)이면 6개, 아니면 9개로 시작
+let itemsPerPage = window.innerWidth < 768 ? 6 : 9;
+
+// 브라우저 리사이즈 대응
+window.addEventListener('resize', () => {
+    const newItemsPerPage = window.innerWidth < 768 ? 6 : 9;
+    if (itemsPerPage !== newItemsPerPage) {
+        itemsPerPage = newItemsPerPage;
+        currentPage = 1; 
+        renderProducts(); 
+    }
+});
 
 // [2] 페이지 변경 함수
 function changePage(pageNumber) {
+    // 1페이지보다 작거나 총 페이지보다 큰 경우 실행 방지 로직은 renderPagination에서 버튼 활성화로 제어
     currentPage = pageNumber;
-    renderProducts();
-     window.scrollTo(0, 500); // 페이지 이동 시 리스트 시작점으로 스크롤 (선택사항)
+    renderProducts(); 
+    
+    // 페이지 이동 시 리스트 시작점으로 부드럽게 스크롤
+    // window.scrollTo({
+    //     top: 500, 
+    //     behavior: 'smooth'
+    // });
 }
 
-// [3] 페이지네이션 버튼 생성 함수
+// [3] 페이지네이션 버튼 생성 함수 (5개씩 그룹핑 버전)
 function renderPagination(totalItems) {
     const paginationContainer = document.querySelector(".pagination-container");
     if (!paginationContainer) return;
 
     const totalPages = Math.ceil(totalItems / itemsPerPage);
+    const pageGroupSize = 5; // 한 번에 보여줄 페이지 번호 개수
+    
+    // 현재 페이지가 속한 그룹 계산 (1~5페이지는 0번 그룹, 6~10페이지는 1번 그룹)
+    const currentGroup = Math.floor((currentPage - 1) / pageGroupSize);
+    
+    // 현재 그룹의 시작 번호와 끝 번호 설정
+    let startPage = currentGroup * pageGroupSize + 1;
+    let endPage = startPage + pageGroupSize - 1;
+    
+    // 끝 번호가 실제 총 페이지를 넘지 않도록 제한
+    if (endPage > totalPages) endPage = totalPages;
+
     let paginationHtml = '';
     
-    for (let i = 1; i <= totalPages; i++) {
-        // 현재 페이지(currentPage)와 버튼 번호(i)가 같으면 'active' 클래스 추가
+    // 페이지가 1개 이하일 경우 페이지네이션 숨김
+    if (totalPages <= 1) {
+        paginationContainer.innerHTML = '';
+        return;
+    }
+
+    // 1. 이전 화살표 (이전 페이지로 이동)
+    paginationHtml += `
+        <button class="page-arrow prev" ${currentPage === 1 ? 'disabled' : ''} 
+                onclick="changePage(${currentPage - 1})">
+            <img src="../../assets/icons/left.svg" alt="이전">
+        </button>
+    `;
+
+    // 2. 현재 그룹에 속한 숫자 버튼 생성 (startPage ~ endPage)
+    for (let i = startPage; i <= endPage; i++) {
         paginationHtml += `
             <button class="page-num ${i === currentPage ? 'active' : ''}" 
                     onclick="changePage(${i})">${i}</button>
         `;
     }
+
+    // 3. 다음 화살표 (다음 페이지로 이동)
+    paginationHtml += `
+        <button class="page-arrow next" ${currentPage === totalPages ? 'disabled' : ''} 
+                onclick="changePage(${currentPage + 1})">
+            <img src="../../assets/icons/right.svg" alt="다음">
+        </button>
+    `;
+
     paginationContainer.innerHTML = paginationHtml;
 }
 
