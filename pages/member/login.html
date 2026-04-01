@@ -21,7 +21,7 @@
             <div class="login-tabs">
                 <label for="login">
                     <input type="radio" id="login" name="user-type" checked>
-                    로그인
+                    회원
                 </label>
                 <label for="nonmember">
                     <input type="radio" id="nonmember" name="user-type">
@@ -71,12 +71,16 @@
         <div class="login-container">
             <div class="user-input">
                 <div class="input-box">
+                    <label for="user-order-name">주문자명</label>
+                    <input type="text" id="user-order-name" name="user-order-name">
+                </div>
+                <div class="input-box">
                     <label for="user-order-number">주문번호</label>
                     <input type="number" id="user-order-number" name="user-order-number">
                 </div>
                 <div class="input-box">
-                    <label for="user-number">핸드폰번호</label>
-                    <input type="number" id="user-number" name="user-number">
+                    <label for="user-password">비회원주문 비밀번호</label>
+                    <input type="password" id="user-password" name="user-password">
                 </div>
             </div>
         </div>
@@ -85,7 +89,7 @@
         </div>
     </div>
 
-    <div class="sign-up">
+    <div class="sign-up none-mo">
         <div class="sns-icons">
             <p class="body2 light magin05">소셜 로그인</p>
             <a href="#">

@@ -51,6 +51,7 @@
     height: 40px;
     font-size: 18px;
     background-color: inherit;
+    box-sizing: border-box;
 }
 .password-input-container {
     position: relative;
@@ -108,8 +109,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 141px;
-    height: 46px;
+    padding: 5px 2rem;
     background-color: var(--main-color);
     color: #fff;
     font-size: var(--heading-4);
@@ -118,6 +118,7 @@
 .login-links{
     width: 100%;
     display: flex;
+    align-items: center;
 }
 .login-links a{
     flex: 1;
@@ -162,7 +163,48 @@
 }
 
 @media (max-width:768px){
-
+    .container1 {
+        margin: 2rem;
+    }
+    .container2 {
+        margin: 0 2rem;
+        color: #9C9C9C;
+        margin-bottom: 2rem;
+    }
+    .login-container {
+        width: auto;
+    }
+    .login-type {
+        flex-direction: column;
+        gap: 7px;
+    }
+    .login-tabs {
+        gap: 3rem;
+    }
+    .login-links a {
+        font-size: var(--detail);
+    }
+    .sign-up.none-mo{
+        display: none !important;
+    }
+    .login {
+        margin-bottom: 7rem;
+    }
+    .login-buttons{
+        width: 280px;
+    }
+    .user-input {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        margin: 0 2rem 2rem;
+    }
+    .nomembership .login-container {
+        margin-bottom: 2rem;
+    }
+    .nomembership .login-buttons {
+        margin-bottom: 7rem;
+    }
 }
 
 @media (max-width:370px){
