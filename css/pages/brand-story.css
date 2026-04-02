@@ -195,6 +195,7 @@
         gap: 3rem;
     }
     .story-img-box>.photo-1 {
+        flex: 100;
         width: auto;
         height: 100%;
         aspect-ratio: 200/236;
@@ -203,6 +204,7 @@
         width: auto;
         height: 100%;
         aspect-ratio: 86/236;
+        flex: 43;
     }
     
     .brand-mind {

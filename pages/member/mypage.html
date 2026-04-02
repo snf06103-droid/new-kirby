@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>2UC 마이페이지</title>
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/components/header.css">
@@ -11,6 +11,10 @@
     <link rel="stylesheet" href="../../css/pages/mypage.css">
     <script src="../../js/components/header.js"></script>
     <script src="../../js/pages/mypage.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
 </head>
 <body>
     <div id="site-header"></div>
@@ -40,22 +44,43 @@
             </div>
             <div class="view">
                 <h1>최근 본 상품</h1>
-                <ul class="view-box">
-                    <li><img src="../../images/list/all/desk-12.jpg" alt=""></li>
-                    <li><img src="../../images/list/all/lamp-12.png" alt=""></li>
-                    <li><img src="../../images/list/all/sofa-8.png" alt=""></li>
-                    <li><img src="../../images/list/all/booself-10.jpg" alt=""></li>
-                </ul>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="../../images/list/all/desk-12.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/lamp-12.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/sofa-8.png" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/booself-10.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/desk-39.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/lamp-1.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/desk-26.jpg" alt=""></div>
+                        <div class="swiper-slide"><img src="../../images/list/all/booself-5.jpg" alt=""></div> 
+                   </div>
+                </div>
+
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 5,
+                    spaceBetween: 18,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    });
+                </script>
+
             </div>
+            <h1 class="title">결제 상품 배송 현황</h1>
             <div class="delivery">
                 <div class="mypage-back">
                     <img src="../../assets/icons/arow-left.svg" alt="마이페이지로돌아가기버튼">
                 </div>
-                <h1>결제 상품 배송 현황</h1>
                 <div class="delivery-box">
                     <div class="delivery-product">
                         <figure>
-                            <img src="../../images/list/all/desk-14.jpg" alt="">
+                            <img src="../../images/list/all/booself-3.jpg" alt="CLASSON BEDSIDEs">
                         </figure>
                         <div class="delivery-option">
                             <div class="desc">
