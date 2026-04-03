@@ -154,3 +154,13 @@
     padding: 4px 1rem;
     color: #fff;
 }
+
+@media (max-width:1440px){
+    .coupon .banner {
+        height: 700px;
+    }
+}
+
+@media (max-width:350px){
+    
+}

@@ -603,5 +603,8 @@
         flex-direction: column;
         gap: 0;
     }
+    .status-desc3 .dl-flex dl {
+        gap: inherit;
+    }
     
 }
