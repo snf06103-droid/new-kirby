@@ -1,0 +1,38 @@
+.course{
+    margin: 10rem 0;
+}
+.course .common-frame{
+    background-color: #fff;
+    padding: 2rem 2.5rem;
+}
+.course h1{
+    text-align: center;
+    margin-bottom: 5rem;
+}
+.course .text-course{
+    padding: 1rem;
+    border: 1px solid var(--point-color-1);
+    white-space: pre-wrap;
+    font-size: var(--detail);
+    font-weight: var(--light-weight);
+    height: 1400px;
+    overflow-y: auto;
+}
+@media (max-width:1440px){
+    .course .common-frame {
+        padding: 2rem;
+        margin: 0 5rem;
+    }
+}
+@media (max-width:768px){
+    .course .common-frame {
+        margin: 0 2rem;
+        padding: 2rem .5rem;
+    }
+}
+@media (max-width:360px){
+    .course .common-frame {
+        margin: 0 1rem;
+        padding: 2rem .5rem;
+    }
+}

@@ -171,9 +171,78 @@
     .coupon-box .btn {
         padding: .5rem 2.1rem;
     }
+    .btn img {
+        width: 30px;
+        height: 30px;
+    }
     
 }
 
-@media (max-width:350px){
+@media (max-width:768px){
+    .coupon .banner {
+        width: 100%;
+        height: 400px;  
+    }
+    .coupon>h1{
+        font-size: var(--heading-2);
+        margin-bottom: 1rem;
+    }
+    .coupon-box .desc .bold {
+        font-size: 2.9rem;
+    }
+    .coupon-box li {
+        padding: 2rem;
+    }
+    .coupon-box .desc h2 {
+        font-size: var(--heading-3);
+    }
+    .coupon-box li {
+        width: 100%;
+        height: auto;
+        gap: 4rem;
+        padding: 2rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .coupon-box .btn {
+        padding: .5rem 2.1rem;
+        width: 100%;
+        box-sizing: border-box;
+        font-size: var(--heading-3);
+    }
+    .coupon-box .btn {
+        padding: .5rem 2.1rem;
+    }
+    .btn img {
+        width: 15px;
+        height: 15px;
+    }
     
+}
+@media (max-width:336px){
+    .coupon .banner {
+        height: 300px;  
+    }
+}
+
+@media (max-width:290px){
+    .coupon .banner {
+        height: 250px;  
+    }
+    .btn-cp-option li {
+        padding: 4px .5rem;
+    }
+    .coupon-box .desc .gray {
+        margin-bottom: 2rem;
+        color: rgba(0, 0, 0, 0.6);
+    }
+    .coupon-box li {
+        gap: 2rem;
+    }
+    .coupon-box {
+        margin-bottom: 5rem;
+    }
+    .coupon-box .desc .bold {
+        font-size: 2.5rem;
+    }
 }
