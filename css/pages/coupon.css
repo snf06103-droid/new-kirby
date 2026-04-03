@@ -16,8 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 104px;
-    height: 33px;
+   padding: 4px 1rem;
     border-radius: 10px;
     border: 1px solid #000;
     cursor: pointer;
@@ -31,7 +30,6 @@
 .coupon-box li{
     background-color: #fff;
     width: 100%;
-    height: 332px;
     padding: 2rem 10rem;
     box-sizing: border-box;
     display: flex;
@@ -54,8 +52,7 @@
     font-weight: var(--bold-weight);
 }
 .coupon-box .btn{
-    width: 250px;
-    height: 54px;
+    padding: .5rem 2.8rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,6 +60,8 @@
     border-radius: 90px;
     border: 1px solid var(--point-color-2);
     cursor: pointer;
+    font-size: var(--heading-2);
+    font-weight: var(--bold-weight);
 }
 .btn img{
     width: 35px;
@@ -110,10 +109,7 @@
 
 /* 주의사항 스타일 */
 .coupon .notes{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 353px;
+    padding: 6rem 0;
     background-color: #F5F5F5;
     margin-bottom: 10rem;
 }
@@ -159,7 +155,23 @@
     .coupon .banner {
         height: 700px;
     }
-    .
+    .coupon-box li {
+        background-color: #fff;
+        width: 100%;
+        height: 332px;
+        padding: 2rem 2.65rem;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .coupon-box .desc .bold {
+        font-size: 3.125rem;
+    }
+    .coupon-box .btn {
+        padding: .5rem 2.1rem;
+    }
+    
 }
 
 @media (max-width:350px){
