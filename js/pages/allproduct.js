@@ -3,10 +3,12 @@ const allProduct = [
     { 
         id: 1, 
         category: "chair", 
-        name: "Lumiere White Chair", 
+        name: "54 CHAIR - TEDDY MUSTARD", 
         price: "450000", 
         img: "chair-1.jpg", 
         hoverImg: "chair-hv-1.jpg",
+        detailImages: [],
+        descriptionImg:"dt-chair-1.jpg",
     },
     { 
         id: 2, 
@@ -15,6 +17,8 @@ const allProduct = [
         price: "550000", 
         img: "chair-2.jpg", 
         hoverImg: "chair-hv-2.png",
+        detailImages: [],
+        descriptionImg:"dt-chair-2.jpg",
     },
     { 
         id: 3, 
@@ -23,6 +27,8 @@ const allProduct = [
         price: "650000", 
         img: "chair-3.jpg", 
         hoverImg: "chair-hv-3.jpg",
+        detailImages: [],
+        descriptionImg:"dt-chair-3.jpg",
     },
     { 
         id: 4, 
@@ -31,6 +37,8 @@ const allProduct = [
         price: "360000", 
         img: "chair-4.png", 
         hoverImg: "chair-hv-4.png",
+        detailImages: [],
+        descriptionImg:"dt-chair-4.jpg",
     },
     { 
         id: 5, 
@@ -39,6 +47,8 @@ const allProduct = [
         price: "4560000", 
         img: "chair-5.jpg", 
         hoverImg: "chair-hv-5.jpg",
+        detailImages: [],
+        descriptionImg:"dt-chair-5.jpg",
     },
     { 
         id: 6, 
@@ -225,6 +235,8 @@ const allProduct = [
         price: "850000", 
         img: "desk-1.jpg", 
         hoverImg: "desk-hv-1.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-1.jpg",
     },
     { 
         id: 29, 
@@ -241,6 +253,8 @@ const allProduct = [
         price: "945000", 
         img: "desk-3.jpg", 
         hoverImg: "desk-hv-3.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-3.jpg",
     },
     { 
         id: 31, 
@@ -257,6 +271,8 @@ const allProduct = [
         price: "960000 ", 
         img: "desk-5.jpg", 
         hoverImg: "desk-hv-5.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-5.jpg",
     },
     { 
         id: 33, 
@@ -273,6 +289,8 @@ const allProduct = [
         price: "1400000 ", 
         img: "desk-7.jpg", 
         hoverImg: "desk-hv-7.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-7.jpg",
     },
     { 
         id: 35, 
@@ -281,6 +299,8 @@ const allProduct = [
         price: "880000", 
         img: "desk-8.jpg", 
         hoverImg: "desk-hv-8.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-8.jpg",
     },
     { 
         id: 36, 
@@ -289,6 +309,8 @@ const allProduct = [
         price: "920000", 
         img: "desk-9.jpg", 
         hoverImg: "desk-hv-9.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-9.jpg",
     },
     { 
         id: 37, 
@@ -305,6 +327,8 @@ const allProduct = [
         price: "1600000", 
         img: "desk-11.jpg", 
         hoverImg: "desk-hv-11.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-11.jpg",
     },
     { 
         id: 39, 
@@ -313,6 +337,8 @@ const allProduct = [
         price: "940000", 
         img: "desk-12.jpg", 
         hoverImg: "desk-hv-12.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-12.jpg", 
     },
     { 
         id: 40, 
@@ -321,6 +347,8 @@ const allProduct = [
         price: "1400000", 
         img: "desk-13.jpg", 
         hoverImg: "desk-hv-13.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-13.jpg",
     },
     { 
         id: 41, 
@@ -329,6 +357,8 @@ const allProduct = [
         price: "1600000", 
         img: "desk-14.jpg", 
         hoverImg: "desk-hv-14.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-14.jpg",
     },
     { 
         id: 42, 
@@ -337,6 +367,8 @@ const allProduct = [
         price: "1500000", 
         img: "desk-15.jpg", 
         hoverImg: "desk-hv-15.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-15.jpg",
     },
     { 
         id: 43, 
@@ -345,6 +377,8 @@ const allProduct = [
         price: "900000", 
         img: "desk-16.jpg", 
         hoverImg: "desk-hv-16.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-16.jpg",
     },
     { 
         id: 44, 
@@ -353,6 +387,8 @@ const allProduct = [
         price: "800000", 
         img: "desk-17.jpg", 
         hoverImg: "desk-hv-17.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-17.jpg",
     },
     { 
         id: 45, 
@@ -361,6 +397,8 @@ const allProduct = [
         price: "880000 ", 
         img: "desk-18.jpg", 
         hoverImg: "desk-hv-18.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-18.jpg",
     },
     { 
         id: 46, 
@@ -369,6 +407,8 @@ const allProduct = [
         price: "850000", 
         img: "desk-19.jpg", 
         hoverImg: "desk-hv-19.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-19.jpg",
     },
     { 
         id: 47, 
@@ -377,6 +417,8 @@ const allProduct = [
         price: "960000", 
         img: "desk-20.jpg", 
         hoverImg: "desk-hv-20.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-20.jpg",
     },
     { 
         id: 48, 
@@ -385,6 +427,8 @@ const allProduct = [
         price: "990000", 
         img: "desk-21.jpg", 
         hoverImg: "desk-hv-21.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-21.jpg",
     },
     { 
         id: 49, 
@@ -401,6 +445,8 @@ const allProduct = [
         price: "1530000", 
         img: "desk-23.jpg", 
         hoverImg: "desk-hv-23.jpg",
+        detailImages: ["desk-23-1.jpg", "desk-23-1.jpg", "desk-23-1.jpg"],
+        descriptionImg:"dt-desk-23.jpg",
     },
     { 
         id: 51, 
@@ -409,6 +455,8 @@ const allProduct = [
         price: "920000", 
         img: "desk-24.jpg", 
         hoverImg: "desk-hv-24.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-24.jpg",
     },
     { 
         id: 52, 
@@ -417,6 +465,8 @@ const allProduct = [
         price: "1100000", 
         img: "desk-25.jpg", 
         hoverImg: "desk-hv-25.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-25.jpg",
     },
     { 
         id: 53, 
@@ -425,6 +475,8 @@ const allProduct = [
         price: "1300000", 
         img: "desk-26.jpg", 
         hoverImg: "desk-hv-26.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-26.jpg",
     },
     { 
         id: 54, 
@@ -457,6 +509,8 @@ const allProduct = [
         price: "1100000", 
         img: "desk-30.jpg", 
         hoverImg: "desk-hv-30.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-30.jpg",
     },
     { 
         id: 58, 
@@ -489,6 +543,8 @@ const allProduct = [
         price: "1050000", 
         img: "desk-34.jpg", 
         hoverImg: "desk-hv-34.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-34.jpg",
     },
     { 
         id: 62, 
@@ -513,6 +569,8 @@ const allProduct = [
         price: "1000000", 
         img: "desk-37.jpg", 
         hoverImg: "desk-hv-37.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-37.jpg",
     },
     { 
         id: 65, 
@@ -577,6 +635,8 @@ const allProduct = [
         price: "950000", 
         img: "desk-45.jpg", 
         hoverImg: "desk-hv-45.jpg",
+        detailImages: [],
+        descriptionImg:"dt-desk-45.jpg",
     },
     { 
         id: 73, 
@@ -617,14 +677,18 @@ const allProduct = [
         price: "1370000", 
         img: "desk-50.jpg", 
         hoverImg: "desk-hv-50.jpg",
+        detailImages: ["desk-50-1", "desk-50-2", "desk-50-3"],
+        descriptionImg:"dt-desk-50.jpg",
     },
     { 
         id: 78, 
         category: "desk", 
-        name: "", 
+        name: "2UC TRIANGLE CONSOLE", 
         price: "990000", 
         img: "desk-51.jpg", 
         hoverImg: "desk-hv-51.jpg",
+        detailImages: ["desk-51-1", "desk-51-2", "desk-51-3"],
+        descriptionImg:"dt-desk-51.jpg",
     },
     { 
         id: 79, 
@@ -651,6 +715,8 @@ const allProduct = [
         price: "1030000", 
         img: "sofa-1.png", 
         hoverImg: "sofa-hv-1.png",
+        detailImages: [],
+        descriptionImg:"dt-sofa-1.jpg",
     },
     { 
         id: 82, 
@@ -659,6 +725,8 @@ const allProduct = [
         price: "1100000", 
         img: "sofa-2.png", 
         hoverImg: "sofa-hv-2.png",
+        detailImages: [],
+        descriptionImg:"dt-sofa-2.jpg",
     },
     { 
         id: 83, 
@@ -667,6 +735,8 @@ const allProduct = [
         price: "1270000", 
         img: "sofa-3.png", 
         hoverImg: "sofa-hv-3.png",
+        detailImages: [],
+        descriptionImg:"dt-sofa-3.jpg",
     },
     { 
         id: 84, 
@@ -675,6 +745,8 @@ const allProduct = [
         price: "1560000", 
         img: "sofa-4.jpg", 
         hoverImg: "sofa-hv-4.png",
+        detailImages: [],
+        descriptionImg:"dt-sofa-4.jpg",
     },
     { 
         id: 85, 
@@ -717,6 +789,8 @@ const allProduct = [
         price: "670000", 
         img: "lamp-1.jpg", 
         hoverImg: "lamp-hv-1.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-1.jpg",
     },
     { 
         id: 90, 
@@ -725,6 +799,8 @@ const allProduct = [
         price: "890000", 
         img: "lamp-2.jpg", 
         hoverImg: "lamp-hv-2.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-2.jpg",
     },
     { 
         id: 90, 
@@ -733,6 +809,8 @@ const allProduct = [
         price: "850000", 
         img: "lamp-3.png", 
         hoverImg: "lamp-hv-3.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-3.jpg",
     },
     { 
         id: 91, 
@@ -741,6 +819,8 @@ const allProduct = [
         price: "930000", 
         img: "lamp-4.png", 
         hoverImg: "lamp-hv-4.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-4.jpg",
     },
     { 
         id: 92, 
@@ -749,6 +829,8 @@ const allProduct = [
         price: "830000", 
         img: "lamp-5.png", 
         hoverImg: "lamp-hv-5.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-5.jpg",
     },
     { 
         id: 93, 
@@ -757,6 +839,8 @@ const allProduct = [
         price: "970000", 
         img: "lamp-6.png", 
         hoverImg: "lamp-hv-6.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-6.jpg",
     },
     { 
         id: 94, 
@@ -765,6 +849,8 @@ const allProduct = [
         price: "790000", 
         img: "lamp-7.png", 
         hoverImg: "lamp-hv-7.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-7.jpg",
     },
     { 
         id: 95, 
@@ -773,6 +859,8 @@ const allProduct = [
         price: "680000", 
         img: "lamp-8.png", 
         hoverImg: "lamp-hv-8.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-8.jpg",
     },
     { 
         id: 96, 
@@ -781,6 +869,8 @@ const allProduct = [
         price: "780000", 
         img: "lamp-9.png", 
         hoverImg: "lamp-hv-9.png",
+        detailImages: [],
+        descriptionImg:"dt-lamp-9.jpg",
     },
     { 
         id: 97, 
@@ -847,6 +937,7 @@ const allProduct = [
         price: "1020000", 
         img: "booself-1.jpg", 
         hoverImg: "booself-hv-1.jpg",
+        
     },
     { 
         id: 91, 
@@ -855,6 +946,8 @@ const allProduct = [
         price: "1200000", 
         img: "booself-2.jpg", 
         hoverImg: "booself-hv-2.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-2.jpg",
     },
     { 
         id: 92, 
@@ -863,6 +956,8 @@ const allProduct = [
         price: "1070000", 
         img: "booself-3.jpg", 
         hoverImg: "booself-hv-3.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-3.jpg",
     },
     { 
         id: 93, 
@@ -871,6 +966,8 @@ const allProduct = [
         price: "1200000", 
         img: "booself-4.jpg", 
         hoverImg: "bookself-hv-4.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-4.jpg",
     },
     { 
         id: 94, 
@@ -879,6 +976,8 @@ const allProduct = [
         price: "1090000", 
         img: "booself-5.jpg", 
         hoverImg: "bookself-hv-5.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-5.jpg",
     },
     { 
         id: 95, 
@@ -887,6 +986,8 @@ const allProduct = [
         price: "98000", 
         img: "booself-6.jpg", 
         hoverImg: "bookself-hv-6.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-6.jpg",
     },
     { 
         id: 96, 
@@ -895,6 +996,8 @@ const allProduct = [
         price: "1020000", 
         img: "booself-7.jpg", 
         hoverImg: "booself-hv-7.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-7.jpg",
     },
     { 
         id: 97, 
@@ -903,6 +1006,8 @@ const allProduct = [
         price: "1200000", 
         img: "booself-8.jpg", 
         hoverImg: "booself-hv-8.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-8.jpg",
     },
     { 
         id: 98, 
@@ -911,6 +1016,8 @@ const allProduct = [
         price: "1000000", 
         img: "booself-9.jpg", 
         hoverImg: "booself-hv-9.jpg",
+        detailImages: [],
+        descriptionImg:"dt-book-9.jpg",
     },
     { 
         id: 99, 

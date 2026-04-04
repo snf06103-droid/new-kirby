@@ -1,5 +1,64 @@
 document.addEventListener('DOMContentLoaded', () => {
 
+    
+
+
+
+
+
+
+    // 1. 주소창의 ?id=50 에서 50이라는 숫자를 가져옵니다.
+    const params = new URLSearchParams(window.location.search);
+    const productId = params.get('id');
+
+    // 2. allProduct 배열에서 클릭한 id와 똑같은 상품을 찾습니다.
+    const product = allProduct.find(p => String(p.id) === productId);
+
+    // 3. 상품을 찾았다면 화면의 글자와 사진을 바꿉니다.
+    if (product) {
+        // [텍스트 교체]
+        const nameEl = document.querySelector('.product-name');
+        const categoryEl = document.querySelector('.price-container .category');
+        const priceEl = document.querySelector('.final-price');
+        const originalPriceEl = document.querySelector('.price .body2.light');
+
+        if (nameEl) nameEl.innerText = product.name;
+        if (categoryEl) categoryEl.innerText = `products > ${product.category}`;
+        if (originalPriceEl) originalPriceEl.innerText = `${Number(product.price).toLocaleString()}원`;
+        
+        // 할인가 계산 (예시: 30% 할인된 금액으로 표시)
+        if (priceEl) {
+            const discountPrice = Math.floor(Number(product.price) * 0.7);
+            priceEl.innerText = `${discountPrice.toLocaleString()}원`;
+        }
+
+        // [스와이퍼 이미지 교체]
+        const swiperImgs = document.querySelectorAll('.mySwiper2 .swiper-slide img, .mySwiper .swiper-slide img');
+        
+        // detailImages 배열이 비어있으면 기본/호버 이미지를 대신 사용하도록 설정
+        const imgList = (product.detailImages && product.detailImages.length > 0) 
+                        ? product.detailImages 
+                        : [product.img, product.hoverImg, product.img];
+
+        swiperImgs.forEach((img, idx) => {
+            const imgName = imgList[idx % imgList.length];
+            // 만약 데이터에 .jpg가 없다면 붙여주고, 있으면 그대로 둡니다.
+            const fileName = imgName.includes('.') ? imgName : `${imgName}.jpg`;
+            img.src = `../../images/detail-page/detail-01/${fileName}`;
+        });
+
+        // [상세 설명 긴 이미지 교체]
+        const descImg = document.querySelector('.detail .img-container img');
+        if (descImg && product.descriptionImg) {
+            descImg.src = `../../images/detail-page/detail/${product.descriptionImg}`;
+        }
+    }
+
+
+
+    
+
+
     // 옵션 선택창 누르면 내려오는 기능
     const optionBtn = document.querySelectorAll('.option-selector button')
 
