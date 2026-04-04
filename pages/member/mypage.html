@@ -62,12 +62,29 @@
                 <!-- Initialize Swiper -->
                 <script>
                     var swiper = new Swiper(".mySwiper", {
-                    slidesPerView: 4,
-                    spaceBetween: 14,
-                    pagination: {
-                        el: ".swiper-pagination",
-                        clickable: true,
-                    },
+                        // 1. [기본 설정] 768px 이하 (가장 작은 모바일/태블릿 기준)
+                        slidesPerView: 4,     // 4개씩 보여주기
+                        spaceBetween: 14,     // 갭 14px
+                        
+                        // 2. [반응형 설정] 너비가 커질 때 변화를 줍니다.
+                        breakpoints: {
+                            // 769px ~ 1440px 구간
+                            769: {
+                                slidesPerView: 5,  // 5개씩 보여주기
+                                spaceBetween: 16,  // 갭 16px
+                            },
+                            // 1441px ~ 1920px 이상 구간
+                            1441: {
+                                slidesPerView: 6,  // 6개씩 보여주기
+                                spaceBetween: 18,  // 갭 18px
+                            }
+                        },
+
+                        // 페이지네이션 설정
+                        pagination: {
+                            el: ".swiper-pagination",
+                            clickable: true,
+                        },
                     });
                 </script>
 
