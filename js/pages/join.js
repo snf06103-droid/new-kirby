@@ -48,4 +48,22 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+    
+    const checkAll = document.querySelector('#check-all');
+    const checkboxes = document.querySelectorAll('.normal');
+
+    // 1. 전체 동의 클릭 시
+    checkAll.addEventListener('change', () => {
+        checkboxes.forEach(cb => {
+            cb.checked = checkAll.checked;
+        });
+    });
+
+    // 2. 개별 항목 클릭 시 전체 동의 상태 업데이트
+    checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+            const result = Array.from(checkboxes).every(box => box.checked);
+            checkAll.checked = result;
+        });
+    });
 })

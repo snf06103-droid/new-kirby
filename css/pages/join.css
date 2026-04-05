@@ -31,7 +31,7 @@
 }
 .join-wrap dd select{
     height: 2rem;
-    width: 8.3rem;
+    width: 18.58%;
     text-align: center;
     border-radius: 0px;
     border-bottom: 1px solid #000;
@@ -49,7 +49,7 @@
     gap: 1.5rem;
 }
 .user-number .user-phone-number{
-    width: 500px;
+    width: 66.83;
 }
 .user-number a{
     display: flex;
@@ -129,7 +129,74 @@
     margin-bottom: 3rem;
 }
 
+.terms-container {
+    width: 443px; 
+    margin-bottom:  2rem;
+    }
+.term-item {
+    display: flex; 
+    align-items: center; 
+    position: relative; 
+    margin-bottom: 1.5rem;
+    }
 
+/* 기본 체크박스 숨기기 */
+input[type="checkbox"] { display: none; }
+
+/* 커스텀 체크박스 (빈 네모) */
+input[type="checkbox"] + label::before {
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    border: 2px solid #000; /* 검정 테두리 */
+    margin-right: 2rem;
+    vertical-align: middle;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+/* 체크되었을 때 스타일 (배경색이나 체크 표시) */
+input[type="checkbox"]:checked + label::before {
+    background-color: #000; /* 검정 배경 */
+    background-image: url('../../assets/icons/check-white.png'); /* 흰색 체크 아이콘 */
+    background-size: 80%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* 라벨 텍스트 스타일 */
+label { font-size: 1rem; cursor: pointer; color: #333; }
+.all-check label { font-size: 1rem; }
+
+/* 오른쪽 화살표 */
+.arrow { position: absolute; right: 0; color: #ccc; cursor: pointer; }
+
+.terms-container>h1{
+    margin-bottom: 2rem;
+}
+
+/* 회원가입 버튼 스타일 */
+.join-btn{
+    padding: 5px 2rem;
+    color: #fff;
+    background-color: var(--main-color);
+}
+.submit-btn{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5rem;
+}
+.sns-icons{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 10rem;
+}
+.sns-icons img{
+    width: 60px;
+    aspect-ratio: 1/1;
+}
 
 @media (max-width:1440px){
 

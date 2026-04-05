@@ -150,6 +150,9 @@
     padding: 4px 1rem;
     color: #fff;
 }
+.banner.mo{
+    display: none;
+}
 
 @media (max-width:1440px){
     .coupon .banner {
@@ -216,6 +219,9 @@
     .btn img {
         width: 15px;
         height: 15px;
+    }
+    .banner.mo{
+        display: block;
     }
     
 }

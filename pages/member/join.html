@@ -23,6 +23,7 @@
 
             <!-- 폼태그 -->
              <form action="">
+                <!-- 전화번호 -->
                 <dl>
                     <dt><label for="user-membership">전화번호</label></dt>
                     <dd class="user-number">
@@ -33,15 +34,16 @@
                             <option value="U+">U+</option>
                             <option value="알뜰폰">알뜰폰</option>
                         </select>
-                        <input type="number" id="user-phone-number" class="user-phone-number">
+                        <input type="number" id="user-phone-number" class="user-phone-number" required>
                         <a href="#">본인인증</a>
                     </dd>
                 </dl>
+                <!-- 이메일 -->
                 <dl>
                     <dt><label for="user-email">E-mail</label></dt>
                     <dd>
                         <div class="email-group">
-                            <input type="text" id="user-email">
+                            <input type="text" id="user-email" required> 
                             <span class="medium">@</span>
                             <input type="text" id="email-domain">
                             
@@ -54,11 +56,12 @@
                         </div>
                     </dd>
                 </dl>
+                <!-- 비밀번호 -->
                 <dl>
                     <dt><label for="user-password">비밀번호</label></dt>
                     <dd>
                     <div class="password-input-container">
-                        <input type="password" id="user-password" name="user-password">
+                        <input type="password" id="user-password" name="user-password" required>
                         <button type="button" id="password-toggle" class="password-toggle">
                             <img src="../../assets/icons/eye.png" alt="비밀번호 보기" id="password-icon">
                             <img src="../../assets/icons/eye-closed.png" alt="비밀번호 숨기기" id="password-icon-closed" style="display:none;">
@@ -66,11 +69,12 @@
                     </div>
                     </dd>
                 </dl>
+                <!-- 비밀번호 확인 -->
                 <dl>
                     <dt><label for="user-password-confirm">비밀번호 확인</label></dt>
                     <dd>
                         <div class="password-input-container">
-                        <input type="password" id="user-password-confirm" name="user-password-confirm">
+                        <input type="password" id="user-password-confirm" name="user-password-confirm" required>
                         <button type="button" id="password-toggle" class="password-toggle">
                             <img src="../../assets/icons/eye.png" alt="비밀번호 보기" id="password-icon">
                             <img src="../../assets/icons/eye-closed.png" alt="비밀번호 숨기기" id="password-icon-closed" style="display:none;">
@@ -78,14 +82,16 @@
                     </div>
                     </dd>
                 </dl>
+                <!-- 이름 -->
                 <dl>
                     <dt><label for="user-name">이름</label></dt>
-                    <dd><input type="text" id="user-name"></dd>
+                    <dd><input type="text" id="user-name" required></dd>
                 </dl>
+                <!-- 생년월일 -->
                 <dl class="birth">
                     <dt><label for="user-birth">생년월일 ex.19880808</label></dt>
                     <dd>
-                        <input type="number" id="user-birth">
+                        <input type="number" id="user-birth" required>
                         <div class="gender">
                             <input type="radio" id="user-male" name="user-gender">
                             <label for="user-male" class="">남자</label>
@@ -94,6 +100,47 @@
                         </div>
                     </dd>
                 </dl>
+                <!-- 이용약관 -->
+                 <div class="terms-container">
+                    <h1>이용약관</h1>
+
+                    <div class="term-item all-check">
+                        <input type="checkbox" id="check-all">
+                        <label for="check-all">전체동의</label>
+                    </div>
+
+                   <div class="term-item">
+                        <input type="checkbox" id="term1" class="normal">
+                        <label for="term1">회원 이용 약관(필수)</label>
+                        <span class="arrow">></span>
+                    </div>
+
+                    <div class="term-item">
+                        <input type="checkbox" id="term2" class="normal">
+                        <label for="term2">개인정보 수집 및 이용(필수)</label>
+                        <span class="arrow">></span>
+                    </div>
+
+                    <div class="term-item">
+                        <input type="checkbox" id="term3" class="normal">
+                        <label for="term3">개인정보 수집 및 이용(선택)</label>
+                        <span class="arrow">></span>
+                    </div>
+
+                    <div class="term-item">
+                        <input type="checkbox" id="term4" class="normal">
+                        <label for="term4">마케팅 및 홍보 활용에 대한 동의(선택)</label>
+                        <span class="arrow">></span>
+                    </div>
+                </div>
+                <div class="submit-btn">
+                    <button type="submit" class="join-btn">회원가입</button>
+                </div>
+                <ul class="sns-icons">
+                    <li><img src="../../assets/icons/naver.png" alt="네이버로 회원가입"></li>
+                    <li><img src="../../assets/icons/google.png" alt="구글로 회원가입"></li>
+                    <li><img src="../../assets/icons/talk.png" alt="카톡으로 회원가입"></li>
+                </ul>
              </form>
     
             
