@@ -1,0 +1,164 @@
+.myOrder-wrap .title{
+    margin: 10rem 0;
+    text-align: center;
+}
+.drop-down{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+    top: 0;
+    right: 0;
+    font-size: var(--heading-4);
+}
+.drop-down .all{
+    display: flex;
+    gap: .5rem;
+}
+.drop-down li{
+    padding: 3px 6px;
+    border-bottom: 1px solid #999;
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 125px;
+}
+.drop-down li:hover{
+    background-color: #ddd;
+}
+.old{
+    position: absolute;
+    top: 100%;
+    right: 0;
+    display: none;
+}
+.old.on{
+    display: block;
+}
+.select-list{
+    margin-bottom: 3rem;
+}
+
+.my-list>li{
+    background-color: #fff;
+    padding: 2rem 5.66rem;
+}
+.my-list>li>p{
+    margin-bottom: .5rem;
+    font-size: var(--heading-2);
+}
+.product-box{
+    display: flex;   
+    gap: 2rem;
+    align-items: center;
+}
+.product-box>figure{
+    width: 300px;
+    aspect-ratio: 1/1;
+}
+.desc-section>h2{
+    margin-bottom: .5rem;
+}
+.desc-section>p{
+    margin-bottom: 1rem;
+}
+.desc-section>h1{
+    margin-bottom: 4rem;
+}
+.btn{ 
+    display: flex;
+    gap: .5rem;
+}
+.btn button{
+    padding: 4px 7.33rem;
+    border: 1px solid var(--point-color-1);
+    border-radius: 10px;
+}
+.my-list{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 10rem;
+}
+
+@media (max-width:1440px){
+    .my-list>li {
+        padding: 2rem 3rem;
+    }
+    .product-box>figure {
+        width: 200px;
+    }
+    .btn button {
+        padding: 4px 3.47rem;
+        border: 1px solid var(--point-color-1);
+        border-radius: 10px;
+    }
+}
+@media (max-width:786px){
+    .drop-down li {
+        width: 97px;
+        font-size: var(--body-1);
+    }
+    .all img{
+        width: 18px;
+        aspect-ratio: 1/1;
+    }
+    .product-box {
+        display: flex;
+        gap: 2rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .my-list>li {
+        padding: 2rem;
+    }
+    .product-box {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .btn button {
+        padding: 4px 2rem;
+        border: 1px solid var(--point-color-1);
+        border-radius: 10px;
+    }
+
+}
+@media (max-width:370px){
+    .myOrder-wrap .title {
+        margin: 5rem 0;
+        text-align: center;
+    }
+    .drop-down li {
+        width: 84px;
+        font-size: var(--body-2);
+    }
+    .product-box>figure {
+        width: 150px;
+    }
+    .my-list>li>p {
+        margin-bottom: .5rem;
+        font-size: var(--heading-3);
+    }
+    .desc-section>h2 {
+        margin-bottom: .5rem;
+        font-size: var(--heading-3);
+    }
+    .desc-section>h1 {
+        margin-bottom: 3rem;
+        font-size: var(--heading-2);
+    }
+    .btn button {
+        padding: 4px 1.5rem;
+        border: 1px solid var(--point-color-1);
+        border-radius: 10px;
+    }
+    .my-list {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin-bottom: 5rem;
+    }
+    
+}

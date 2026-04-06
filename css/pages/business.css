@@ -6,3 +6,67 @@
 caption{
     display: none;
 }
+th{
+    background-color: #DDDDDD;
+    font-size: var(--heading-2);
+    font-weight: var(--bold-weight);
+    padding: 0 1.83rem 0 .5rem;
+    text-align: start;
+    width: 282px;
+    box-sizing: border-box;
+}
+td{
+    width: 30rem;
+    text-align: center;
+}
+tr{
+    height: 100px;
+}
+tbody{
+    margin: 0 auto;
+}
+table{
+    margin-bottom: 5rem;
+}
+.first{
+    margin-bottom: 1rem;
+}
+.business-desc{
+    margin-bottom: 10rem;
+}
+.mo{
+    display: none;
+}
+
+@media (max-width:1440px){
+    .business-desc p{
+        width: 100%;
+    }
+}
+@media (max-width:768px){
+    .none-mo{
+        display: none;
+    }
+    .mo{
+        display: block;
+    }
+    th {
+        background-color: #DDDDDD;
+        font-size: var(--heading-3);
+        font-weight: var(--bold-weight);
+        padding: 0 .5rem;
+        text-align: start;
+        width: 282px;
+        box-sizing: border-box;
+    }
+    
+}
+@media (max-width:768px){
+    th{
+        font-size: var(--body-1);
+    }
+    .common-frame {
+        width: auto;
+        margin: 0 1rem;
+    }
+}
