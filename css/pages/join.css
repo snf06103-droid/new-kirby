@@ -1,10 +1,9 @@
 .join-wrap .join-container{
     width: 802px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 .join-container>.title{
-    font-size: 50px;
+    font-size: 2.77rem;
     font-weight: var(--medium-weight);
     text-align: center;
     padding: 10rem 0 5rem;
@@ -31,7 +30,7 @@
 }
 .join-wrap dd select{
     height: 2rem;
-    width: 18.58%;
+    flex: 149;
     text-align: center;
     border-radius: 0px;
     border-bottom: 1px solid #000;
@@ -49,7 +48,7 @@
     gap: 1.5rem;
 }
 .user-number .user-phone-number{
-    width: 66.83;
+    flex: 549;
 }
 .user-number a{
     display: flex;
@@ -60,10 +59,10 @@
     gap: 1rem;
 }
 .join-wrap form dd .email-group input{
-    width: 250px;
+    flex: 256;
 }
 .join-wrap form dd .email-group select{
-    width: 250px;
+    flex: 224;
 }
 
 /* 비밀번호 스타일 */
@@ -110,7 +109,7 @@
     display: flex;
 }
 .join-wrap form .birth dd>input {
-    width: 604px;
+
 }
 .join-wrap form dd input {
     width: 100%;
@@ -124,13 +123,14 @@
     display: flex;
     gap: 1rem;
     align-items: center;
+    justify-content: center;
 }
 .birth{
     margin-bottom: 3rem;
 }
 
 .terms-container {
-    width: 443px; 
+    width: 55.24%; 
     margin-bottom:  2rem;
     }
 .term-item {
@@ -198,16 +198,106 @@ label { font-size: 1rem; cursor: pointer; color: #333; }
     aspect-ratio: 1/1;
 }
 
-@media (max-width:1440px){
-
+@media (max-width:1024px){
+    .join-wrap .join-container {
+        width: auto;
+        margin: 0 7rem;
+    }
+    .sns-icons img {
+        width: 52.8px;
+        aspect-ratio: 1/1;
+    }
 }
 
 @media (max-width:768px){
-
+    .join-wrap .join-container {
+        width: auto;
+        margin: 0 2rem;
+    }
+    .join-container>.title {
+        font-size: var(--heading-3);
+        font-weight: var(--bold-weight);
+        text-align: center;
+        padding: 2rem 0 3rem 0;
+    }
+    .join-container>.required {
+        font-size: var(--heading-4);
+        font-weight: var(--bold-weight);
+        margin-bottom: 2rem;
+    }
+    .join-wrap form dt label {
+        color: #9C9C9C;
+        font-weight: var(--light-weight);
+    }
+    .join-wrap form .user-number {
+        display: flex;
+        gap: .5rem;
+    }
+    .join-wrap form {
+        gap: .5rem;
+    }
+    .password-toggle img {
+        width: 18px;
+        height: 18px;
+        transition: opacity 0.2s ease;
+    }
+    .terms-container>h1 {
+        font-size: var(--heading-4);
+    }
+    .birth {
+        margin-bottom: 2rem;
+    }
+    .term-item {
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-bottom: .5rem;
+    }
+    .all-check{
+        margin-bottom: 1REM;
+    }
+    .terms-container {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .sns-icons img {
+        width: 46.2px;
+        aspect-ratio: 1/1;
+    }
+    .sns-icons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 7rem;
+    }
 }
 
-@media (max-width:370px){
-
+@media (max-width:340px){
+        input[type="checkbox"] + label::before {
+        content: '';
+        display: inline-block;
+        width: 1rem;
+        height: 1rem;
+        border: 2px solid #000;
+        margin-right: .5rem;
+        vertical-align: middle;
+        transition: 0.2s;
+        cursor: pointer;
+    }
+    .email-group {
+        display: flex;
+        gap: .5rem;
+    }
+    .gender {
+        display: flex;
+        gap: .5rem;
+        align-items: center;
+        justify-content: center;
+    }   
+    .join-wrap .join-container {
+        width: auto;
+        margin: 0 1rem;
+    }
 }
 
 @media (max-width:350px){
