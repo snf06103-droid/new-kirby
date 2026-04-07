@@ -1,0 +1,527 @@
+.section-title {
+  margin-top: 5rem;
+  margin-bottom: 3rem;
+}
+
+.form-row {
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    margin-bottom: 2rem;
+}
+
+/* 왼쪽 라벨 고정 너비 */
+.form-row label {
+  width: 81px;
+  font-size: 1rem;
+}
+
+/* 오른쪽 입력 영역 */
+.input-group {
+  flex: 1;
+}
+
+.input-full, .select-full {
+    width: 100%;
+  padding-left: 8px;
+  border: 1px solid #646464;
+  height: 30px;
+    box-sizing: border-box;
+}
+
+/* 주소검색 버튼 있는 줄 */
+.zipcode-box {
+  display: flex;
+  margin-bottom: 1rem;
+}
+
+/* 연락처/이메일 등 가로 나열 */
+.phone-group, .email-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.phone-group input, .email-group input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid #646464;
+  height: 30px;
+    box-sizing: border-box;
+}
+
+.btn-search {
+  background: #ccc;
+  border: 1px solid #999;
+  padding: 0 15px;
+  cursor: pointer;
+  height: 30px;
+}
+
+
+.input-full.recipient {
+    width: 322px;
+    box-sizing: border-box;
+}
+.adress{
+    align-items: flex-start;
+}
+.post {
+    border: 1px solid #646464;
+    padding: 8px;
+    height: 30px;
+    box-sizing: border-box;
+}
+.normal{
+    margin-bottom: 1rem;
+    height: 30px;
+    box-sizing: border-box;
+}
+#email-id {
+    width: 227px;
+}
+option.self{
+    padding: 8px;
+    border: 1px solid #646464;
+}
+.no-label{
+    margin-bottom: 5rem;
+}
+.message{
+    width: 667px;
+}
+input{
+    background-color: inherit;
+}
+
+/* 비밀번호 확인 스타일 */
+.password-box{
+    padding: 4rem 0;
+    background-color: #F6F6F6;
+    border-top: 2px solid #7E7E7E;
+    border-bottom: 2px solid #7E7E7E;
+}
+.password-box .title{
+    margin-bottom: 3rem;
+}
+.password-box dt label{
+    width: 99px;
+    display: block;
+}
+.password-box dl{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.password-box dd input {
+    height: 30px;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #646464;
+}
+.password-box dd{
+    width: 100%;
+    height: 30px;
+}
+.psw{
+    margin-bottom: 1rem;
+}
+
+/* 주문상품 스타일 */
+.product-desc-box{
+    padding-top: 5rem;
+}
+.product-option{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 5rem;
+}
+.product-option figure{
+    width: 300px;
+    aspect-ratio: 1/1;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.product-desc-title{
+    margin-bottom: 3rem;
+}
+.option-desc{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.exite{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.exite img{
+    width: 27px;
+    aspect-ratio: 1/1;
+}
+.option-title{
+    margin-bottom: 1rem;
+}
+.option-info{
+    margin-bottom: 1rem;
+}
+
+/* 결제정보 */
+.pay-info{
+}
+.pay-info-title{
+    margin-bottom: 3rem;
+}
+.pay-info dl{
+    display: flex;
+    justify-content: space-between;
+    padding: ;
+}
+.price{
+    margin: 1.5rem 0;
+}
+.pay-info dd{
+    font-size: var(--heading-4);
+    font-weight: var(--bold-weight);
+}
+.red{
+    color: red;
+}
+.pay-total{
+    background-color: #F4F7FF;
+    border-bottom: 2px solid #7E7E7E;
+    padding: 3rem 0;
+    margin-bottom: 5rem;
+}
+.pay-total dl{
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--heading-1);
+    font-weight: var(--bold-weight);
+}
+
+/* 결제수단 스타일 */
+.payment-title{
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.payment-option{
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.payment-option li{
+    padding: 11px 3.6rem;
+    background-color: #F6F6F6;
+    margin-bottom: 3rem;
+    cursor: pointer;
+}
+.payment-option li.on{
+    background-color: var(--main-color);
+    color: #fff;
+}
+
+/* 결제정보 */
+.pay-method-list{
+    margin-bottom: 4rem;
+}
+.pay-method-list li{
+    padding: 12px 0;
+    border-bottom: 1px solid #7E7E7E;
+}
+.pay-item{
+    display: flex;
+    gap: .5rem;
+}
+span{
+    font-weight: var(--medium-weight);
+}
+
+/* 약관동의 */
+.check-box li label{
+    display: flex;
+    gap: 1.5rem;
+    padding: 12px 0;
+    border-bottom: 1px solid #7E7E7E;
+}
+.check-box{
+    margin-bottom: 10rem;
+}
+
+/* 카드결제 섹션 */
+.card-section{
+    padding: 2rem 3rem;
+    background-color: #F6F6F6;
+}
+.card-section-item{
+    display: flex;
+    gap: 7rem;
+    font-size: var(--body-2);
+    align-items: center;
+}
+.card-option-container{
+    margin-bottom: 1rem;
+
+}
+.card-option{
+    position: relative;
+    background-color: var(--neutral-color);
+    width: 517px;
+    color: #9999;
+}
+.card-option>p{
+    position: relative;
+    border: 1px solid #CACACA;
+    padding: 4px 3rem 4px 1rem;
+    cursor: pointer;
+}
+.card-option>p::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: .6rem;
+    height: .6rem;
+    border-right: 2px solid #666;
+    border-bottom: 2px solid #666;
+    transform: translateY(-70%) rotate(45deg);
+    transition: transform .2s ease;
+}
+.card-option.open>p::after{
+    transform: translateY(-30%) rotate(-135deg);
+}
+.card-option li{
+    border: 1px solid #CACACA;
+    padding: 4px 1rem;
+    background-color: #fff;
+    cursor: pointer;
+}
+.card-option ul{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+    z-index: 5;
+}
+.card-option.open ul{
+    display: block;
+}
+
+/* 무통장결제 */
+.bank-transfer{
+    background-color: #F6F6F6;
+    padding: 2rem 3rem;
+    margin-bottom: 4rem;
+}
+.bank-transfer dl{
+    display: flex;
+    gap: 6.7rem;
+    font-size: var(--body-2);
+    align-items: center;
+}
+.bank-transfer dd{
+    padding: 4px 1rem;
+}
+.bank-name{
+    margin-bottom: 1rem;
+}
+.user-name input{
+    border: 1px solid #999;
+    padding: 4px 1rem;
+    height: 30px;
+    box-sizing: border-box;
+}
+
+/* 휴대폰 결제 */
+.phone-section p{
+    color: #999;
+    margin-bottom: 4rem;
+}
+
+/* 클릭했을 때 바뀌는 스타일 */
+.easy-pay{
+    display: none;
+}
+.easy-pay.on{
+    display: block;
+}
+.card-section{
+    display: none;
+}
+.card-section.on{
+    display: block;
+}
+.bank-transfer{
+    display: none;
+}
+.bank-transfer.on{
+    display: block;
+}
+.phone-section{
+    display: none;
+}
+.phone-section.on{
+    display: block;
+}
+
+input{
+    height: 30px;
+}
+
+@media (max-width: 1440px) {
+    .input-full,
+    .select-full,
+    .phone-group input,
+    .email-group input,
+    .btn-search,
+    .post,
+    .normal,
+    .password-box dd input,
+    .password-box dd,
+    .user-name input,
+    input {
+        height: 28px;
+    }
+    .password-box {
+        padding: 2rem 0;
+    }
+}
+@media (max-width: 873px) {
+    .section-title {
+        margin-top: 4rem;
+    }
+    .form-row label {
+        width: 60px;
+    }
+    .input-full,
+    .select-full,
+    .phone-group input,
+    .email-group input,
+    .btn-search,
+    .post,
+    .normal,
+    .password-box dd input,
+    .password-box dd,
+    .user-name input,
+    input {
+        height: 26px;
+    }
+    .message {
+        width: 223px;
+    }
+    .no-label {
+        margin-bottom: 2rem;
+    }
+    .product-desc-box {
+        padding-top: 4rem;
+    }
+    .exite img {
+        width: 21px;
+    }
+    .product-option {
+        margin-bottom: 4rem;
+    }
+    .pay-total {
+        padding: 1rem 0;
+        margin-bottom: 4rem;
+    }
+    .payment-title {
+        margin-bottom: 2rem;
+    }
+    .payment-option li {
+        padding: .5rem 1rem;
+        margin-bottom: 2rem;
+    }
+    .card-section {
+        padding: 2rem 1rem;
+    }
+    .card-section-item {
+        gap: 2rem;
+    }
+    .card-option {
+        width: 70%;
+    }
+    .payment-option {
+        gap: .5rem;
+    }
+    .input-full.recipient {
+        width: 80%;
+    }
+    .form-row {
+        gap: 1rem;
+    }
+    .phone-group, .email-group {
+        gap: .5rem;
+    }
+    .phone-group input, .email-group input {
+        width: 30%;
+    }
+    #email-id {
+        width: 60%;
+    }
+    .bank-transfer {
+        padding: 2rem 1rem;
+    }
+    .bank-transfer dl {
+        gap: 1rem;
+    }
+    .bank-transfer dd {
+        padding:0;
+    }
+    .btn-search {
+        padding: 0 5px;
+       
+    }
+
+
+}
+@media (max-width:372px){
+    .form-row {
+        gap: 0;
+    }
+    .btn-search {
+        font-size: 10px;
+    }
+    .password-box dl {
+        gap: 0;
+    }
+    .payment-option li {
+        padding: 5px 10px;
+    }
+    .bank-transfer dl {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .card-section-item {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .card-section-item {
+        gap: 1rem;
+    }
+    .card-option-container {
+        margin-bottom: 2rem;
+    }
+    .form-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .password-box .title {
+        font-size: 1.2rem;
+    }
+    .product-option {
+        gap: 1rem;
+    }
+    .product-option figure {
+    width: 100px;
+    height: 100px;
+}
+
+}
