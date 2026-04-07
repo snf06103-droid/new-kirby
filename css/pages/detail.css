@@ -174,7 +174,7 @@ element.style {
     border-radius: 10px;
     padding: 2rem;
     display: flex;
-    justify-content: space-between;
+    
 }
 .review-item figure{
     width: 200px;
@@ -185,8 +185,9 @@ element.style {
 .review-item figure img{
     height: auto;
 }
-.review-item .review-desc{
+.review-item .review-desc {
     width: 650px;
+    padding-left: 2rem;
 }
 .review-item .review-desc .review-title{
     display: flex;
