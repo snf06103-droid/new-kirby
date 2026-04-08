@@ -914,6 +914,11 @@ max-height: 15000px;
     .qna-text .title-box {
         padding: 1rem;
     }
+    .review-item figure img {
+        height: 100%;
+        width: 100%;
+        margin-bottom: .5rem;
+    }
 
 }
 
