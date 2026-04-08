@@ -44,7 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const imgName = imgList[idx % imgList.length];
             // 만약 데이터에 .jpg가 없다면 붙여주고, 있으면 그대로 둡니다.
             const fileName = imgName.includes('.') ? imgName : `${imgName}.jpg`;
-            img.src = `../../images/detail-page/detail-01/${fileName}`;
+            const imagePath = (product.detailImages && product.detailImages.length > 0)
+                ? `../../images/detail-page/main-swiper/${fileName}`
+                : `../../images/list/all/${fileName}`;
+            img.src = imagePath;
         });
 
         // [상세 설명 긴 이미지 교체]

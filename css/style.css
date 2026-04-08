@@ -122,6 +122,9 @@ select {
     cursor: pointer;
     box-sizing: border-box;
 }
+select:focus{
+    outline:none;
+}
 .light{
     font-weight: var(--light-weight);
 }

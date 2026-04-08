@@ -445,7 +445,7 @@ const allProduct = [
         price: "1530000", 
         img: "desk-23.jpg", 
         hoverImg: "desk-hv-23.jpg",
-        detailImages: ["desk-23-1.jpg", "desk-23-1.jpg", "desk-23-1.jpg"],
+        detailImages: ["desk-23-1.jpg", "desk-23-2.jpg", "desk-23-3.jpg"],
         descriptionImg:"dt-desk-23.jpg",
     },
     { 
@@ -677,7 +677,7 @@ const allProduct = [
         price: "1370000", 
         img: "desk-50.jpg", 
         hoverImg: "desk-hv-50.jpg",
-        detailImages: ["desk-50-1", "desk-50-2", "desk-50-3"],
+        detailImages: ["desk-50-1.jpg", "desk-50-2.jpg", "desk-50-3.jpg"],
         descriptionImg:"dt-desk-50.jpg",
     },
     { 
@@ -687,7 +687,7 @@ const allProduct = [
         price: "990000", 
         img: "desk-51.jpg", 
         hoverImg: "desk-hv-51.jpg",
-        detailImages: ["desk-51-1", "desk-51-2", "desk-51-3"],
+        detailImages: ["desk-51-1.jpg", "desk-51-2.jpg", "desk-51-3.jpg"],
         descriptionImg:"dt-desk-51.jpg",
     },
     { 

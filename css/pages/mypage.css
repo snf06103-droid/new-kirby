@@ -165,6 +165,9 @@
     justify-content: center;
     width: 100%;
 }
+.status-button.hide{
+    display: none;;
+}
 .status-button>a{
     padding: 7px 71px;
     border-radius: 25px;

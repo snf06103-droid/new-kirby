@@ -45,7 +45,7 @@
                         <div class="swiper-button-next"></div>
                         <div class="swiper-button-prev"></div>
                     </div>
-                    <div thumbsSlider="" class="swiper mySwiper">
+                    <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide">
                                 <img src="../../images/detail-page/detail-01/detail-1.jpg" />
@@ -412,9 +412,15 @@
                     <h1 class="point magin05 product-name">H GLASS TABLE</h1>
                     <p class="body2 gray magin1 product-desc">컬러풀한 프레임과 투명한 유리 글라스의 만남</p>
                     <div class="size-option">
-                        <p class="body2 bold">사이즈</p>
+                        <label class="body2 bold" for="size-product">사이즈</label>
                         <div class="option-selector">
-                            <button type="button" class="selected-value">
+                            <select id="size-product" class="select1">
+                                <option value="no_select">사이즈를 선택해주세요.</option>
+                                <option value="15 X 25 cm">15 X 25 cm</option>
+                                <option value="50 X 75 cm">50 X 75 cm</option>
+                                <option value="100 X 120 cm">100 X 120 cm</option>
+                            </select>
+                            <!-- <button type="button" class="selected-value">
                                 사이즈를 선택해주세요.
                                 <img src="../../assets/icons/down-black.png" alt="사이즈 선택창">
                             </button>
@@ -422,7 +428,7 @@
                                 <li>15 X 25 cm</li>
                                 <li>50 X 75 cm</li>
                                 <li>100 X 120 cm</li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                     <div class="color-option">
