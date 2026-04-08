@@ -24,7 +24,7 @@
     <div id="site-header"></div>
 
     <div class="detail-wrap" id="top">
-        <div class="common-frame">
+        <div class="common-frame none-mo">
             <div class="main-box">
                 <!-- 상품이미지 -->
                 <div class="img-box">
@@ -261,7 +261,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="qna-3 qna-text">
+                                <div class="qna-3 qna-text big">
                                     <div class="title-box">
                                         <div class="q">
                                             <h1>Q</h1>
@@ -301,7 +301,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="qna-5 qna-text">
+                                <div class="qna-5 qna-text big">
                                     <div class="title-box">
                                         <div class="q">
                                             <h1>Q</h1>
@@ -324,7 +324,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="qna-6 qna-text">
+                                <div class="qna-6 qna-text big">
                                     <div class="title-box">
                                         <div class="q">
                                             <h1>Q</h1>
@@ -348,7 +348,7 @@
                                         </p>
                                     </div>
                                 </div>
-                                <div class="qna-7 qna-text">
+                                <div class="qna-7 qna-text big">
                                     <div class="title-box">
                                         <div class="q">
                                             <h1>Q</h1>
@@ -432,9 +432,16 @@
                         </div>
                     </div>
                     <div class="color-option">
-                        <p class="body2 bold">색상</p>
+                        <label class="body2 bold" for="color-product">색상</label>
                         <div class="option-selector">
-                            <button type="button" class="selected-value">
+                            <select id="color-product" class="select1">
+                                <option value="no_select">색상을 선택해주세요.</option>
+                                <option value="pink">Pink</option>
+                                <option value="yellow">Yellow</option>
+                                <option value="green">Green</option>
+                                <option value="orange">Orange</option>
+                            </select>
+                            <!-- <button type="button" class="selected-value">
                                 색상을 선택해주세요.
                                 <img src="../../assets/icons/down-black.png" alt="사이즈 선택창">
                             </button>
@@ -443,7 +450,7 @@
                                 <li>yellow</li>
                                 <li>green</li>
                                 <li>orange</li>
-                            </ul>
+                            </ul> -->
                         </div>
                     </div>
                     <dl>
@@ -459,7 +466,7 @@
                     </div>
                     <p class="final-price">240,000원</p>
                     <div class="order-btn">
-                        <span class="flex"><a href="#">구매하기</a></span>
+                        <span class="flex"><a href="../../pages/shop/checkout.html">구매하기</a></span>
                     </div>
                     <div class="cart-btn">
                         <div class="share">
@@ -484,6 +491,435 @@
             </div>
         </div>
 
+        <!-- 모바일에서 보이는 메인박스 -->
+        <div class="common-frame mo">
+            <div class="main-box">
+                <!-- 상품이미지 -->
+                <div class="img-box">
+                    
+                    <!-- Swiper -->
+                    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-3.jpg" />
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-1.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-2.jpg" />
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="../../images/detail-page/detail-01/detail-3.jpg" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상품 정보 스티키 옵션 -->
+                <div class="order-box">
+                    <div class="price-container">
+                        <p class="category">products > desk</p>
+                        <h1 class="point magin05 product-name">H GLASS TABLE</h1>
+                        <p class="body2 gray magin1 product-desc">컬러풀한 프레임과 투명한 유리 글라스의 만남</p>
+                        
+                        <dl>
+                            <dt>배송방법</dt>
+                            <dd>택배</dd>
+                            <dt>배송비</dt>
+                            <dd>200,000원 이상 무료 배송</dd>
+                        </dl>
+                        <p class="magin05 item-price">상품금액</p>
+                        <div class="price">
+                            <p class="bold">30%</p>
+                            <p  light">350,000원</p>
+                        </div>
+                        <p class="final-price">240,000원</p>
+                        <div class="order-btn">
+                            <span class="flex"><a href="../../pages/shop/checkout.html">구매하기</a></span>
+                        </div>
+                        <div class="cart-btn">
+                            <div class="share">
+                                <img src="../../assets/icons/share-link.png" alt="공유하기버튼">
+                            </div>
+                            <div class="heart">
+                                <img src="../../assets/icons/heart.png" alt="좋아요 버튼">
+                            </div>
+                            <div class="heart-click">
+                                <img src="../../assets/icons/heart-click.jpg" alt="좋아요 버튼">
+                            </div>
+                            <span><a href="../member/cart.html">장바구니</a></span>
+                        </div>
+                        <div class="card-benefits">
+                            <p  class="bold">결제혜택</p>
+                            <div class="benefits-detail">
+                                <img src="../../assets/icons/toss.png" alt="토스현대카드 할인혜택">
+                                <p class="detail light">현대 카드 & 토스카드 20만원 이상 결제시 10,000원 할인</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 상품상세페이지 -->
+                <div class="detail-sticky-box">
+                    <div class="sticky-menu-wrap">
+                        <ul class="sticky-menu">
+                            <li class="btn-detail active"><a href="#">상품상세</a></li>
+                            <li class="btn-review"><a href="#">고객리뷰</a></li>
+                            <li class="btn-qna"><a href="#">Q&A</a></li>
+                            <li class="btn-service"><a href="#">서비스 가이드</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="detail-caregoty-wrap">
+                        <!-- 상품상세 클릭하면 나오는 창 -->
+                        <div class="detail ">
+                            <div class="img-container">
+                                <img src="../../images/detail-page/detail/dt-ex.jpg" alt="디테일 상세페이지">
+                            </div>
+                            <span class="detail-more-btn">
+                                상품정보 더보기 
+                                <img src="../../assets/icons/down.png" alt="상품정보더보기">
+                            </span>
+                        </div>
+
+                        <!-- 리뷰 클릭하면 나오는 창 -->
+                        <div class="review active">
+                            <div class="best-review-photo">
+                                <h1 class="point">BEST 사진리뷰</h1>
+                                <ul>
+                                    <li><img src="../../images/detail-page/review/best-1.jpg" alt="BEST 사진리뷰"></li>
+                                    <li><img src="../../images/detail-page/review/best-2.jpg" alt="BEST 사진리뷰"></li>
+                                    <li><img src="../../images/detail-page/review/best-3.jpg" alt="BEST 사진리뷰"></li>
+                                </ul>
+                            </div>
+                            <div class="option">
+                                <img src="../../assets/icons/list-down.png" alt="">
+                                별점 높은순
+                            </div>
+                            <div class="user-review">
+                                <ul>
+                                    <li class="review-item" data-score="5"    >
+                                        <figure>
+                                            <img src="../../images/detail-page/review/review-1.jpg" alt="리뷰사진">
+                                        </figure>
+                                        <div class="review-desc">
+                                            <div class="review-title">
+                                                <h3>변경하기 너무 편해요~</h3>
+                                                <div class="star">
+                                                    <img src="../../images/detail-page/review/star-5.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p>
+                                                다리는 좌식용으로 좀 짧게하고, 강화유리로 비용추가해서 변경했어요. <br>
+                                                판매자님 응답빠르고 친절합니다! 구매한지 열흘정도 만에 배송 받았어요
+                                            </p>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="product-info">
+                                                구매한 제품&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H GLASS TABLE
+                                            </div>
+                                            <div class="user-info">
+                                                맥가이버님
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="review-item" data-score="4">
+                                        <figure>
+                                            <img src="../../images/detail-page/review/review-2.jpg" alt="리뷰사진">
+                                        </figure>
+                                        <div class="review-desc">
+                                            <div class="review-title">
+                                                <h3>반려동물 걱정 안해도 되서 좋아요!</h3>
+                                                <div class="star">
+                                                    <img src="../../images/detail-page/review/star-4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p>
+                                                아직 소파가 안와서 그냥 한켠에 있지만 생각한데로 이쁘네요~ <br>
+                                                집 분위기와도 잘 어울려요! 냥이가 있어서 강화 유리로 요청드렸는데 잘한 것 같아요 
+                                            </p>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="product-info">
+                                                구매한 제품&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H GLASS TABLE
+                                            </div>
+                                            <div class="user-info">
+                                                키티님
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="review-item" data-score="4">
+                                        <figure>
+                                            <img src="../../images/detail-page/review/review-3.jpg" alt="리뷰사진">
+                                        </figure>
+                                        <div class="review-desc">
+                                            <div class="review-title">
+                                                <h3>실수가 있었지만 제품이 이뻐서 용서가되요♡</h3>
+                                                <div class="star">
+                                                    <img src="../../images/detail-page/review/star-4.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p>
+                                                오배송으로 왔는데 친절하게 응대해주시고 교환해주셔서 감사합니다♡ <br>
+                                                너무 이뻐용~ 다른 제품들 또 구매할께요~~
+                                            </p>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="product-info">
+                                                구매한 제품&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H GLASS TABLE
+                                            </div>
+                                            <div class="user-info">
+                                                이쁘면다되님
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="review-item" data-score="3">
+                                        <figure>
+                                            <img src="../../images/detail-page/review/review-4.jpg" alt="리뷰사진">
+                                        </figure>
+                                        <div class="review-desc">
+                                            <div class="review-title">
+                                                <h3>다음에는 다른 컬러로 도전할래요!</h3>
+                                                <div class="star">
+                                                    <img src="../../images/detail-page/review/star-3.png" alt="">
+                                                </div>
+                                            </div>
+                                            <p>
+                                                난생처음으로 컬러풀한 가구를 샀는데 이걸 왜 이제서 샀는지...ㅠㅠ <br>
+                                                저처럼 컬러풀한 가구 경험하지 못한 사람들 구매 갈겨!!!!
+                                            </p>
+                                        </div>
+                                        <div class="item-info">
+                                            <div class="product-info">
+                                                구매한 제품&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;H GLASS TABLE
+                                            </div>
+                                            <div class="user-info">
+                                                이제부터ENFP님
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="pagination">
+                                    <span><img src="../../assets/icons/left.svg" alt="왼쪽 페이지로 이동"></span>
+                                    <span>1</span>
+                                    <span>2</span>
+                                    <span>3</span>
+                                    <span>4</span>
+                                    <span>5</span>
+                                    <span><img src="../../assets/icons/right.svg" alt="오른쪽 페이지로 이동"></span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 큐앤에이 클릭하면 나오는 창 -->
+                        <div class="qna">
+                            <h1 class="qna-title point">Q&A</h1>
+                            <div class="qna-box">
+                                <div class="qna-1 qna-text">
+                                    <div class="title-box">
+                                        <div class="q">
+                                            <h1>Q</h1>
+                                            <h2>평균 배송일은 며칠 걸리나요? </h2>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="../../assets/icons/down.png" alt="평균 배송일은 며칠 걸리나요?답변보기">
+                                        </div>
+                                        <div class="icon-click">
+                                            <img src="../../assets/icons/up-white.png" alt="평균 배송일은 며칠 걸리나요?답변접기">
+                                        </div>
+                                    </div>
+                                    <div class="qna-desc">
+                                        <p>
+                                            일반적으로 구매 후 배송완료까지 주문일로부터 주말 제외 15일 이내 소요됩니다.
+     
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="qna-2 qna-text">
+                                    <div class="title-box">
+                                        <div class="q">
+                                            <h1>Q</h1>
+                                            <h2>교환 및 환불 안내규정이 있나요?</h2>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="../../assets/icons/down.png" alt="평균 배송일은 며칠 걸리나요?답변보기">
+                                        </div>
+                                        <div class="icon-click">
+                                            <img src="../../assets/icons/up-white.png" alt="평균 배송일은 며칠 걸리나요?답변접기">
+                                        </div>
+                                    </div>
+                                    <div class="qna-desc">
+                                        <p>
+                                            주문제작 상품으로 제품 불량 및 하자를 제외하고 단순변심에 의한 교환 및 반품이 불가하오니 구입 전 충분한 고민 후 구입 바랍니다. <br>
+                                            <br>
+                                            그 외 교환 및 환불이 불가능한 경우 <br>
+                                            1. 모니터 해상도에 따라 실제 색상과 다소 차이가 생길 수 있으며 이는 교환 및 반품 사유에 해당되지 않습니다. <br>
+                                            2. 원목의 자연스러운 특징인 나뭇결이나 색상 차이, 옹이가 있는 경우는 자연적인 현상으로 교환 및 반품 사유에 해당되지 않습니다. <br>
+                                            3. 상품 불량 및 하자로 인한 교환 및 반품 시 발생하는 모든 배송관련 비용은 판매자(2UC)가 부담합니다.
+     
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="qna-3 qna-text big">
+                                    <div class="title-box">
+                                        <div class="q">
+                                            <h1>Q</h1>
+                                            <h2>가구 제작 과정은 어떻게 이루어지나요?</h2>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="../../assets/icons/down.png" alt="평균 배송일은 며칠 걸리나요?답변보기">
+                                        </div>
+                                        <div class="icon-click">
+                                            <img src="../../assets/icons/up-white.png" alt="평균 배송일은 며칠 걸리나요?답변접기">
+                                        </div>
+                                    </div>
+                                    <div class="qna-desc">
+                                        <p>
+                                            제품은 디자인 → 설계 → 제작 → 검수 과정을 거쳐 완성됩니다. <br>디자인 단계에서 사용성을 충분히 고려하고, 제작 과정에서는 구조 안정성과 마감을 꼼꼼하게 확인합니다.
+     
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="qna-4 qna-text">
+                                    <div class="title-box">
+                                        <div class="q">
+                                            <h1>Q</h1>
+                                            <h2>어떤 소재를 사용하나요?</h2>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="../../assets/icons/down.png" alt="평균 배송일은 며칠 걸리나요?답변보기">
+                                        </div>
+                                        <div class="icon-click">
+                                            <img src="../../assets/icons/up-white.png" alt="평균 배송일은 며칠 걸리나요?답변접기">
+                                        </div>
+                                    </div>
+                                    <div class="qna-desc">
+                                        <p>
+                                            제품의 용도에 맞는 소재를 선택합니다. <br>내구성과 안정성을 고려하여 오랫동안 사용할 수 있는 소재를 우선으로 사용하며, 사용 환경과 목적에 맞는 마감 방식을 적용합니다.
+     
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="qna-5 qna-text big">
+                                    <div class="title-box">
+                                        <div class="q">
+                                            <h1>Q</h1>
+                                            <h2>공간에 어울리는 가구를 선택하려면 어떻게 해야 하나요?</h2>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="../../assets/icons/down.png" alt="평균 배송일은 며칠 걸리나요?답변보기">
+                                        </div>
+                                        <div class="icon-click">
+                                            <img src="../../assets/icons/up-white.png" alt="평균 배송일은 며칠 걸리나요?답변접기">
+                                        </div>
+                                    </div>
+                                    <div class="qna-desc">
+                                        <p>
+                                            가구를 선택할 때는 다음 세 가지를 먼저 고려하는 것이 좋습니다. <br>
+                                            &middot; 공간 크기와 배치 <br>
+                                            &middot; 사용 목적 <br>
+                                            &middot; 기존 인테리어 분위기 <br>
+                                            이 기준을 중심으로 선택하면 공간과 자연스럽게 어울리는 가구를 고를 수 있습니다.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="qna-6 qna-text big">
+                                    <div class="title-box">
+                                        <div class="q">
+                                            <h1>Q</h1>
+                                            <h2>가구를 오래 사용하려면 어떻게 관리해야 하나요?</h2>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="../../assets/icons/down.png" alt="평균 배송일은 며칠 걸리나요?답변보기">
+                                        </div>
+                                        <div class="icon-click">
+                                            <img src="../../assets/icons/up-white.png" alt="평균 배송일은 며칠 걸리나요?답변접기">
+                                        </div>
+                                    </div>
+                                    <div class="qna-desc">
+                                        <p>
+                                            가구의 수명을 늘리기 위해서는 간단한 관리가 중요합니다. <br>
+                                            &middot; 직사광선을 피하기 <br>
+                                            &middot; 습기가 많은 환경 피하기 <br>
+                                            &middot; 부드러운 천으로 정기적으로 관리하기 <br> 
+                                            기본적인 관리만으로도 가구를 훨씬 오래 사용할 수 있습니다.
+                                                
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="qna-7 qna-text big">
+                                    <div class="title-box">
+                                        <div class="q">
+                                            <h1>Q</h1>
+                                            <h2>미드센추리 모던 가구는 어떤 공간에 잘 어울리나요?</h2>
+                                        </div>
+                                        <div class="icon">
+                                            <img src="../../assets/icons/down.png" alt="평균 배송일은 며칠 걸리나요?답변보기">
+                                        </div>
+                                        <div class="icon-click">
+                                            <img src="../../assets/icons/up-white.png" alt="평균 배송일은 며칠 걸리나요?답변접기">
+                                        </div>
+                                    </div>
+                                    <div class="qna-desc">
+                                        <p>
+                                            미드센추리 모던 가구는 다양한 공간과 잘 어울립니다. <br>
+                                            &middot; 미니멀 인테리어 <br>
+                                            &middot; 내추럴 우드 인테리어<br>
+                                            &middot; 북유럽 스타일 공간<br>
+                                            &middot; 모던 스타일 공간<br>
+                                            심플한 디자인 덕분에 다른 가구와도 자연스럽게 조화를 이룹니다.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- 서비스 가이드 클릭하면 나오는 창 -->
+                        <div class="service">
+                            <h1 class="point">배송/교환 &반품안내</h1>
+                            <div class="delivery">
+                                <h4 class="desc1">
+                                    배송료는 선불로 진행됩니다. <br>
+                                    배송은 주문일로부터 영업일 기준 15일 정도 소요되며,<br>
+                                    배송직전 해피콜 안내를 받을 수 있습니다.<br>
+                                    배송일 지정은 가능하나 1일 -3일 정도의 오차는 있을수 있습니다.<br>
+                                    여러 종류의 상품 구매시 배송비는 개별 부과되며 배송료 상담을 통해 절감 가능합니다.<br>
+                                    도서,산간,제주도는 본사로 문의 주시기 바랍니다. (Tel. 010 2058 0603)<br>
+                                    교환과 반품은 아래 버튼을 클릭하여 신청하여 주시기 바랍니다.
+                                </h4>
+                            </div>
+                            <button>교환 반품 신청하기</button>
+                            <h1 class="notes">주의사항</h1>
+                            <figure>
+                                <img src="../../assets/icons/carefull.png" alt="주의사항">
+                            </figure>
+                            <h3>*상품의 완성도에 과하게 민감하신 분들은 구매를 고려해 주세요.</h3>
+                            <h4 class="desc2">작업 공정상 생기는 스크래치는 불량이 아닙니다. <br>
+                            상품의 색상은 고객님의 모니터 사양과 해상도에 따라 실물과 차이가 날 수 있습니다.<br>
+                            천연 무늬목 제품의 컬러와 나무결은 다를수 있습니다.<br>
+                            주문 제작 방식으로 진행되는 만큼 주문 후 취소는 불가능 합니다.<br>
+                            상품의 불량과 하자 부분은 2UC 측에서 정한 기준에 의해 판단됩니다.<br>
+                            제품이상으로 인한 하자는 6개월 무상 A/S가능합니다.</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+
         <!-- 추천상품 -->
         <div class="rcmd-items ">
             <div class="common-frame rcmd">
@@ -503,7 +939,7 @@
                                 <img src="../../images/list/all/booself-12.jpg" alt="">
                             </figure>
                             <figcaption>
-                                <h3>SAIA LOUNGE CHAIR</h3>
+                                <h2>SAIA LOUNGE CHAIR</h2>
                                 <p class="light">독특한 패턴 & 매끈한 곡률</p>
                                 <h3>580,000원</h3>
                             </figcaption>
@@ -515,7 +951,7 @@
                                 <img src="../../images/list/all/booself-5.jpg" alt="">
                             </figure>
                             <figcaption>
-                                <h3>CL4 TABLE LAMP</h3>
+                                <h2>CL4 TABLE LAMP</h2>
                                 <p class="light">은색의 차가운 무드의 램프</p>
                                 <h3>850,000원</h3>
                             </figcaption>
@@ -527,7 +963,19 @@
                                 <img src="../../images/list/all/booself-19.jpg" alt="">
                             </figure>
                             <figcaption>
-                                <h3>OVAL STEEL CONSOL</h3>
+                                <h2>OVAL STEEL CONSOL</h2>
+                                <p class="light">판타지한 색감의 테이블</p>
+                                <h3>1,450,000원</h3>
+                            </figcaption>
+                        </a>
+                    </li>
+                    <li class="rcmd-product">
+                        <a href="#">
+                            <figure>
+                                <img src="../../images/list/all/booself-19.jpg" alt="">
+                            </figure>
+                            <figcaption>
+                                <h2>OVAL STEEL CONSOL</h2>
                                 <p class="light">판타지한 색감의 테이블</p>
                                 <h3>1,450,000원</h3>
                             </figcaption>
@@ -546,7 +994,7 @@
     <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      spaceBetween: 10,
+      spaceBetween: 0,
       slidesPerView: 4,
       freeMode: true,
       watchSlidesProgress: true,

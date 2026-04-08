@@ -91,12 +91,21 @@ document.addEventListener('DOMContentLoaded', () => {
         heartClick.classList.toggle('active')
     })
 
-    //상세페이지 더보기 누르면 상세페이지 늘어나는 기능 
-    const detailMoreBtn = document.querySelector('.detail-more-btn')
-    const imgContainer = document.querySelector('.img-container')
+    //상세페이지 더보기 누르면 상세페이지 늘어나는 기능 (데스크톱 & 모바일 각각)
+    const detailMoreBtns = document.querySelectorAll('.detail-more-btn')
+    const imgContainers = document.querySelectorAll('.detail-caregoty-wrap .detail .img-container')
 
-    detailMoreBtn.addEventListener('click',()=>{
-        imgContainer.classList.add('active')
+    detailMoreBtns.forEach((btn, idx) => {
+        btn.addEventListener('click',()=>{
+            imgContainers[idx].classList.add('active')
+            btn.classList.toggle('active')
+            
+            // 텍스트 변경
+            const textNode = btn.childNodes[0];
+            if(textNode) {
+                textNode.textContent = btn.classList.contains('active') ? '접기 ' : '상품정보 더보기 ';
+            }
+        })
     })
 
 
@@ -130,49 +139,65 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // 상세페이지 스티키 메뉴 누르면 이동하는 기능
-    const btnDetail = document.querySelector('.sticky-menu-wrap .btn-detail')
-    const btnReview = document.querySelector('.sticky-menu-wrap .btn-review')
-    const btnQna = document.querySelector('.sticky-menu-wrap .btn-qna')
-    const btnService = document.querySelector('.sticky-menu-wrap .btn-service')
+    // 상세페이지 스티키 메뉴 누르면 이동하는 기능 (데스크톱 & 모바일 각각)
+    const commonFrames = document.querySelectorAll('.detail-wrap > .common-frame');
 
-    const detail = document.querySelector('.detail-caregoty-wrap .detail')
-    const review = document.querySelector('.detail-caregoty-wrap .review')
-    const qna = document.querySelector('.detail-caregoty-wrap .qna')
-    const service = document.querySelector('.detail-caregoty-wrap .service')
+    commonFrames.forEach(frame => {
+        const btnDetail = frame.querySelector('.sticky-menu-wrap .btn-detail')
+        const btnReview = frame.querySelector('.sticky-menu-wrap .btn-review')
+        const btnQna = frame.querySelector('.sticky-menu-wrap .btn-qna')
+        const btnService = frame.querySelector('.sticky-menu-wrap .btn-service')
 
-    //모든 버튼과 컨텐츠의 active를 끄는 리셋 함수
-    function resetTabs() {
-        [btnDetail, btnReview, btnQna, btnService].forEach(btn => btn?.classList.remove('active'));
-        [detail, review, qna, service].forEach(cont => cont?.classList.remove('active'));
-    }
+        const detail = frame.querySelector('.detail-caregoty-wrap .detail')
+        const review = frame.querySelector('.detail-caregoty-wrap .review')
+        const qna = frame.querySelector('.detail-caregoty-wrap .qna')
+        const service = frame.querySelector('.detail-caregoty-wrap .service')
 
-    btnDetail.addEventListener('click',function(){
-        resetTabs()
-        this.classList.toggle('active')
-        detail.classList.toggle('active')
+        //모든 버튼과 컨텐츠의 active를 끄는 리셋 함수
+        function resetTabs() {
+            [btnDetail, btnReview, btnQna, btnService].forEach(btn => btn?.classList.remove('active'));
+            [detail, review, qna, service].forEach(cont => cont?.classList.remove('active'));
+        }
+
+        if(btnDetail) {
+            btnDetail.addEventListener('click',function(e){
+                e.preventDefault()
+                resetTabs()
+                this.classList.toggle('active')
+                detail.classList.toggle('active')
+            })
+        }
+
+        if(btnReview) {
+            btnReview.addEventListener('click',function(e){
+                e.preventDefault()
+                resetTabs()
+                this.classList.toggle('active')
+                review.classList.toggle('active')
+            })
+        }
+
+        if(btnQna) {
+            btnQna.addEventListener('click',function(e){
+                e.preventDefault()
+                resetTabs()
+                this.classList.toggle('active')
+                qna.classList.toggle('active')
+            })
+        }
+
+        if(btnService) {
+            btnService.addEventListener('click',function(e){
+                e.preventDefault()
+                resetTabs()
+                this.classList.toggle('active')
+                service.classList.toggle('active')
+            })
+        }
+
+        // 초기 실행: 첫 로딩 시 상세페이지 활성화
+        if(btnDetail) btnDetail.click()
     })
-
-    btnReview.addEventListener('click',function(){
-        resetTabs()
-        this.classList.toggle('active')
-        review.classList.toggle('active')
-    })
-
-    btnQna.addEventListener('click',function(){
-        resetTabs()
-        this.classList.toggle('active')
-        qna.classList.toggle('active')
-    })
-
-    btnService.addEventListener('click',function(){
-        resetTabs()
-        this.classList.toggle('active')
-        service.classList.toggle('active')
-    })
-
-    // 초기 실행: 첫 로딩 시 상세페이지 활성화
-    btnDetail.click()
 
 
 })

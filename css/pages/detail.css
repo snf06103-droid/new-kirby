@@ -22,6 +22,12 @@ body {
     background-color: var(--neutral-color);
 }
 
+.detail-wrap>.common-frame.none-mo{
+        display: flex;
+    }
+    .detail-wrap>.common-frame.mo{
+        display: none; 
+    }
 /* 상세페이지 스와이퍼 js스타일 */
 .swiper {
     width: 100%;
@@ -282,7 +288,7 @@ element.style {
     display: block;
 }
 .qna-text{
-    max-height: 97px;
+    max-height: 98px;
     overflow: hidden;
     transition: .3s ease;
 }
@@ -492,7 +498,7 @@ max-height: 200px;
 .price-container .order-btn span{
     font-weight: var(--bold-weight);
     width: 100%;
-    height: 40px;
+    padding: .5rem 0;
     background-color: var(--point-color-2);
 }
 .price-container .cart-btn{
@@ -505,8 +511,8 @@ max-height: 200px;
     align-items: center;
     font-weight: var(--bold-weight);
     color: #fff;
-    width: 320px;
-    height: 40px;
+    width: 100%;
+    padding: .5rem 0;
     background-color: var(--main-color);
 }
 .card-benefits>p{
@@ -552,6 +558,8 @@ max-height: 200px;
     margin-bottom: 2rem;
 }
 .sticky-menu{
+    max-width: 901px;
+    width: 100%;
     display: flex;
     gap: 1rem;
     justify-content: center;
@@ -577,14 +585,22 @@ max-height: 200px;
     background-color: var(--point-color-2);
 }
 .detail-caregoty-wrap{
-    width: 901px;
+    max-width: 901px;
+    width: 100%;
 }
 .detail-caregoty-wrap .detail .img-container{
+    width: 100%;
+    max-width: 100%;
     max-height:  1911px;
     overflow: hidden;
 }
 .detail-caregoty-wrap .detail .img-container.active{
 max-height: 15000px;
+}
+.detail-caregoty-wrap .detail .img-container img{
+    width: 100%;
+    height: auto;
+    display: block;
 }
 .detail span{
     width: 100%;
@@ -599,6 +615,10 @@ max-height: 15000px;
 .detail span img{
     width: 20px;
     height: 20px;
+    transition: transform 0.3s ease;
+}
+.detail-more-btn.active img{
+    transform: rotate(180deg);
 }
 
 /* 추천상품 스타일 */
@@ -647,7 +667,8 @@ max-height: 15000px;
     width: 100%;
     padding: 0.5rem 0;
     text-align: center;
-    font-size: 0.9rem;
+    font-size: var(--detail);
+    font-weight: var(--light-weight);
 }
 
 
@@ -686,27 +707,27 @@ max-height: 15000px;
       background-position: center;
     }
 
-.mySwiper2 {
-    height: auto;
-    width: 100%;
-}
-.mySwiper .swiper-wrapper {
-    /* border: 1px solid gold; */
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-}
-.mySwiper .swiper-slide {
-    width: 25% !important;
-    height: 150px;
-    opacity: 0.5;
-}
+    .mySwiper2 {
+        height: auto;
+        width: 100%;
+    }
+    .mySwiper .swiper-wrapper {
+        /* border: 1px solid gold; */
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+    }
+    .mySwiper .swiper-slide {
+        width: 30% !important;
+        height: 150px;
+        opacity: 0.5;
+    }
 
-   .mySwiper {
-    height: auto;
-    box-sizing: border-box;
-    padding: 10px 0;
-}
+    .mySwiper {
+        height: auto;
+        box-sizing: border-box;
+        padding: 10px 0;
+    }
 
     .mySwiper .swiper-slide {
       width: 25%;
@@ -728,14 +749,171 @@ max-height: 15000px;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
-        width: 818px;
+        width: 43.9vw;
         height: auto;
         gap: 1rem;
         margin-bottom: 10rem;
     }
+
+    
+    .detail-sticky-box{
+        width: 48.8vw;
+    }
+    .sticky-menu-wrap {
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .sticky-menu {
+        gap: .9rem;
+    }
+    .rcmd-product figure {
+        width: 255px;
+    }
+    .detail-wrap .order-box {
+        width: 39vw;
+    }
+    .color-option {
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+
+    /* 리뷰스타일 */
+    .best-review-photo ul>li {
+        width: 30%;
+        height: 30%;
+    }
+    .review-item {
+        padding: 2rem 1rem;
+    }
+    .review-item .review-desc .review-title {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    .review-item .review-desc>p {
+        font-size: var(--body-2);
+    }
+    .review-item .review-desc {
+        width: auto;
+        padding-left: 1rem;
+        flex: 2;
+    }
+    .review-item figure {
+        width: auto;
+        flex: 1;
+        height: 100%;
+    }
+    .qna-text {
+        max-height: 93px;
+    }
+    .qna-text .title-box .q {
+        text-align: start;
+    }
+    .qna-text.big {
+        max-height: 121px;
+    }
+    aside img {
+        width: 40px;
+        height: 40px;
+    }
+    aside {
+        right: 5px;
+        bottom: 206px;
+    }
+
 }
 
-@media (max-width:768px){
+@media (max-width:800px){
+    .detail-wrap>.common-frame.none-mo{
+        display: none;
+    }
+    .detail-wrap>.common-frame.mo{
+        display: flex; 
+    }
+    .detail-wrap .img-box {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .detail-wrap .order-box {
+        width: 100%;
+        padding: 1.6rem 0;
+    }
+    .price-container .category {
+        font-size: 1.2rem;
+    }
+    .price-container .product-name {
+        font-size: 1.9rem;
+    }
+    .price-container .product-desc {
+        font-size: var(--body-1);
+    }
+    .price-container>dl>dt {
+        font-size: var(--body-1);
+    }
+    .price-container dd {
+        font-size: var(--body-1);
+    }
+    .price .bold {
+        font-size: 1.2rem;
+    }
+    .price-container .final-price {
+        font-size: 26px;
+    }
+    .card-benefits>p {
+        font-size: 1.2rem;
+    }
+    .detail-sticky-box {
+        width: 100%;
+    }
+    .best-review-photo {
+        padding: 5rem 0;
+    }
+    .rcmd-product{
+        width: 37.2vw;
+        margin-bottom: 2rem;
+    }
+    .rcmd-product figure {
+        width: 100%;
+    }
+    .rcmd-product-list {
+        flex-wrap: wrap;
+    }
+    aside img {
+        width: 30px;
+        height: 30px;
+    }
+    .sticky-menu {
+        gap: .5rem;
+    }
+    .sticky-menu>li>a {
+        font-size: var(--body-2);
+    }
+    .review-item {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr;
+    }
+    .review-item figure {
+        width: 100%;
+        height: auto;
+    }
+    .item-info {
+        grid-column: 1/3;
+        display: flex;
+        justify-content: space-between;
+    }
+    .review-item .review-desc .review-title {
+        text-align: start;
+    }
+    .review-item .review-desc>p {
+        display: -webkit-box;          
+        -webkit-box-orient: vertical; 
+        -webkit-line-clamp: 3;         
+        overflow: hidden;             
+        text-overflow: ellipsis;      
+    }
+    .qna-text .title-box {
+        padding: 1rem;
+    }
 
 }
 
