@@ -670,7 +670,12 @@ max-height: 15000px;
     font-size: var(--detail);
     font-weight: var(--light-weight);
 }
-
+.main-box{
+    width: 100%;
+}
+.qna-desc{
+    display: none;
+}
 
 @media (max-width:1440px){
     /* 상세페이지 스와이퍼 js스타일 */
