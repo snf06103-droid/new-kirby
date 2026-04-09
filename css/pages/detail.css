@@ -410,6 +410,7 @@ element.style {
     position: sticky;
     top: 100px;
     left: 0;
+    width: 400px;
     /* border: 1px solid gold; */
 }
 .price-container>dl>dt{
@@ -924,7 +925,13 @@ max-height: 15000px;
         width: 100%;
         margin-bottom: .5rem;
     }
-
+    .price-container {
+        position: sticky;
+        top: 100px;
+        left: 0;
+        width: 100%;
+        /* border: 1px solid gold; */
+    }
 }
 
 @media (max-width:370px){
