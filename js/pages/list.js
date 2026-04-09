@@ -2,10 +2,8 @@ let currentSort = 'default';
 let currentPage = 1;
 let currentCategory = 'all';
 
-// 반응형: 모바일(768px 미만)이면 6개, 아니면 9개로 시작
 let itemsPerPage = window.innerWidth < 768 ? 6 : 9;
 
-// 브라우저 리사이즈 대응
 window.addEventListener('resize', () => {
     const newItemsPerPage = window.innerWidth < 768 ? 6 : 9;
     if (itemsPerPage !== newItemsPerPage) {
@@ -15,46 +13,35 @@ window.addEventListener('resize', () => {
     }
 });
 
-// [2] 페이지 변경 함수
 function changePage(pageNumber) {
-    // 1페이지보다 작거나 총 페이지보다 큰 경우 실행 방지 로직은 renderPagination에서 버튼 활성화로 제어
+   
     currentPage = pageNumber;
     renderProducts(); 
-    
-    // 페이지 이동 시 리스트 시작점으로 부드럽게 스크롤
-    // window.scrollTo({
-    //     top: 500, 
-    //     behavior: 'smooth'
-    // });
+  
 }
 
-// [3] 페이지네이션 버튼 생성 함수 (5개씩 그룹핑 버전)
 function renderPagination(totalItems) {
     const paginationContainer = document.querySelector(".pagination-container");
     if (!paginationContainer) return;
 
     const totalPages = Math.ceil(totalItems / itemsPerPage);
-    const pageGroupSize = 5; // 한 번에 보여줄 페이지 번호 개수
+    const pageGroupSize = 5; 
     
-    // 현재 페이지가 속한 그룹 계산 (1~5페이지는 0번 그룹, 6~10페이지는 1번 그룹)
     const currentGroup = Math.floor((currentPage - 1) / pageGroupSize);
     
-    // 현재 그룹의 시작 번호와 끝 번호 설정
     let startPage = currentGroup * pageGroupSize + 1;
     let endPage = startPage + pageGroupSize - 1;
     
-    // 끝 번호가 실제 총 페이지를 넘지 않도록 제한
     if (endPage > totalPages) endPage = totalPages;
 
     let paginationHtml = '';
     
-    // 페이지가 1개 이하일 경우 페이지네이션 숨김
     if (totalPages <= 1) {
         paginationContainer.innerHTML = '';
         return;
     }
 
-    // 1. 이전 화살표 (이전 페이지로 이동)
+
     paginationHtml += `
         <button class="page-arrow prev" ${currentPage === 1 ? 'disabled' : ''} 
                 onclick="changePage(${currentPage - 1})">
@@ -62,7 +49,6 @@ function renderPagination(totalItems) {
         </button>
     `;
 
-    // 2. 현재 그룹에 속한 숫자 버튼 생성 (startPage ~ endPage)
     for (let i = startPage; i <= endPage; i++) {
         paginationHtml += `
             <button class="page-num ${i === currentPage ? 'active' : ''}" 
@@ -70,7 +56,6 @@ function renderPagination(totalItems) {
         `;
     }
 
-    // 3. 다음 화살표 (다음 페이지로 이동)
     paginationHtml += `
         <button class="page-arrow next" ${currentPage === totalPages ? 'disabled' : ''} 
                 onclick="changePage(${currentPage + 1})">
@@ -81,13 +66,11 @@ function renderPagination(totalItems) {
     paginationContainer.innerHTML = paginationHtml;
 }
 
-// [4] 제품 리스트 및 배너 그리기 함수
 function renderProducts() {
     const productGrid = document.querySelector(".product-grid");
     const banner = document.getElementById("main-banner");
     if (!productGrid) return;
 
-    // 1. 배너 이미지 업데이트 (all일 때는 기본 chair 이미지)
     if (banner) {
        const categoryImg = currentCategory === 'all' ? 'chair' : currentCategory;
 
@@ -97,17 +80,14 @@ function renderProducts() {
         banner.style.background = `url(../../images/list/banner/${bannerImg}.jpg) no-repeat 50% 50% / cover`;
     }
 
-    // 2. 카테고리 필터링
     const filtered = currentCategory === 'all' 
         ? allProduct 
         : allProduct.filter(p => p.category === currentCategory);
 
-    // 3. 페이지네이션 슬라이싱
     const startIndex = (currentPage - 1) * itemsPerPage;
     const endIndex = startIndex + itemsPerPage;
     const slicedProducts = filtered.slice(startIndex, endIndex);
 
-    // 4. 상품 그리드 생성
     productGrid.innerHTML = slicedProducts.map(product => `
         <li class="product-list">
             <figure class="hover-box">
@@ -141,60 +121,49 @@ function renderProducts() {
         </li>
     `).join('');
 
-    // 5. 페이지네이션 버튼 다시 그리기
     renderPagination(filtered.length);
 }
 
-// [5] 카테고리 클릭 이벤트 초기화
 function initCategoryEvents() {
     const menus = document.querySelectorAll(".product-types li");
     const labelSpan = document.querySelector('.select-label span');
     
     menus.forEach(menu => {
         menu.addEventListener("click", () => {
-            // 클릭한 메뉴의 첫 번째 클래스를 카테고리로 사용
+        
             currentCategory = menu.classList[0]; 
             currentPage = 1; 
 
-            // 주소창 변경 (새로고침 없이)
             const newURL = `${window.location.pathname}?type=${currentCategory}`;
             window.history.pushState({ path: newURL }, '', newURL);
 
-            // UI 활성화 (글자 진하게)
             menus.forEach(m => m.classList.remove('active'));
             menu.classList.add('active');
 
-            // 셀렉트 박스 텍스트 변경
             if (labelSpan) labelSpan.innerText = menu.innerText;
 
-            // 화면 갱신 (리스트 + 배너)
             renderProducts();
         });
     });
 }
 
-// [6] 실행 (DOM 로드 후)
 document.addEventListener('DOMContentLoaded', function() {
-    // 1. 주소창 파라미터 확인
     const params = new URLSearchParams(window.location.search);
     const urlType = params.get('type'); 
 
     if (urlType) {
         currentCategory = urlType;
         
-        // 해당 메뉴 버튼 active 처리
         const menus = document.querySelectorAll(".product-types li");
         menus.forEach(m => {
             if(m.classList.contains(urlType)) {
                 m.classList.add('active');
-                // 셀렉트 박스 이름도 맞춰주기
                 const labelSpan = document.querySelector('.select-label span');
                 if (labelSpan) labelSpan.innerText = m.innerText;
             }
         });
     }
 
-    // 2. 드롭다운(정렬) 로직
     const selectLabel = document.querySelector('.select-label');
     const selectBox = document.querySelector('.select-box');
     if (selectLabel && selectBox) {
@@ -204,7 +173,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-    // 3. 초기 실행
     initCategoryEvents(); 
     renderProducts(); 
 });

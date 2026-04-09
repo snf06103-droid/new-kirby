@@ -47,13 +47,10 @@ document.addEventListener("DOMContentLoaded", function() {
         const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
         passwordInput.setAttribute('type', type);
         
-        // 아이콘 이미지 변경
-        if (type === 'password') {
-            // 보기 모드: eye.png 보이기, eye-closed.png 숨기기
+        if (type === 'password') {  
             passwordIcon.style.display = 'block';
             passwordIconClosed.style.display = 'none';
         } else {
-            // 마스크 모드: eye-closed.png 보이기, eye.png 숨기기
             passwordIcon.style.display = 'none';
             passwordIconClosed.style.display = 'block';
         }

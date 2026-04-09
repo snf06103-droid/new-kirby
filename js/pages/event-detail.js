@@ -56,7 +56,6 @@ const eventDate = [
     },
 ];
 
-// 1. 클릭 감지 (정확한 클래스명 사용)
 const otherItems = document.querySelectorAll('.other-box li');
 
 otherItems.forEach(item => {
@@ -64,7 +63,6 @@ otherItems.forEach(item => {
         e.preventDefault(); 
         const clickedId = this.dataset.id;
 
-        // [수정완료] eventDate로 철자 수정함!
         const selectedData = eventDate.find(data => data.id === clickedId);
 
         if (selectedData) {
@@ -84,7 +82,6 @@ function updateEventDetail(data) {
     const mainText4 = document.querySelector('.event-text .desc4');
     const mainText5 = document.querySelector('.event-text .desc5');
 
-    // 데이터 교체 (mainDate 변수명 일치시킴)
     if(mainImg) mainImg.src = data.img;
     if(mainTitle) mainTitle.innerText = data.title;
     if(mainDate) mainDate.innerText = data.date;
@@ -97,25 +94,21 @@ function updateEventDetail(data) {
 
     window.scrollTo({ top: 0, behavior: 'smooth' });
 }
-// 페이지가 열리자마자 실행되는 코드입니다.
+
 window.addEventListener('DOMContentLoaded', () => {
-    // 1. 주소창의 ?id=2 같은 부분을 읽어옵니다.
+
     const urlParams = new URLSearchParams(window.location.search);
     const idFromUrl = urlParams.get('id');
 
-    // 2. 만약 주소에 id가 적혀있다면 (예: event-detail.html?id=3)
     if (idFromUrl) {
-        // 데이터 창고(eventDate)에서 해당 id와 일치하는 데이터를 찾습니다.
         const selectedData = eventDate.find(data => data.id === idFromUrl);
         
-        // 3. 찾은 데이터가 있다면 화면을 업데이트합니다.
         if (selectedData) {
             updateEventDetail(selectedData);
         }
     }
 });
 
-// [1] 상단 상세 내용을 바꾸는 메인 함수
 function updateEventDetail(data) {
     const mainImg = document.querySelector('.event-box figure img');
     const mainTitle = document.querySelector('.event-desc h1');
@@ -127,7 +120,6 @@ function updateEventDetail(data) {
     const mainText4 = document.querySelector('.event-text .desc4');
     const mainText5 = document.querySelector('.event-text .desc5');
 
-    // 1. 상단 데이터 교체 (이게 먼저 실행되어야 위가 바뀝니다!)
     if(mainImg) mainImg.src = data.img;
     if(mainTitle) mainTitle.innerText = data.title;
     if(mainDate) mainDate.innerText = data.date;
@@ -137,21 +129,15 @@ function updateEventDetail(data) {
     if(mainText4) mainText4.innerText = data.desc4;
     if(mainText5) mainText5.innerText = data.desc5;
 
-    // 2. 하단 '다른 이벤트' 목록 4개 새로 고침
     updateOtherList(data.id);
 
-    // 3. 페이지 상단으로 부드럽게 이동
-    // window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
-// [2] 하단 목록을 '현재 ID 제외'하고 다시 그리는 함수
 function updateOtherList(currentId) {
     const otherBox = document.querySelector('.other-box');
     
-    // 현재 보고 있는 ID와 다른 데이터만 4개 추출
     const filteredList = eventDate.filter(item => item.id !== currentId);
 
-    // HTML 생성
     otherBox.innerHTML = filteredList.map(item => `
         <li data-id="${item.id}">
             <a href="#">
@@ -161,11 +147,9 @@ function updateOtherList(currentId) {
         </li>
     `).join('');
 
-    // [중요] 새로 그려진 4개의 li에 다시 클릭 이벤트를 걸어줍니다.
     bindClickEvents();
 }
 
-// [3] 하단 리스트 아이템들에 클릭 기능을 연결하는 함수
 function bindClickEvents() {
     const items = document.querySelectorAll('.other-box li');
     items.forEach(item => {
@@ -174,16 +158,15 @@ function bindClickEvents() {
             const clickedId = this.dataset.id;
             const selectedData = eventDate.find(d => d.id === clickedId);
             if (selectedData) {
-                updateEventDetail(selectedData); // 클릭 시 상단/하단 동시 업데이트!
+                updateEventDetail(selectedData); 
             }
         });
     });
 }
 
-// [4] 페이지 처음 열렸을 때 실행 로직
 window.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);
-    const idFromUrl = params.get('id') || "1"; // 주소에 id 없으면 기본 1번
+    const idFromUrl = params.get('id') || "1"; 
 
     const initialData = eventDate.find(d => d.id === idFromUrl);
     if (initialData) {
