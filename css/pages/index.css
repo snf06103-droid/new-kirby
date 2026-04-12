@@ -803,7 +803,10 @@ body {
     .best-box>.common-frame {
         margin: 0 2rem;
     }
-    
+    .pick-text .h1-box {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+    }
 }
 
 @media (max-width:590px){

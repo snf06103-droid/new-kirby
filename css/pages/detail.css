@@ -651,6 +651,7 @@ max-height: 15000px;
     margin-bottom: var(--margin-top-pc);
     display: flex;
     justify-content: space-between;
+    gap: 2rem;
 }
 .rcmd-product figure{
     width: 378px;
@@ -676,6 +677,9 @@ max-height: 15000px;
 }
 .qna-desc{
     display: none;
+}
+.qna-text.active .qna-desc{
+    display: block;
 }
 
 @media (max-width:1440px){

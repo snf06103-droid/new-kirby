@@ -153,6 +153,9 @@ footer .logo img{
     .footer-text {
         width: 100%;
     }
+    .footer-container {
+        margin: 1rem;
+    }
 }
 @media (max-width:320px){
    

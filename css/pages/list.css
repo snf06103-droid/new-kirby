@@ -297,6 +297,9 @@
         width: 100%;
         aspect-ratio: 402/350;
     }
+    .select-list li {
+        width: 85px;
+    }
 }
 
 @media (max-width:370px){
